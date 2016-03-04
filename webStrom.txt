@@ -1,0 +1,15 @@
+ctrl+/ 单行注释
+ctrl+shift+/ 块注释
+
+shift+enter 重新开始一行
+ctrl+y 删除行
+ctrl+d 复制行
+
+ctrl+alt+L 整理代码
+tab 整理代码选中代码整体向后
+shift+tab 整理代码选中代码整体向前
+
+ctrl+w 选中代码，连续按会有其它效果
+ctrl+shift+up/down 上下移动行代码
+ctrl+r 替换内容
+alt+1 隐藏显示面板
