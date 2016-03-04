@@ -3,3 +3,5 @@ diyige
 zaicitijiao
 
 在家里电脑上新建QSTH-BAG文件夹后从远程clone项目到本地
+
+移动文件夹位置即改变本地路径后提交
