@@ -3,7 +3,7 @@
 <head lang="en">
     <meta charset="UTF-8">
     <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <title>新建角色</title>
+    <title>员工管理-修改员工资料</title>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/common.css">
     <script src="js/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
@@ -11,7 +11,7 @@
     <script src="js/common.js" type="text/javascript" charset="utf-8"></script>
 </head>
 <body>
-<div class="view-wrap new-role">
+<div class="view-wrap staff-management">
     <!--顶部菜单-->
     <div class="view-topbar">
         <div class="topbar-content">
@@ -53,8 +53,8 @@
             <div class="sidebar-nav">
                 <div class="sidebar-title"><i class="sidebar-title-icon"></i><span>系统管理</span><span class="glyphicon glyphicon-triangle-bottom"></span></div>
                 <ul class="sidebar-trans">
-                    <li><a class="active" href="role-management.html">角色管理</a></li>
-                    <li><a href="staff-management.html">员工管理</a></li>
+                    <li><a href="role-management.html">角色管理</a></li>
+                    <li><a class="active" href="staff-management.html">员工管理</a></li>
                     <li><a href="menu-management.html">菜单管理</a></li>
                     <li><a href="function-management.html">功能管理</a></li>
                 </ul>
@@ -68,16 +68,24 @@
                 <div class="col-sm-12">
                     <div class="wizard">
                         <div class="wizard-title">
-                            <h2>新建角色</h2>
+                            <h2>修改员工资料</h2>
                         </div>
                         <div class="wizard-content">
-                            <div class="center-items-wrap w600">
+                            <div class="center-items-wrap w500">
                                 <dl class="dl-horizontal center-margin-left-negative100">
-                                    <dt>角色名称：</dt>
+                                    <dt>姓名：</dt>
                                     <dd class="form-group">
                                         <input type="text" class="form-control">
                                     </dd>
-                                    <dt>功能授权：</dt>
+                                    <dt>登录名：</dt>
+                                    <dd class="form-group">
+                                        <input type="text" class="form-control">
+                                    </dd>
+                                    <dt>电话：</dt>
+                                    <dd class="form-group">
+                                        <input type="text" class="form-control">
+                                    </dd>
+                                    <dt>角色：</dt>
                                     <dd class="form-group">
                                         <form class="function-authorize-from">
                                             <label class="function-authorize-item">
@@ -103,6 +111,19 @@
                                             <label class="function-authorize-item">
                                                 <input type="checkbox" id="inlineCheckBox6" value="option6">
                                                 功能A
+                                            </label>
+                                        </form>
+                                    </dd>
+                                    <dt>状态：</dt>
+                                    <dd class="form-group">
+                                        <form class="function-authorize-from">
+                                            <label class="function-authorize-item mb0">
+                                                <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option7">
+                                                启用
+                                            </label>
+                                            <label class="function-authorize-item mb0">
+                                                <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option8">
+                                                锁定
                                             </label>
                                         </form>
                                     </dd>
