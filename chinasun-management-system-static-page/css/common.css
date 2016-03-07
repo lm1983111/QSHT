@@ -1,17 +1,41 @@
+body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: "Helvetica Neue", "Luxi Sans", "DejaVu Sans", Tahoma, "Hiragino Sans GB", STHeiti, "Microsoft YaHei";
+}
+.mr20{
+    margin-right: 20px;
+}
+.mt60{
+    margin-top: 60px;
+}
+a{
+    cursor: pointer;
+}
+.common-header-nav:after,.common-header-nav:before, .wizard-title:after, .wizard-title:before{
+    display: table;
+    content: "";
+    clear: both;
+}
 .btn {
-    font-size: 12px;
+    font-size: 14px;
     border-radius: 0px;
-    padding: 8px 16px;
-    height: 32px;
+    padding: 11px 26px;
+    height: 38px;
     line-height: 14px
 }
 
 .btn-default {
     color: #333;
     border: 1px solid #ddd;
-    background-color: #f7f7f7
+    background-color: #ccc
 }
 
+.btn-lg{
+    font-size: 14px;
+    border-radius: 0px;
+    padding:0 50px;
+    height: 44px;
+    line-height: 44px;
+}
 .btn-default:active {
     -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.125);
     box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.125)
@@ -32,3 +56,392 @@
 .btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {
     outline: none;
 }
+.btn-bg-gray-font-white{
+    background-color: #808080;
+    color: #fff;
+}
+.btn-bg-gray-font-white2{
+    background-color: #b3b3b3;
+    color: #fff;
+}
+.btn-bg-gray-font-white:hover, .btn-bg-gray-font-white:focus{
+    background-color: #696969;
+    color: #fff;
+}
+.btn-bg-gray-font-white2:hover, .btn-bg-gray-font-white2:focus{
+    background-color: #969696;
+    color: #fff;
+}
+.nav-tabs{
+    border: none;
+}
+.nav-tabs > li{
+    margin-right: 5px;
+    margin-left: 0;
+}
+.nav-tabs > li > a{
+    display: block;
+    border-radius: 0;
+    margin-right: 0;
+    font-size: 14px;
+}
+.nav-tabs > li > a:hover{
+    color: #333;
+}
+.nav-tabs > li > a, .nav-tabs > li > a:focus {
+    color: #666;
+    border: 0px;
+    padding: 10px 16px;
+    background: #FBFAF8;
+}
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover{
+    color: #333;
+    border: none;
+    background-color: #b3b3b3;
+}
+.nav-tabs > li, .nav-tabs > li.active{
+    border: 1px solid #b3b3b3;
+    background-color: #b3b3b3;
+}
+.form-control {
+    height: 38px;
+    border-radius: 0px;
+    padding: 6px;
+    -webkit-transition: none;
+    transition: none;
+    font-size: 12px;
+}
+.form-control:focus{
+    box-shadow: none;
+}
+.w500{width: 500px}
+.w600{width: 600px}
+.w700{width: 700px}
+
+/*顶部菜单*/
+.view-topbar{
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    z-index: 101;
+    background-color: #eee;
+}
+.view-body{
+    position: absolute;
+    top: 80px;
+    bottom: 0;
+    width: 100%;
+    z-index: 100;
+    background-color: #000;
+}
+.view-sidebar{
+    position: fixed;
+    top: 80px;
+    bottom: 0;
+    display: block;
+    width: 180px;
+    z-index: 100;
+    background-color: #293541;
+    font-size: 14px;
+}
+.view-main{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 180px;
+    right: 0;
+    overflow: hidden;
+    background-color: #fff;
+}
+.topbar-content{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 80px;
+    z-index: 100;
+    clear: both;
+    font-size: 14px;
+    background-color: #e6e6e6;
+}
+.topbar-left-logo{
+    position: relative;
+    display: block;
+    margin-left: 30px;
+    float: left;
+    width: 285px;
+    height: 80px;
+    background-image: url("../img/logo.png");
+    background-position: 0 center;
+    background-repeat: no-repeat;
+}
+.topbar-right{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: auto;
+    height: 80px;
+}
+.topbar-right-item{
+    display: block;
+    height: 100%;
+    float: left;
+}
+.topbar-right-item-inner{
+    display: block;
+    padding-left: 10px;
+    padding-right:10px;
+    height: 80px;
+    line-height: 80px;
+    color: #666;
+}
+.topbar-right-item a{
+    color: #666;
+    text-decoration: none;
+    text-decoration: none;
+    -moz-user-select: none; /*火狐*/
+    -webkit-user-select: none;  /*webkit浏览器*/
+    -ms-user-select: none;   /*IE10*/
+    -khtml-user-select: none; /*早期浏览器*/
+    user-select: none;
+}
+.user-portrait-wrap{
+    padding-left: 50px;
+}
+.topbar-right-item .user-portrait{
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    display: block;
+    width: 36px;
+    height: 36px;
+    border-radius: 100%;
+    background-image: url("../img/user_portrait.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/*顶部菜单结束*/
+
+/*左侧菜单栏*/
+.sidebar-nav{
+    margin-bottom: 20px;
+    background-color: #3f4955;
+}
+.sidebar-nav-flod{
+}
+.sidebar-title{
+    display: block;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    cursor: pointer;
+}
+.sidebar-trans{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    -webkit-transition: all 0.12s ease,0.12s ease;
+    -moz-transition: all 0.12s ease,0.12s ease;
+    -ms-transition: all 0.12s ease,0.12s ease;
+    -o-transition: all 0.12s ease,0.12s ease;
+    transition: all 0.12s ease,0.12s ease;
+}
+.sidebar-trans li{
+    position: relative;
+}
+.sidebar-trans li a{
+    display: block;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 35px;
+    color: #fff;
+    text-decoration: none;
+}
+.sidebar-trans li a:hover, .sidebar-trans li a.active{
+    text-decoration: none;
+    color: #82b86d;
+}
+.sidebar-title-icon{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url("../img/sidebar_title_icon.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.sidebar-title .glyphicon-triangle-bottom{
+    display: inline-block;
+    margin: 0 8px 0 10px;
+    font-size: 10px;
+    color: #fff;
+    -webkit-transition: transform 0.12s;
+    -moz-transition: transform 0.12s;
+    -ms-transition: transform 0.12s;
+    -o-transition: transform 0.12s;
+    transition: transform 0.12s;
+}
+.sidebar-nav-flod .glyphicon-triangle-bottom{
+    -webkit-transform:rotate(-90deg);
+    transform:rotate(-90deg);
+}
+.sidebar-nav .height0{
+    height: 0 !important;
+    overflow: hidden;
+}
+/*左侧菜单栏结束*/
+
+/*右侧主体部分*/
+.main-body{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    overflow: hidden;
+    overflow-y: auto;
+}
+.common-con{}
+.common-header-nav{
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.common-header-nav-left{
+    display: block;
+    float: left;
+}
+.common-header-nav-right{
+    display: block;
+    float: right;
+}
+.pagination-goto{
+    display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: middle;
+    zoom: 1;
+    padding: 0px 15px;
+}
+.pagination-goto input.ipt {
+    width: 40px;
+    display: inline-block;
+    margin-right: 6px;
+}
+.pagination-info option{
+    height: 40px;
+}
+.table{
+    font-size: 14px;
+    background-color: #eee;
+}
+.table thead tr th{
+    background-color: #ccc;
+    color: #333;
+}
+.table > thead > tr > th{
+    border-bottom: 0;
+}
+.table tbody tr td{
+    vertical-align: middle;
+}
+.table-hover tbody tr{
+
+}
+.table-hover tbody tr:hover td{
+    background-color: #f5f5f5;
+}
+.table tfoot{
+    background-color: #ccc;
+}
+.table tfoot tr td{
+    padding: 12px 8px;
+    vertical-align: middle;
+}
+.pagination{
+    margin: 0;
+    vertical-align: middle;
+    border-radius: 0;
+}
+.pagination-per-show{
+    display: inline-block;
+    vertical-align: middle;
+    zoom: 1;
+    padding: 0 16px;
+    color: #888;
+}
+.pagination > li:first-child > a, .pagination > li:first-child > span{
+    border-radius: 0;
+}
+.pagination > li:last-child > a, .pagination > li:last-child > span{
+    border-radius: 0;
+}
+.pagination > li > a, .pagination > li > span{
+    color: #333;
+}
+.pagination > li > a:focus, .pagination > li > a:hover, .pagination > li > span:focus, .pagination > li > span:hover {
+    z-index: 3;
+    color: #333;
+    background-color: #eee;
+    border-color: #ddd
+}
+.limit-acolor a{
+    color: #333;
+}
+.limit-acolor a:hover{
+    color: #333;
+}
+/*右侧主体部分结束*/
+
+/*新建角色*/
+.wizard{
+    display: block;
+    min-height: 800px;
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    margin-top: 30px;
+}
+.wizard-title{
+    display: block;
+    width: 100%;
+    padding-left: 35px;
+    background-color: #ccc;
+}
+.wizard-title h2{
+    height: 50px;
+    line-height: 50px;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+}
+.wizard-content{
+    padding-top: 40px;
+}
+.wizard-content .center-items-wrap{
+    display: block;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+.function-authorize-from{
+    display: block;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+}
+.center-items-wrap table{
+    width: 100%;
+}
+.function-authorize-item{
+    display: inline-block;
+    margin-right: 50px;
+    margin-bottom: 20px;
+}
+
+/*新建角色结束*/

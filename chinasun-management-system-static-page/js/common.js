@@ -8,7 +8,7 @@ $(function(){
     //点击当前sidebar-title给他的兄弟ul添加height0样式
     $(".sidebar-title").on("click",function(){
         if($(this).next().hasClass("height0")){
-            $(this).next().removeClass("height0")
+            $(this).next().removeClass("height0");
             $(this).parent().removeClass("sidebar-nav-flod");
         }else{
             $(this).next().addClass("height0");
