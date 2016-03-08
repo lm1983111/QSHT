@@ -13,6 +13,10 @@ body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 .mt60{
     margin-top: 60px;
 }
+.w420h160-textarea{
+    width: 420px !important;
+    height: 160px !important;
+}
 .center-margin-left-negative100, .ml-neg100{
     margin-left: -100px;
 }
@@ -480,16 +484,30 @@ a{
 /*话题管理话题详情*/
 .full-items-wrap{
     display: block;
-    padding-left: 60px;
-    padding-right: 60px;
 }
 .full-item{
     padding-bottom: 20px;
-    margin-bottom: 20px;
+    padding-top: 20px;
     border-bottom: 1px solid #ddd;
 }
+.full-item dl{
+    margin-bottom: 0;
+}
+.full-item .h4{
+    font-weight: 700;
+}
+.full-item .h4:first-child{
+    margin-top: 0;
+}
 .topic-detail-user-portrait{
-
+}
+.topic-detail-user-portrait img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.topic-management-topic-tetail .wizard-content .dl-horizontal dt{
+    padding-top: 0;
 }
 .gallery-wrap{
     display: block;
@@ -514,5 +532,43 @@ a{
 .gallery-160-240 a img{
     max-width: 100%;
     max-height: 100%;
+}
+.topic-detail-comment-textarea{
+    width: 500px;
+    min-height: 100px;
+}
+.col-topic-detail-comment-wrap{
+    display: block;
+    width: 500px;
+}
+.col-topic-detail-comment{
+    display: block;
+    float: left;
+    width: 70%;
+    text-align: left;
+}
+.col-topic-detail-operate-btn{
+    display: block;
+    float: left;
+    width: 30%;
+    text-align: right;
+}
+.circle-white-btn{
+    display: inline-block;
+    width: 90px;
+    height: 30px;
+    margin-bottom: 30px;
+    line-height: 30px;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    text-align: center;
+    color: #333;
+    text-decoration: none;
+    background-color: #fff;
+}
+.circle-white-btn:hover{
+    background-color: #eee;
+    color: #333;
+    text-decoration: none;
 }
 /*话题管理话题详情结束*/
