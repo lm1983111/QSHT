@@ -3,7 +3,7 @@
 <head lang="en">
     <meta charset="UTF-8">
     <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <title>话题管理-修改话题</title>
+    <title>角色管理-查看角色</title>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/common.css">
     <script src="js/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
@@ -11,7 +11,7 @@
     <script src="js/common.js" type="text/javascript" charset="utf-8"></script>
 </head>
 <body>
-<div class="view-wrap staff-management">
+<div class="view-wrap new-role">
     <!--顶部菜单-->
     <div class="view-topbar">
         <div class="topbar-content">
@@ -36,7 +36,7 @@
             <div class="sidebar-nav">
                 <div class="sidebar-title"><i class="sidebar-title-icon"></i><span>社区管理</span><span class="glyphicon glyphicon-triangle-bottom"></span></div>
                 <ul class="sidebar-trans">
-                    <li><a class="active" href="topic-management.html">话题管理</a></li>
+                    <li><a href="topic-management.html">话题管理</a></li>
                     <li><a href="buck-profile.html">降压资料</a></li>
                 </ul>
             </div>
@@ -56,7 +56,7 @@
             <div class="sidebar-nav">
                 <div class="sidebar-title"><i class="sidebar-title-icon"></i><span>系统管理</span><span class="glyphicon glyphicon-triangle-bottom"></span></div>
                 <ul class="sidebar-trans">
-                    <li><a href="role-management.html">角色管理</a></li>
+                    <li><a class="active" href="role-management.html">角色管理</a></li>
                     <li><a href="staff-management.html">员工管理</a></li>
                     <li><a href="menu-management.html">菜单管理</a></li>
                     <li><a href="function-management.html">功能管理</a></li>
@@ -71,66 +71,29 @@
                 <div class="col-sm-12">
                     <div class="wizard">
                         <div class="wizard-title">
-                            <h2>修改话题</h2>
+                            <h2>查看角色</h2>
                         </div>
                         <div class="wizard-content">
-                            <div class="center-items-wrap w500">
+                            <div class="center-items-wrap w600">
                                 <dl class="dl-horizontal center-margin-left-negative100">
-                                    <dt>标题：</dt>
+                                    <dt>角色名称：</dt>
                                     <dd class="form-group">
-                                        <input type="text" class="form-control">
+                                        <div class="role-management-view-role-name">管理员</div>
                                     </dd>
-                                    <dt>主题内容：</dt>
+                                    <dt>功能授权：</dt>
                                     <dd class="form-group">
-                                        <textarea class="form-control w420h160-textarea">朋友推荐了千山降压APP朋友推荐了千山降压APP朋友推荐了千山降压APP朋友推荐了千山降压APP朋友推荐了千山降压APP朋友推荐了千山降PP朋友推荐了千山降压APP</textarea>
-                                    </dd>
-                                    <dt>话题图片：</dt>
-                                    <dd>
-                                        <!--话题图片-->
-                                        <div class="uploadimg-body">
-                                            <div id="preview" class="topic-img-preview">
-                                                <!--话题图片缩略图-->
-                                                <div class="topic-img-item" id="topic-img_0">
-                                                    <a>
-                                                        <span class="delete-topic-img-btn"></span>
-                                                        <img src="img/gallery1.jpg"/>
-                                                    </a>
-                                                </div>
-                                                <div class="topic-img-item" id="topic-img_1">
-                                                    <a>
-                                                        <span class="delete-topic-img-btn"></span>
-                                                        <img src="img/gallery2.jpg"/>
-                                                    </a>
-                                                </div>
-                                                <div class="topic-img-item" id="topic-img_2">
-                                                    <a>
-                                                        <span class="delete-topic-img-btn"></span>
-                                                        <img src="img/gallery3.jpg"/>
-                                                    </a>
-                                                </div>
-                                                <div class="topic-img-item" id="topic-img_3">
-                                                    <a>
-                                                        <span class="delete-topic-img-btn"></span>
-                                                        <img src="img/gallery4.jpg"/>
-                                                    </a>
-                                                </div>
-                                                <!--话题图片缩略图结束-->
-
-                                                <!--上传图片按钮-->
-                                                <div class="uploadimg-launcher">
-                                                    <input id="fileImage" class="uploadimg-launcher-input" type="file" size="30" name="fileselect[]" multiple />
-                                                    <div class="uploading-launcher-mask"></div>
-                                                </div>
-                                                <!--上传图片按钮-->
-                                            </div>
-
+                                        <div class="function-authorize-from">
+                                            <span class="function-authorize-item">功能A</span>
+                                            <span class="function-authorize-item">功能B</span>
+                                            <span class="function-authorize-item">功能C</span>
+                                            <span class="function-authorize-item">功能D</span>
+                                            <span class="function-authorize-item">功能E</span>
+                                            <span class="function-authorize-item">功能F</span>
                                         </div>
-                                        <!--上传图片结束-->
                                     </dd>
                                     <dt></dt>
                                     <dd class="form-group mt60">
-                                        <button type="button" class="btn btn-bg-gray-font-white btn-lg mr20">保存</button>
-                                        <button type="button" class="btn btn-bg-gray-font-white2 btn-lg">取消</button>
+                                        <button type="button" class="btn btn-bg-gray-font-white btn-lg mr20">返回</button>
                                     </dd>
                                 </dl>
                             </div>

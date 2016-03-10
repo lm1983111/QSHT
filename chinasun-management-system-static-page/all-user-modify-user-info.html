@@ -3,7 +3,7 @@
 <head lang="en">
     <meta charset="UTF-8">
     <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <title>话题管理-修改话题</title>
+    <title>所有用户-修改用户资料</title>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/common.css">
     <script src="js/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
@@ -36,7 +36,7 @@
             <div class="sidebar-nav">
                 <div class="sidebar-title"><i class="sidebar-title-icon"></i><span>社区管理</span><span class="glyphicon glyphicon-triangle-bottom"></span></div>
                 <ul class="sidebar-trans">
-                    <li><a class="active" href="topic-management.html">话题管理</a></li>
+                    <li><a href="topic-management.html">话题管理</a></li>
                     <li><a href="buck-profile.html">降压资料</a></li>
                 </ul>
             </div>
@@ -50,7 +50,7 @@
             <div class="sidebar-nav">
                 <div class="sidebar-title"><i class="sidebar-title-icon"></i><span>用户管理</span><span class="glyphicon glyphicon-triangle-bottom"></span></div>
                 <ul class="sidebar-trans">
-                    <li><a href="all-user.html">全部用户</a></li>
+                    <li><a class="active" href="all-user.html">全部用户</a></li>
                 </ul>
             </div>
             <div class="sidebar-nav">
@@ -71,61 +71,41 @@
                 <div class="col-sm-12">
                     <div class="wizard">
                         <div class="wizard-title">
-                            <h2>修改话题</h2>
+                            <h2>修改用户资料</h2>
                         </div>
                         <div class="wizard-content">
                             <div class="center-items-wrap w500">
                                 <dl class="dl-horizontal center-margin-left-negative100">
-                                    <dt>标题：</dt>
+                                    <dt>头像：</dt>
                                     <dd class="form-group">
-                                        <input type="text" class="form-control">
+                                        <img src="img/user_portrait_somebody.jpg">
                                     </dd>
-                                    <dt>主题内容：</dt>
+                                    <dt>姓名：</dt>
                                     <dd class="form-group">
-                                        <textarea class="form-control w420h160-textarea">朋友推荐了千山降压APP朋友推荐了千山降压APP朋友推荐了千山降压APP朋友推荐了千山降压APP朋友推荐了千山降压APP朋友推荐了千山降PP朋友推荐了千山降压APP</textarea>
+                                        <input type="text" class="form-control" value="王小帅">
                                     </dd>
-                                    <dt>话题图片：</dt>
-                                    <dd>
-                                        <!--话题图片-->
-                                        <div class="uploadimg-body">
-                                            <div id="preview" class="topic-img-preview">
-                                                <!--话题图片缩略图-->
-                                                <div class="topic-img-item" id="topic-img_0">
-                                                    <a>
-                                                        <span class="delete-topic-img-btn"></span>
-                                                        <img src="img/gallery1.jpg"/>
-                                                    </a>
-                                                </div>
-                                                <div class="topic-img-item" id="topic-img_1">
-                                                    <a>
-                                                        <span class="delete-topic-img-btn"></span>
-                                                        <img src="img/gallery2.jpg"/>
-                                                    </a>
-                                                </div>
-                                                <div class="topic-img-item" id="topic-img_2">
-                                                    <a>
-                                                        <span class="delete-topic-img-btn"></span>
-                                                        <img src="img/gallery3.jpg"/>
-                                                    </a>
-                                                </div>
-                                                <div class="topic-img-item" id="topic-img_3">
-                                                    <a>
-                                                        <span class="delete-topic-img-btn"></span>
-                                                        <img src="img/gallery4.jpg"/>
-                                                    </a>
-                                                </div>
-                                                <!--话题图片缩略图结束-->
-
-                                                <!--上传图片按钮-->
-                                                <div class="uploadimg-launcher">
-                                                    <input id="fileImage" class="uploadimg-launcher-input" type="file" size="30" name="fileselect[]" multiple />
-                                                    <div class="uploading-launcher-mask"></div>
-                                                </div>
-                                                <!--上传图片按钮-->
-                                            </div>
-
-                                        </div>
-                                        <!--上传图片结束-->
+                                    <dt>年龄：</dt>
+                                    <dd class="form-group">
+                                        <input type="text" class="form-control" value="36">
+                                    </dd>
+                                    <dt>性别：</dt>
+                                    <dd class="form-group">
+                                        <input type="text" class="form-control" value="男">
+                                    </dd>
+                                    <dt>手机：</dt>
+                                    <dd class="form-group">
+                                        <input type="text" class="form-control" value="15475458554">
+                                    </dd>
+                                    <dt>收货地址：</dt>
+                                    <dd class="form-group">
+                                        <input type="text" class="form-control" value="湖南省长沙县盼盼路9号千山药机5栋1205室">
+                                    </dd>
+                                    <dt>状态：</dt>
+                                    <dd class="form-group">
+                                        <select class="form-control">
+                                            <option>启用</option>
+                                            <option selected>锁定</option>
+                                        </select>
                                     </dd>
                                     <dt></dt>
                                     <dd class="form-group mt60">

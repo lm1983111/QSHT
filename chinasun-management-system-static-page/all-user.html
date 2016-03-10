@@ -3,7 +3,7 @@
 <head lang="en">
     <meta charset="UTF-8">
     <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <title>功能管理</title>
+    <title>用户管理</title>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/common.css">
     <script src="js/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
@@ -50,7 +50,7 @@
             <div class="sidebar-nav">
                 <div class="sidebar-title"><i class="sidebar-title-icon"></i><span>用户管理</span><span class="glyphicon glyphicon-triangle-bottom"></span></div>
                 <ul class="sidebar-trans">
-                    <li><a href="all-user.html">全部用户</a></li>
+                    <li><a class="active" href="all-user.html">全部用户</a></li>
                 </ul>
             </div>
             <div class="sidebar-nav">
@@ -59,7 +59,7 @@
                     <li><a href="role-management.html">角色管理</a></li>
                     <li><a href="staff-management.html">员工管理</a></li>
                     <li><a href="menu-management.html">菜单管理</a></li>
-                    <li><a class="active" href="function-management.html">功能管理</a></li>
+                    <li><a href="function-management.html">功能管理</a></li>
                 </ul>
             </div>
 
@@ -74,35 +74,44 @@
                             <div class="common-header-nav-left">
                             </div>
                             <form class="common-header-nav-right form-inline">
-                                <a href="new-menu.html" type="button" class="btn btn-default">+新增功能</a>
+                                <div class="form-group">
+                                    <input type="text" placeholder="请输入搜索内容" class="form-control ipt">
+                                    <button type="button" class="btn btn-default">搜索</button>
+                                </div>
                             </form>
                         </div>
 
                         <div class="tab-content">
-                            <table class="table table-hover table-td-ptb40">
+                            <table class="table table-hover table-td-ptb20">
                                 <thead>
                                 <tr>
-                                    <th>新增功能</th>
-                                    <th>隶属于</th>
-                                    <th>链接</th>
-                                    <th>排序</th>
+                                    <th>头像</th>
+                                    <th>姓名</th>
+                                    <th>性别</th>
+                                    <th>年龄</th>
+                                    <th>手机号码</th>
+                                    <th>收货地址</th>
+                                    <th>注册时间</th>
+                                    <th>状态</th>
                                     <th>操作</th>
                                 </tr>
                                 </thead>
                                 <tbody>
                                 <tr>
-                                    <td><span>话题管理</span></td>
-                                    <td>
-                                        <span>社区管理</span>
-                                    </td>
-                                    <td><a href="http://baidu.com">chinasunhealth.com</a></td>
-                                    <td><span class="btn btn-default btn-sm">01</span></td>
-                                    <td><a href="function-management-modify-function.html" class="btn btn-default btn-sm mr20">修改</a><a class="btn btn-default btn-sm">删除</a></td>
+                                    <td><span class="all-user-customer-portrait"><img src="img/all_user_customer_portrait.png"></span></td>
+                                    <td><span>王小帅</span></td>
+                                    <td><span>男</span></td>
+                                    <td><span>36</span></td>
+                                    <td><span>15365865988</span></td>
+                                    <td><span>湖南省长沙县盼盼路9号千山药机5栋1205室</span></td>
+                                    <td><span>2016-3-1-13：35</span></td>
+                                    <td><span>锁定</span></td>
+                                    <td><a href="all-user-modify-user-info.html" class="btn btn-default btn-sm mr20">编辑</a></td>
                                 </tr>
                                 </tbody>
                                 <tfoot>
                                 <tr>
-                                    <td colspan="5">
+                                    <td colspan="9">
                                         <div class="pull-left">共有168个帖子</div>
                                         <div class="pull-right">
                                             <ul class="pagination">

@@ -48,7 +48,10 @@
                 </ul>
             </div>
             <div class="sidebar-nav">
-                <div class="sidebar-title"><i class="sidebar-title-icon"></i><span>用户管理</span></div>
+                <div class="sidebar-title"><i class="sidebar-title-icon"></i><span>用户管理</span><span class="glyphicon glyphicon-triangle-bottom"></span></div>
+                <ul class="sidebar-trans">
+                    <li><a href="all-user.html">全部用户</a></li>
+                </ul>
             </div>
             <div class="sidebar-nav">
                 <div class="sidebar-title"><i class="sidebar-title-icon"></i><span>系统管理</span><span class="glyphicon glyphicon-triangle-bottom"></span></div>
@@ -91,7 +94,7 @@
                                     <td><span>01</span></td>
                                     <td><span>超级管理员</span></td>
                                     <td><span>功能ABCD</span></td>
-                                    <td><a class="btn btn-default btn-sm mr20">查看</a><a href="modify-staff-data.html" class="btn btn-default btn-sm mr20">修改</a><a class="btn btn-default btn-sm">删除</a></td>
+                                    <td><a href="role-management-view-role.html" class="btn btn-default btn-sm mr20">查看</a><a href="role-management-modify-role.html" class="btn btn-default btn-sm mr20">修改</a><a class="btn btn-default btn-sm">删除</a></td>
                                 </tr>
                                 </tbody>
                                 <tfoot>
@@ -132,5 +135,20 @@
         <!--右侧主体页面结束-->
     </div>
 </div>
+<!--弹出框-->
+<div class="pop-up-window1">
+    <div class="pop-up-window1-header">
+        <div class="pop-up-window1-title"><i class="pop-up-window1-title-icon"></i>温馨提示</div>
+    </div>
+    <div class="pop-up-window1-content">
+        <p>确定要删除此账号吗？</p>
+        <p>删除后不能恢复，且删除其属下的所有业务</p>
+    </div>
+    <div class="pop-up-window1-footer">
+        <a class="puw1-footer-btn puw1-footer-left-btn">确定</a>
+        <a class="puw1-footer-btn puw1-footer-right-btn">取消</a>
+    </div>
+</div>
+<!--弹出框结束-->
 </body>
 </html>
