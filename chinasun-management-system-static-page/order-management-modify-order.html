@@ -1,0 +1,157 @@
+
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>订单管理-修改订单</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <script src="js/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+<div class="view-wrap">
+    <!--顶部菜单-->
+    <div class="view-topbar">
+        <div class="topbar-content">
+            <div class="topbar-left-logo"></div>
+            <ul class="topbar-right">
+                <li class="topbar-right-item">
+                    <div class="topbar-right-item-inner user-portrait-wrap"><a class="user-portrait"></a><span>王小帅，欢迎您!</span></div>
+                </li>
+                <li class="topbar-right-item">
+                    <a class="topbar-right-item-inner">修改密码</a>
+                </li>
+                <li class="topbar-right-item">
+                    <a class="topbar-right-item-inner">退出</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--顶部菜单结束-->
+    <div class="view-body">
+        <!--左侧菜单栏-->
+        <div class="view-sidebar">
+            <div class="sidebar-nav">
+                <div class="sidebar-title"><i class="sidebar-title-icon"></i><span>社区管理</span><span class="glyphicon glyphicon-triangle-bottom"></span></div>
+                <ul class="sidebar-trans">
+                    <li><a href="topic-management.html">话题管理</a></li>
+                    <li><a href="buck-profile.html">降压资料</a></li>
+                </ul>
+            </div>
+            <div class="sidebar-nav">
+                <div class="sidebar-title"><i class="sidebar-title-icon"></i><span>商城管理</span><span class="glyphicon glyphicon-triangle-bottom"></span></div>
+                <ul class="sidebar-trans">
+                    <li><a class="active" href="order-management.html">订单管理</a></li>
+                    <li><a href="goods-management.html">商品管理</a></li>
+                </ul>
+            </div>
+            <div class="sidebar-nav">
+                <div class="sidebar-title"><i class="sidebar-title-icon"></i><span>用户管理</span><span class="glyphicon glyphicon-triangle-bottom"></span></div>
+                <ul class="sidebar-trans">
+                    <li><a href="all-user.html">全部用户</a></li>
+                </ul>
+            </div>
+            <div class="sidebar-nav">
+                <div class="sidebar-title"><i class="sidebar-title-icon"></i><span>系统管理</span><span class="glyphicon glyphicon-triangle-bottom"></span></div>
+                <ul class="sidebar-trans">
+                    <li><a href="role-management.html">角色管理</a></li>
+                    <li><a href="staff-management.html">员工管理</a></li>
+                    <li><a href="menu-management.html">菜单管理</a></li>
+                    <li><a href="function-management.html">功能管理</a></li>
+                </ul>
+            </div>
+
+        </div>
+        <!--左侧菜单栏结束-->
+        <!--右侧主体页面-->
+        <div class="view-main">
+            <div class="main-body">
+                <div class="col-sm-12">
+                    <div class="wizard">
+                        <div class="wizard-title">
+                            <h2>修改订单</h2>
+                        </div>
+                        <div class="wizard-content">
+                            <dl class="dl-horizontal">
+                                <dt>买家电话：</dt>
+                                <dd class="form-group">
+                                    <input type="text" class="form-control w200 dib" value="1861211101">
+                                </dd>
+                                <dt>买家姓名：</dt>
+                                <dd class="form-group">
+                                    <input type="text" class="form-control w286 dib" value="王小帅">
+                                </dd>
+                                <dt>收货人：</dt>
+                                <dd class="form-group">
+                                    <input type="text" class="form-control w150 dib" value="李雷">
+                                </dd>
+                                <dt>收货电话：</dt>
+                                <dd class="form-group">
+                                    <input type="text" class="form-control w200 dib" value="15854754569">
+                                </dd>
+                                <dt>收货地址：</dt>
+                                <dd class="form-group">
+                                    <input type="text" class="form-control w700 dib" value="湖南省长沙市经济开发区盼盼盼路千山药机">
+                                </dd>
+                                <dt></dt>
+                                <dd>
+                                    <table class="table new-order-add-goods-table">
+                                        <thead>
+                                        <th>商品</th>
+                                        <th>数量</th>
+                                        <th>单价</th>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>
+                                                <select class="form-control">
+                                                    <option>[安内强]替米沙坦片</option>
+                                                    <option>[安内强]替米沙坦片</option>
+                                                    <option>[安内强]替米沙坦片</option>
+                                                    <option>[安内强]替米沙坦片</option>
+                                                    <option>[安内强]替米沙坦片</option>
+                                                    <option>[安内强]替米沙坦片</option>
+                                                </select>
+                                            </td>
+                                            <td>
+                                                <div class="input-medicine-num-wrap">
+                                                    <a class="input-medicine-reduce-btn">-</a>
+                                                    <input class="form-control input-medicine-num" value="1">
+                                                    <a class="input-medicine-num-add-btn">+</a>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div>00.00</div>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                        <tfoot>
+                                        <tr>
+                                            <td colspan="3"><button class="btn new-order-add-goods-btn">+添加商品</button></td>
+                                        </tr>
+                                        </tfoot>
+                                    </table>
+                                </dd>
+                                <dt>合计：</dt>
+                                <dd class="form-group">
+                                    <input type="text" class="form-control w150 dib" value="00.00">
+                                </dd>
+                                <dt></dt>
+                                <dd class="form-group">
+                                    <button type="button" class="btn btn-bg-gray-font-white btn-lg mr20">保存</button>
+                                    <button type="button" class="btn btn-bg-gray-font-white2 btn-lg">取消</button>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--右侧主体页面结束-->
+    </div>
+</div>
+</body>
+</html>
