@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>话题管理-降压资料</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <script src="js/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+<div class="view-wrap">
+<!--顶部菜单-->
+<div class="view-topbar">
+    <div class="topbar-content">
+        <div class="topbar-left-logo"></div>
+        <ul class="topbar-right">
+            <li class="topbar-right-item">
+                <div class="topbar-right-item-inner user-portrait-wrap"><a class="user-portrait"></a><span>王小帅，欢迎您!</span></div>
+            </li>
+            <li class="topbar-right-item">
+                <a class="topbar-right-item-inner">修改密码</a>
+            </li>
+            <li class="topbar-right-item">
+                <a class="topbar-right-item-inner">退出</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--顶部菜单结束-->
+<div class="view-body">
+    <!--左侧菜单栏-->
+    <div class="view-sidebar">
+        <div class="sidebar-nav">
+            <div class="sidebar-title"><i class="sidebar-title-icon"></i><span>社区管理</span><span class="glyphicon glyphicon-triangle-bottom"></span></div>
+            <ul class="sidebar-trans">
+                <li><a href="topic-management.html">话题管理</a></li>
+                <li><a class="active" href="lower-blood-pressure-data.html">降压资料</a></li>
+            </ul>
+        </div>
+        <div class="sidebar-nav">
+            <div class="sidebar-title"><i class="sidebar-title-icon"></i><span>商城管理</span><span class="glyphicon glyphicon-triangle-bottom"></span></div>
+            <ul class="sidebar-trans">
+                <li><a href="order-management.html">订单管理</a></li>
+                <li><a href="goods-management.html">商品管理</a></li>
+            </ul>
+        </div>
+        <div class="sidebar-nav">
+            <div class="sidebar-title"><i class="sidebar-title-icon"></i><span>用户管理</span><span class="glyphicon glyphicon-triangle-bottom"></span></div>
+            <ul class="sidebar-trans">
+                <li><a href="all-user.html">全部用户</a></li>
+            </ul>
+        </div>
+        <div class="sidebar-nav">
+            <div class="sidebar-title"><i class="sidebar-title-icon"></i><span>系统管理</span><span class="glyphicon glyphicon-triangle-bottom"></span></div>
+            <ul class="sidebar-trans">
+                <li><a href="role-management.html">角色管理</a></li>
+                <li><a href="staff-management.html">员工管理</a></li>
+                <li><a href="menu-management.html">菜单管理</a></li>
+                <li><a href="function-management.html">功能管理</a></li>
+            </ul>
+        </div>
+
+    </div>
+    <!--左侧菜单栏结束-->
+    <!--右侧主体页面-->
+    <div class="view-main">
+        <div class="main-body">
+            <div class="col-sm-12">
+                <div class="common-con">
+                    <div class="common-header-nav">
+                        <div class="common-header-nav-left">
+                            <!-- Nav tabs -->
+                            <a href="lower-blood-pressure-data-new-data.html" type="button" class="btn btn-default">+新建资料</a>
+                        </div>
+                        <form class="common-header-nav-right form-inline">
+                            <div class="form-group">
+                                <input type="text" placeholder="搜索标题、内容、作者" class="form-control ipt">
+                                <button type="button" class="btn btn-default">搜索</button>
+                            </div>
+                            <button type="button" class="btn btn-default">刷新</button>
+                            <button type="button" class="btn btn-default">删除</button>
+                        </form>
+                    </div>
+
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                            <table class="table table-hover">
+                                <colgroup>
+                                    <col class="w50">
+                                    <col class="w200">
+                                    <col class="w400">
+                                    <col class="w150">
+                                    <col class="w150">
+                                    <col class="w150">
+                                    <col class="w200">
+                                </colgroup>
+                                <thead>
+                                <tr>
+                                    <th><input type="checkbox" name="ckSellectAlla" id="ckSellectAlla"></th>
+                                    <th>标题</th>
+                                    <th>内容</th>
+                                    <th>作者</th>
+                                    <th>赞/评论</th>
+                                    <th class="dropdown">
+                                        <div id="dLabel" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-title">
+                                            类型
+                                            <span class="caret"></span>
+                                        </div>
+                                        <ul class="dropdown-menu" aria-labelledby="dLabel">
+                                            <li><a>降压100问</a></li>
+                                            <li><a>降压社区</a></li>
+                                        </ul>
+                                    </th>
+                                    <th>操作</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td><input type="checkbox" name="ckbox" id="ckbox1"></td>
+                                    <td class="limit-acolor"><a href="lower-blood-pressure-data-view-data.html">王小帅教授降压专题讲座</a></td>
+                                    <td>
+                                        <div class="td-attach-img50text-left"><img src="img/htgl_item_img.jpg"></div>
+                                        <div class="td-attach-img50text-right">王小帅教授降压专题讲座非常不错王小帅教授降压专题讲座非常不错王小帅教授降压专题讲座非常不错王小帅教授降压专题讲座非常不错王小帅教授降压专题讲座非常不错~</div>
+                                    </td>
+                                    <td><span>管理员A</span></td>
+                                    <td><span>200/120</span></td>
+                                    <td><span>降压讲座</span></td>
+                                    <td><a href="topic-management-modify-topic.html" class="btn btn-default btn-sm mr20">修改</a><a class="btn btn-default btn-sm">删除</a></td>
+                                </tr>
+                                </tbody>
+                                <tfoot>
+                                <tr>
+                                    <td colspan="7">
+                                        <div class="pull-left">共有168个帖子</div>
+                                        <div class="pull-right">
+                                            <ul class="pagination">
+                                                <li page-index="1"><a>首页</a></li>
+                                                <li page-index="0"><a>上一页</a></li>
+                                                <li><a>1/22</a></li>
+                                                <li page-index="2"><a>下一页</a></li>
+                                            </ul>
+                                            <div class="total-comment-num">145话题，共22页</div>
+                                            <div class="pagination-goto">
+                                                <span id="goBtna">跳转到</span>
+                                                <input type="text" class="form-control ipt" placeholder="页">
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                </tfoot>
+                            </table>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--右侧主体页面结束-->
+</div>
+</div>
+</body>
+</html>

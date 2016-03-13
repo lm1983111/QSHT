@@ -3,12 +3,40 @@
 <head lang="en">
     <meta charset="UTF-8">
     <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <title>功能管理</title>
+    <title>角色管理</title>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/common.css">
     <script src="js/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
     <script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
     <script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+    <style type="text/css">
+        .black-on-white{
+            position: absolute;
+            z-index: 1000;
+            top: 0px;
+            right: 0px;
+            left: 0px;
+            height: 2041px;
+            display: block;
+        }
+        #jquery-msg-bg {
+            opacity: 0.6;
+            filter: alpha(opacity=60);
+            background: black;
+        }
+        .black-on-white .jquery-msg-content {
+            /*width: 400px;*/
+            height: auto;
+            background: white;
+            color: #333333;
+            opacity: 0.9;
+            filter: alpha(opacity=90);
+            -webkit-box-shadow: 5px 5px 30px 0 black;
+            box-shadow: 5px 5px 30px 0 black;
+            -webkit-border-radius: 3px;
+            border-radius: 3px;
+        }
+    </style>
 </head>
 <body>
 <div class="view-wrap">
@@ -56,10 +84,10 @@
             <div class="sidebar-nav">
                 <div class="sidebar-title"><i class="sidebar-title-icon"></i><span>系统管理</span><span class="glyphicon glyphicon-triangle-bottom"></span></div>
                 <ul class="sidebar-trans">
-                    <li><a href="role-management.html">角色管理</a></li>
+                    <li><a class="active" href="role-management.html">角色管理</a></li>
                     <li><a href="staff-management.html">员工管理</a></li>
                     <li><a href="menu-management.html">菜单管理</a></li>
-                    <li><a class="active" href="function-management.html">功能管理</a></li>
+                    <li><a href="function-management.html">功能管理</a></li>
                 </ul>
             </div>
 
@@ -74,35 +102,32 @@
                             <div class="common-header-nav-left">
                             </div>
                             <form class="common-header-nav-right form-inline">
-                                <a href="new-menu.html" type="button" class="btn btn-default">+新增功能</a>
+                                <a href="new-role.html" type="button" class="btn btn-default">+新建角色</a>
                             </form>
                         </div>
 
                         <div class="tab-content">
+
                             <table class="table table-hover table-td-ptb40">
                                 <thead>
                                 <tr>
-                                    <th>新增功能</th>
-                                    <th>隶属于</th>
-                                    <th>链接</th>
-                                    <th>排序</th>
+                                    <th>ID</th>
+                                    <th>角色名称</th>
+                                    <th>拥有权限</th>
                                     <th>操作</th>
                                 </tr>
                                 </thead>
                                 <tbody>
-                                <tr>
-                                    <td><span>话题管理</span></td>
-                                    <td>
-                                        <span>社区管理</span>
-                                    </td>
-                                    <td><a href="http://baidu.com">chinasunhealth.com</a></td>
-                                    <td><span class="btn btn-default btn-sm">01</span></td>
-                                    <td><a href="function-management-modify-function.html" class="btn btn-default btn-sm mr20">修改</a><a class="btn btn-default btn-sm">删除</a></td>
+                                <tr id="the-user">
+                                    <td><span>01</span></td>
+                                    <td><span>超级管理员</span></td>
+                                    <td><span>功能ABCD</span></td>
+                                    <td><a href="role-management-view-role.html" class="btn btn-default btn-sm mr20">查看</a><a href="role-management-modify-role.html" class="btn btn-default btn-sm mr20">修改</a><a id="replace-content" class="btn btn-default btn-sm">删除</a></td>
                                 </tr>
                                 </tbody>
                                 <tfoot>
                                 <tr>
-                                    <td colspan="5">
+                                    <td colspan="4">
                                         <div class="pull-left">共有168个帖子</div>
                                         <div class="pull-right">
                                             <ul class="pagination">
@@ -129,6 +154,7 @@
                                 </tfoot>
                             </table>
 
+
                         </div>
                     </div>
                 </div>
@@ -137,5 +163,58 @@
         <!--右侧主体页面结束-->
     </div>
 </div>
+
+<!--demo-弹出框-->
+<script src="js/jquery.center.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/jquery.msg.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript" charset="utf-8">
+    // wrap everything in document ready event
+    $( function(){
+        // block the screen to show msg when click on #replace-content btn
+        $( '#replace-content' ).bind( 'click', function(){
+            $.msg({
+                autoUnblock : false,
+                clickUnblock : false,
+                content: '<div class="pop-up-window1-header"><div class="pop-up-window1-title">' +
+                        '<i class="pop-up-window1-title-icon"></i>温馨提示' +
+                        '</div></div>' +
+                        '<div class="pop-up-window1-content">确定要删除此账号吗？<br/>删除后不能恢复，且删除其属下的所有业务</div>' +
+                        '<div class="btn-wrap pop-up-window1-footer">' +
+                        '<span id="yes" class="puw1-footer-btn puw1-footer-left-btn">确定</span>' +
+                        '<span id="no" class="puw1-footer-btn puw1-footer-right-btn">取消</span>' +
+                        '</div>',
+                afterBlock : function(){
+                    // store 'this' for other scope to use
+                    var self = this;
+
+                    // delete user and auto unblock the screen after 1 second
+                    // when click #yes btn
+                    $( '#yes' ).bind( 'click', function(){
+
+                        // self.method is not chainable
+                        self.replace( '删除成功！' );
+                        self.unblock( 2000 );
+                        // this equals to
+                        // $.msg( 'replace', 'User deleted.' ).
+                        //   msg( 'unblock', 2000 );
+
+                        $( '#the-user' ).empty();
+                    });
+
+                    $( '#no' ).bind( 'click', function(){
+
+                        // this equals to $.msg( 'unblock' );
+                        self.unblock();
+                    });
+                },
+                beforeUnblock : function(){
+                    alert( 'This is a callback from beforeUnblock event handler :)' )
+                }
+            });
+        });
+    });
+</script>
+<!--demo-弹出框结束-->
+
 </body>
 </html>

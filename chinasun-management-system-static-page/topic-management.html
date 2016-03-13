@@ -37,7 +37,7 @@
                     <div class="sidebar-title"><i class="sidebar-title-icon"></i><span>社区管理</span><span class="glyphicon glyphicon-triangle-bottom"></span></div>
                     <ul class="sidebar-trans">
                         <li><a class="active" href="topic-management.html">话题管理</a></li>
-                        <li><a href="buck-profile.html">降压资料</a></li>
+                        <li><a href="lower-blood-pressure-data.html">降压资料</a></li>
                     </ul>
                 </div>
                 <div class="sidebar-nav">
@@ -93,6 +93,15 @@
                                 <!--已发布话题-->
                                 <div role="tabpanel" class="tab-pane active" id="haveReleaseTopic">
                                     <table class="table table-hover">
+                                        <colgroup>
+                                            <col class="w50">
+                                            <col class="w200">
+                                            <col class="w400">
+                                            <col class="w150">
+                                            <col class="w150">
+                                            <col class="w150">
+                                            <col class="w200">
+                                        </colgroup>
                                         <thead>
                                             <tr>
                                                 <th><input type="checkbox" name="ckSellectAlla" id="ckSellectAlla"></th>
@@ -100,7 +109,17 @@
                                                 <th>内容</th>
                                                 <th>作者</th>
                                                 <th>赞/评论</th>
-                                                <th>发布时间</th>
+                                                <th class="dropdown">
+                                                    <div id="dLabel" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-title">
+                                                        发布时间
+                                                        <span class="caret"></span>
+                                                    </div>
+                                                    <ul class="dropdown-menu" aria-labelledby="dLabel">
+                                                        <li><a>最近3个月话题</a></li>
+                                                        <li><a>今年内话题</a></li>
+                                                        <li><a>2015年话题</a></li>
+                                                    </ul>
+                                                </th>
                                                 <th>操作</th>
                                             </tr>
                                         </thead>
@@ -108,7 +127,10 @@
                                             <tr>
                                                 <td><input type="checkbox" name="ckbox" id="ckbox1"></td>
                                                 <td class="limit-acolor"><a href="topic-management-topic-tetail.html">千山降压APP使用心得</a></td>
-                                                <td class="limit-acolor"><a href="topic-management-topic-tetail.html"><img src="img/htgl_item_img.jpg">朋友推荐下了千山降压APP抱着好奇的心情去用了下感觉非常不错~</a></td>
+                                                <td>
+                                                    <div class="td-attach-img50text-left"><img src="img/htgl_item_img.jpg"></div>
+                                                    <div class="td-attach-img50text-right">朋友推荐下了千山降压APP抱着好奇的心情去用了下感觉非常不错朋友推荐下了千山降压APP抱着好奇的心情去用了下感觉非常不错朋友推荐下了千山降压APP抱着好奇的心情去用了下感觉非常不错朋友推荐下了千山降压APP抱着好奇的心情去用了下感觉非常不错~</div>
+                                                </td>
                                                 <td><span>王小帅</span></td>
                                                 <td><span>200/120</span></td>
                                                 <td><span>2016-3-1 13:34</span></td>
@@ -117,7 +139,10 @@
                                             <tr>
                                                 <td><input type="checkbox" name="ckbox" id="ckbox2"></td>
                                                 <td class="limit-acolor"><a href="topic-management-topic-tetail.html">千山降压APP使用心得</a></td>
-                                                <td class="limit-acolor"><a href="topic-management-topic-tetail.html"><img src="img/htgl_item_img.jpg">朋友推荐下了千山降压APP抱着好奇的心情去用了下感觉非常不错~</a></td>
+                                                <td>
+                                                    <div class="td-attach-img50text-left"><img src="img/htgl_item_img.jpg"></div>
+                                                    <div class="td-attach-img50text-right">朋友推荐下了千山降压APP抱着好奇的心情去用了下感觉非常不错~</div>
+                                                </td>
                                                 <td><span>王小帅</span></td>
                                                 <td><span>200/120</span></td>
                                                 <td><span>2016-3-1 13:34</span></td>
@@ -158,6 +183,15 @@
                                 <!--待审核话题-->
                                 <div role="tabpanel" class="tab-pane" id="waitCheckTopic">
                                     <table class="table table-hover">
+                                        <colgroup>
+                                            <col class="w50">
+                                            <col class="w200">
+                                            <col class="w400">
+                                            <col class="w150">
+                                            <col class="w150">
+                                            <col class="w150">
+                                            <col class="w200">
+                                        </colgroup>
                                         <thead>
                                         <tr>
                                             <th><input type="checkbox" name="ckSellectAllb" id="ckSellectAllb"></th>
@@ -165,7 +199,17 @@
                                             <th>内容</th>
                                             <th>作者</th>
                                             <th>赞/评论</th>
-                                            <th>发布时间</th>
+                                            <th class="dropdown">
+                                                <div id="dLabel" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-title">
+                                                    发布时间
+                                                    <span class="caret"></span>
+                                                </div>
+                                                <ul class="dropdown-menu" aria-labelledby="dLabel">
+                                                    <li><a>最近3个月话题</a></li>
+                                                    <li><a>今年内话题</a></li>
+                                                    <li><a>2015年话题</a></li>
+                                                </ul>
+                                            </th>
                                             <th>操作</th>
                                         </tr>
                                         </thead>
@@ -173,7 +217,10 @@
                                         <tr>
                                             <td><input type="checkbox" name="ckbox3" id="ckbox3"></td>
                                             <td class="limit-acolor"><a href="#">千山降压APP使用心得</a></td>
-                                            <td class="limit-acolor"><a href="#"><img src="img/htgl_item_img.jpg">朋友推荐下了千山降压APP抱着好奇的心情去用了下感觉非常不错~</a></td>
+                                            <td>
+                                                <div class="td-attach-img50text-left"><img src="img/htgl_item_img.jpg"></div>
+                                                <div class="td-attach-img50text-right">朋友推荐下了千山降压APP抱着好奇的心情去用了下感觉非常不错朋友推荐下了千山降压APP抱着好奇的心情去用了下感觉非常不错朋友推荐下了千山降压APP抱着好奇的心情去用了下感觉非常不错朋友推荐下了千山降压APP抱着好奇的心情去用了下感觉非常不错~</div>
+                                            </td>
                                             <td><span>王小帅</span></td>
                                             <td><span>200/120</span></td>
                                             <td><span>2016-3-1 13:34</span></td>
@@ -182,7 +229,10 @@
                                         <tr>
                                             <td><input type="checkbox" name="ckbox4" id="ckbox4"></td>
                                             <td class="limit-acolor"><a href="#">千山降压APP使用心得</a></td>
-                                            <td class="limit-acolor"><a href="#"><img src="img/htgl_item_img.jpg">朋友推荐下了千山降压APP抱着好奇的心情去用了下感觉非常不错~</a></td>
+                                            <td>
+                                                <div class="td-attach-img50text-left"><img src="img/htgl_item_img.jpg"></div>
+                                                <div class="td-attach-img50text-right">朋友推荐下了千山降压APP抱着好奇的心情去用了下感觉非常不错朋友推荐下了千山降压APP抱着好奇的心情去用了下感觉非常不错朋友推荐下了千山降压APP抱着好奇的心情去用了下感觉非常不错朋友推荐下了千山降压APP抱着好奇的心情去用了下感觉非常不错~</div>
+                                            </td>
                                             <td><span>王小帅</span></td>
                                             <td><span>200/120</span></td>
                                             <td><span>2016-3-1 13:34</span></td>

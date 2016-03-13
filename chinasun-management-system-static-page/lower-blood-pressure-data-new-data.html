@@ -3,7 +3,7 @@
 <head lang="en">
     <meta charset="UTF-8">
     <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <title>功能管理-修改功能</title>
+    <title>降压资料-新建资料</title>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/common.css">
     <script src="js/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
@@ -11,7 +11,7 @@
     <script src="js/common.js" type="text/javascript" charset="utf-8"></script>
 </head>
 <body>
-<div class="view-wrap">
+<div class="view-wrap staff-management">
     <!--顶部菜单-->
     <div class="view-topbar">
         <div class="topbar-content">
@@ -37,7 +37,7 @@
                 <div class="sidebar-title"><i class="sidebar-title-icon"></i><span>社区管理</span><span class="glyphicon glyphicon-triangle-bottom"></span></div>
                 <ul class="sidebar-trans">
                     <li><a href="topic-management.html">话题管理</a></li>
-                    <li><a href="lower-blood-pressure-data.html">降压资料</a></li>
+                    <li><a class="active" href="lower-blood-pressure-data.html">降压资料</a></li>
                 </ul>
             </div>
             <div class="sidebar-nav">
@@ -57,7 +57,7 @@
                 <div class="sidebar-title"><i class="sidebar-title-icon"></i><span>系统管理</span><span class="glyphicon glyphicon-triangle-bottom"></span></div>
                 <ul class="sidebar-trans">
                     <li><a href="role-management.html">角色管理</a></li>
-                    <li><a class="active" href="staff-management.html">员工管理</a></li>
+                    <li><a href="staff-management.html">员工管理</a></li>
                     <li><a href="menu-management.html">菜单管理</a></li>
                     <li><a href="function-management.html">功能管理</a></li>
                 </ul>
@@ -71,31 +71,38 @@
                 <div class="col-sm-12">
                     <div class="wizard">
                         <div class="wizard-title">
-                            <h2>修改功能</h2>
+                            <h2>新建资料</h2>
                         </div>
                         <div class="wizard-content">
                             <div class="center-items-wrap w500">
                                 <dl class="dl-horizontal center-margin-left-negative100">
-                                    <dt>功能名称：</dt>
+                                    <dt>主题类类型：</dt>
                                     <dd class="form-group">
-                                        <input type="text" class="form-control" value="商品管理">
-                                    </dd>
-                                    <dt>功能链接：</dt>
-                                    <dd class="form-group">
-                                        <input type="text" class="form-control" value="http://chinasunhealth.com/">
-                                    </dd>
-                                    <dt>隶属于：</dt>
-                                    <dd class="form-group">
-                                        <select class="form-control w-per50">
-                                            <option>社区管理</option>
-                                            <option>社区管理</option>
-                                            <option>社区管理</option>
-                                            <option>社区管理</option>
+                                        <select class="form-control">
+                                            <option>降压讲座</option>
+                                            <option>降压讲座</option>
                                         </select>
                                     </dd>
-                                    <dt>排序：</dt>
+                                    <dt>标题：</dt>
                                     <dd class="form-group">
-                                        <input type="text" class="form-control w-per50" value="02">
+                                        <input type="text" class="form-control">
+                                    </dd>
+                                    <dt>图文详情：</dt>
+                                    <dd class="form-group">
+                                        <input type="password" class="form-control">
+                                    </dd>
+                                    <dt>状态：</dt>
+                                    <dd class="form-group">
+                                        <div class="function-authorize-from">
+                                            <label class="function-authorize-item mb0">
+                                                <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option7">
+                                                推送
+                                            </label>
+                                            <label class="function-authorize-item mb0">
+                                                <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option8">
+                                                不推送
+                                            </label>
+                                        </div>
                                     </dd>
                                     <dt></dt>
                                     <dd class="form-group mt60">
