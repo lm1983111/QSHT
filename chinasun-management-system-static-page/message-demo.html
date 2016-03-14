@@ -3,40 +3,12 @@
 <head lang="en">
     <meta charset="UTF-8">
     <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <title>角色管理</title>
+    <title>弹出框提示demo</title>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/common.css">
     <script src="js/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
     <script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
     <script src="js/common.js" type="text/javascript" charset="utf-8"></script>
-    <style type="text/css">
-        .black-on-white{
-            position: absolute;
-            z-index: 1000;
-            top: 0px;
-            right: 0px;
-            left: 0px;
-            height: 2041px;
-            display: block;
-        }
-        #jquery-msg-bg {
-            opacity: 0.6;
-            filter: alpha(opacity=60);
-            background: black;
-        }
-        .black-on-white .jquery-msg-content {
-            /*width: 400px;*/
-            height: auto;
-            background: white;
-            color: #333333;
-            opacity: 0.9;
-            filter: alpha(opacity=90);
-            -webkit-box-shadow: 5px 5px 30px 0 black;
-            box-shadow: 5px 5px 30px 0 black;
-            -webkit-border-radius: 3px;
-            border-radius: 3px;
-        }
-    </style>
 </head>
 <body>
 <div class="view-wrap">
@@ -64,15 +36,15 @@
             <div class="sidebar-nav">
                 <div class="sidebar-title"><i class="sidebar-title-icon"></i><span>社区管理</span><span class="glyphicon glyphicon-triangle-bottom"></span></div>
                 <ul class="sidebar-trans">
-                    <li><a href="topic-management.html">话题管理</a></li>
+                    <li><a href="topic-management-published.html">话题管理</a></li>
                     <li><a href="lower-blood-pressure-data.html">降压资料</a></li>
                 </ul>
             </div>
             <div class="sidebar-nav">
                 <div class="sidebar-title"><i class="sidebar-title-icon"></i><span>商城管理</span><span class="glyphicon glyphicon-triangle-bottom"></span></div>
                 <ul class="sidebar-trans">
-                    <li><a href="order-management.html">订单管理</a></li>
-                    <li><a href="goods-management.html">商品管理</a></li>
+                    <li><a href="order-management-all-order.html">订单管理</a></li>
+                    <li><a href="goods-management-selling.html">商品管理</a></li>
                 </ul>
             </div>
             <div class="sidebar-nav">
@@ -192,7 +164,10 @@
                     $( '#yes' ).bind( 'click', function(){
 
                         // self.method is not chainable
-                        self.replace( '删除成功！' );
+                        //删除成功
+                        self.replace( '<div class="weak-note"><i class="weak-note-delete-icon-success"></i>删除成功</div>' );
+                        //删除失败
+                        //self.replace( '<div class="weak-note"><i class="weak-note-delete-icon-fail"></i>删除失败</div>' );
                         self.unblock( 2000 );
                         // this equals to
                         // $.msg( 'replace', 'User deleted.' ).

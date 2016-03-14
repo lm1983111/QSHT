@@ -10,8 +10,14 @@ body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 .w600{
     width: 600px;
 }
+.w420{
+    width: 420px;
+}
 .w400{
     width: 400px;
+}
+.w300{
+    width: 300px;
 }
 .w200{
     width: 200px;
@@ -564,12 +570,21 @@ a{
     box-shadow:0 0 10px rgba(0, 0, 0, .3);
     text-align: center;
 }
-.weak-note-delete-icon{
+.weak-note-delete-icon-success{
     display: inline-block;
     width: 26px;
     height: 22px;
     margin-right: 10px;
-    background-image: url("../img/weak_note_delete_icon.jpg");
+    background-image: url("../img/weak_note_delete_icon.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.weak-note-delete-icon-fail{
+    display: inline-block;
+    width: 26px;
+    height: 22px;
+    margin-right: 10px;
+    background-image: url("../img/weak_note_delete_icon_fail.png");
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -1036,3 +1051,30 @@ a{
     padding-right: 10px;
 }
 /*社区管理-降压资料结束*/
+
+/*弹出框*/
+.black-on-white{
+    position: absolute;
+    z-index: 1000;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    height: 2041px;
+    display: block;
+}
+#jquery-msg-bg {
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+    background: black;
+}
+.black-on-white .jquery-msg-content {
+    background: white;
+    color: #333333;
+    opacity: 0.9;
+    filter: alpha(opacity=90);
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+/*弹出框结束*/

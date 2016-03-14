@@ -2,9 +2,124 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title></title>
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>降压资料-修改资料</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <script src="js/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/common.js" type="text/javascript" charset="utf-8"></script>
 </head>
 <body>
+<div class="view-wrap staff-management">
+    <!--顶部菜单-->
+    <div class="view-topbar">
+        <div class="topbar-content">
+            <div class="topbar-left-logo"></div>
+            <ul class="topbar-right">
+                <li class="topbar-right-item">
+                    <div class="topbar-right-item-inner user-portrait-wrap"><a class="user-portrait"></a><span>王小帅，欢迎您!</span></div>
+                </li>
+                <li class="topbar-right-item">
+                    <a class="topbar-right-item-inner">修改密码</a>
+                </li>
+                <li class="topbar-right-item">
+                    <a class="topbar-right-item-inner">退出</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--顶部菜单结束-->
+    <div class="view-body">
+        <!--左侧菜单栏-->
+        <div class="view-sidebar">
+            <div class="sidebar-nav">
+                <div class="sidebar-title"><i class="sidebar-title-icon"></i><span>社区管理</span><span class="glyphicon glyphicon-triangle-bottom"></span></div>
+                <ul class="sidebar-trans">
+                    <li><a href="topic-management-published.html">话题管理</a></li>
+                    <li><a class="active" href="lower-blood-pressure-data.html">降压资料</a></li>
+                </ul>
+            </div>
+            <div class="sidebar-nav">
+                <div class="sidebar-title"><i class="sidebar-title-icon"></i><span>商城管理</span><span class="glyphicon glyphicon-triangle-bottom"></span></div>
+                <ul class="sidebar-trans">
+                    <li><a href="order-management-all-order.html">订单管理</a></li>
+                    <li><a href="goods-management-selling.html">商品管理</a></li>
+                </ul>
+            </div>
+            <div class="sidebar-nav">
+                <div class="sidebar-title"><i class="sidebar-title-icon"></i><span>用户管理</span><span class="glyphicon glyphicon-triangle-bottom"></span></div>
+                <ul class="sidebar-trans">
+                    <li><a href="all-user.html">全部用户</a></li>
+                </ul>
+            </div>
+            <div class="sidebar-nav">
+                <div class="sidebar-title"><i class="sidebar-title-icon"></i><span>系统管理</span><span class="glyphicon glyphicon-triangle-bottom"></span></div>
+                <ul class="sidebar-trans">
+                    <li><a href="role-management.html">角色管理</a></li>
+                    <li><a href="staff-management.html">员工管理</a></li>
+                    <li><a href="menu-management.html">菜单管理</a></li>
+                    <li><a href="function-management.html">功能管理</a></li>
+                </ul>
+            </div>
 
+        </div>
+        <!--左侧菜单栏结束-->
+        <!--右侧主体页面-->
+        <div class="view-main">
+            <div class="main-body">
+                <div class="col-sm-12">
+                    <div class="wizard">
+                        <div class="wizard-title">
+                            <h2>修改资料</h2>
+                        </div>
+                        <div class="wizard-content">
+                            <div class="center-items-wrap w500">
+                                <dl class="dl-horizontal center-margin-left-negative100">
+                                    <dt>主题类类型：</dt>
+                                    <dd class="form-group">
+                                        <select class="form-control">
+                                            <option>降压讲座</option>
+                                            <option>降压讲座</option>
+                                        </select>
+                                    </dd>
+                                    <dt>标题：</dt>
+                                    <dd class="form-group">
+                                        <input type="text" class="form-control" value="王小川教授降压专题讲座">
+                                    </dd>
+                                    <dt>图文详情：</dt>
+                                    <dd class="form-group">
+                                        <!--富文本编辑器-->
+                                        <div class="ueditor-wrap">http://wenku.baidu.com/link?url=6yiYyO8bkg-aq_CK05y5cANcrL2rfcZmPvAtZbFizU1oFy75633xImOzAEoI7ghTtkga4Kn2R3zTnT3Er7_CUnY0W1qpaclOxxHGkzErJJm</div>
+                                        <!--富文本编辑器结束-->
+                                    </dd>
+                                    <dt>状态：</dt>
+                                    <dd class="form-group">
+                                        <div class="function-authorize-from">
+                                            <label class="function-authorize-item mb0">
+                                                <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option7">
+                                                推送
+                                            </label>
+                                            <label class="function-authorize-item mb0">
+                                                <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option8" checked>
+                                                不推送
+                                            </label>
+                                        </div>
+                                    </dd>
+                                    <dt></dt>
+                                    <dd class="form-group mt60">
+                                        <button type="button" class="btn btn-bg-gray-font-white btn-lg mr20">保存</button>
+                                        <button type="button" class="btn btn-bg-gray-font-white2 btn-lg">取消</button>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--右侧主体页面结束-->
+    </div>
+</div>
 </body>
 </html>

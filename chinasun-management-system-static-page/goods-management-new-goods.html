@@ -1,10 +1,9 @@
-
 <!DOCTYPE html>
 <html>
 <head lang="en">
     <meta charset="UTF-8">
     <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <title>订单管理-修改订单</title>
+    <title>商品管理-新建商品</title>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/common.css">
     <script src="js/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
@@ -12,7 +11,7 @@
     <script src="js/common.js" type="text/javascript" charset="utf-8"></script>
 </head>
 <body>
-<div class="view-wrap">
+<div class="view-wrap staff-management">
     <!--顶部菜单-->
     <div class="view-topbar">
         <div class="topbar-content">
@@ -44,8 +43,8 @@
             <div class="sidebar-nav">
                 <div class="sidebar-title"><i class="sidebar-title-icon"></i><span>商城管理</span><span class="glyphicon glyphicon-triangle-bottom"></span></div>
                 <ul class="sidebar-trans">
-                    <li><a class="active" href="order-management-all-order.html">订单管理</a></li>
-                    <li><a href="goods-management-selling.html">商品管理</a></li>
+                    <li><a href="order-management-all-order.html">订单管理</a></li>
+                    <li><a class="active" href="goods-management-selling.html">商品管理</a></li>
                 </ul>
             </div>
             <div class="sidebar-nav">
@@ -72,75 +71,67 @@
                 <div class="col-sm-12">
                     <div class="wizard">
                         <div class="wizard-title">
-                            <h2>修改订单</h2>
+                            <h2>新建商品</h2>
                         </div>
                         <div class="wizard-content">
                             <dl class="dl-horizontal">
-                                <dt>买家电话：</dt>
+                                <dt>标题：</dt>
                                 <dd class="form-group">
-                                    <input type="text" class="form-control w200 dib" value="1861211101">
+                                    <input type="text" class="form-control w420" value="">
                                 </dd>
-                                <dt>买家姓名：</dt>
+                                <dt>价格：</dt>
                                 <dd class="form-group">
-                                    <input type="text" class="form-control w286 dib" value="王小帅">
+                                    <input type="text" class="form-control w420" value="">
                                 </dd>
-                                <dt>收货人：</dt>
-                                <dd class="form-group">
-                                    <input type="text" class="form-control w150 dib" value="李雷">
-                                </dd>
-                                <dt>收货电话：</dt>
-                                <dd class="form-group">
-                                    <input type="text" class="form-control w200 dib" value="15854754569">
-                                </dd>
-                                <dt>收货地址：</dt>
-                                <dd class="form-group">
-                                    <input type="text" class="form-control w700 dib" value="湖南省长沙市经济开发区盼盼盼路千山药机">
-                                </dd>
-                                <dt></dt>
+                                <dt>商品图片：</dt>
                                 <dd>
-                                    <table class="table new-order-add-goods-table">
-                                        <thead>
-                                        <th>商品</th>
-                                        <th>数量</th>
-                                        <th>单价</th>
-                                        </thead>
-                                        <tbody>
-                                        <tr>
-                                            <td>
-                                                <select class="form-control">
-                                                    <option>[安内强]替米沙坦片</option>
-                                                    <option>[安内强]替米沙坦片</option>
-                                                    <option>[安内强]替米沙坦片</option>
-                                                    <option>[安内强]替米沙坦片</option>
-                                                    <option>[安内强]替米沙坦片</option>
-                                                    <option>[安内强]替米沙坦片</option>
-                                                </select>
-                                            </td>
-                                            <td>
-                                                <div class="input-medicine-num-wrap">
-                                                    <a class="input-medicine-reduce-btn">-</a>
-                                                    <input class="form-control input-medicine-num" value="1">
-                                                    <a class="input-medicine-num-add-btn">+</a>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div>00.00</div>
-                                            </td>
-                                        </tr>
-                                        </tbody>
-                                        <tfoot>
-                                        <tr>
-                                            <td colspan="3"><button class="btn new-order-add-goods-btn">+添加商品</button></td>
-                                        </tr>
-                                        </tfoot>
-                                    </table>
+                                    <!--商品图片-->
+                                    <div class="uploadimg-body">
+                                        <div id="preview" class="topic-img-preview">
+                                            <!--话题图片缩略图-->
+                                            <div class="topic-img-item" id="topic-img_0">
+                                                <a>
+                                                    <span class="delete-topic-img-btn"></span>
+                                                    <img src="img/gallery1.jpg"/>
+                                                </a>
+                                            </div>
+                                            <div class="topic-img-item" id="topic-img_1">
+                                                <a>
+                                                    <span class="delete-topic-img-btn"></span>
+                                                    <img src="img/gallery2.jpg"/>
+                                                </a>
+                                            </div>
+                                            <div class="topic-img-item" id="topic-img_2">
+                                                <a>
+                                                    <span class="delete-topic-img-btn"></span>
+                                                    <img src="img/gallery3.jpg"/>
+                                                </a>
+                                            </div>
+                                            <!--话题图片缩略图结束-->
+
+                                            <!--上传图片按钮-->
+                                            <div class="uploadimg-launcher">
+                                                <input id="fileImage" class="uploadimg-launcher-input" type="file" size="30" name="fileselect[]" multiple />
+                                                <div class="uploading-launcher-mask"></div>
+                                            </div>
+                                            <!--上传图片按钮-->
+                                        </div>
+
+                                    </div>
+                                    <!--商品图片结束-->
                                 </dd>
-                                <dt>合计：</dt>
+                                <dt>商品简介：</dt>
                                 <dd class="form-group">
-                                    <input type="text" class="form-control w150 dib" value="00.00">
+                                    <textarea class="form-control w420h160-textarea"></textarea>
+                                </dd>
+                                <dt>图文详情：</dt>
+                                <dd class="form-group">
+                                </dd>
+                                <dt>说明书：</dt>
+                                <dd class="form-group">
                                 </dd>
                                 <dt></dt>
-                                <dd class="form-group">
+                                <dd class="form-group mt60">
                                     <button type="button" class="btn btn-bg-gray-font-white btn-lg mr20">保存</button>
                                     <button type="button" class="btn btn-bg-gray-font-white2 btn-lg">取消</button>
                                 </dd>

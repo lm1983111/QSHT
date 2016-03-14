@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>订单管理-未付款订单</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <script src="js/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+<div class="view-wrap">
+<!--顶部菜单-->
+<div class="view-topbar">
+    <div class="topbar-content">
+        <div class="topbar-left-logo"></div>
+        <ul class="topbar-right">
+            <li class="topbar-right-item">
+                <div class="topbar-right-item-inner user-portrait-wrap"><a class="user-portrait"></a><span>王小帅，欢迎您!</span></div>
+            </li>
+            <li class="topbar-right-item">
+                <a class="topbar-right-item-inner">修改密码</a>
+            </li>
+            <li class="topbar-right-item">
+                <a class="topbar-right-item-inner">退出</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--顶部菜单结束-->
+<div class="view-body">
+<!--左侧菜单栏-->
+<div class="view-sidebar">
+    <div class="sidebar-nav">
+        <div class="sidebar-title"><i class="sidebar-title-icon"></i><span>社区管理</span><span class="glyphicon glyphicon-triangle-bottom"></span></div>
+        <ul class="sidebar-trans">
+            <li><a href="topic-management-published.html">话题管理</a></li>
+            <li><a href="lower-blood-pressure-data.html">降压资料</a></li>
+        </ul>
+    </div>
+    <div class="sidebar-nav">
+        <div class="sidebar-title"><i class="sidebar-title-icon"></i><span>商城管理</span><span class="glyphicon glyphicon-triangle-bottom"></span></div>
+        <ul class="sidebar-trans">
+            <li><a class="active" href="order-management-all-order.html">订单管理</a></li>
+            <li><a href="goods-management-selling.html">商品管理</a></li>
+        </ul>
+    </div>
+    <div class="sidebar-nav">
+        <div class="sidebar-title"><i class="sidebar-title-icon"></i><span>用户管理</span><span class="glyphicon glyphicon-triangle-bottom"></span></div>
+        <ul class="sidebar-trans">
+            <li><a href="all-user.html">全部用户</a></li>
+        </ul>
+    </div>
+    <div class="sidebar-nav">
+        <div class="sidebar-title"><i class="sidebar-title-icon"></i><span>系统管理</span><span class="glyphicon glyphicon-triangle-bottom"></span></div>
+        <ul class="sidebar-trans">
+            <li><a href="role-management.html">角色管理</a></li>
+            <li><a href="staff-management.html">员工管理</a></li>
+            <li><a href="menu-management.html">菜单管理</a></li>
+            <li><a href="function-management.html">功能管理</a></li>
+        </ul>
+    </div>
+
+</div>
+<!--左侧菜单栏结束-->
+<!--右侧主体页面-->
+<div class="view-main">
+    <div class="main-body">
+        <div class="col-sm-12">
+            <div class="common-con">
+                <div class="common-header-nav">
+                    <div class="common-header-nav-left">
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li><a href="order-management-all-order.html">全部订单</a></li>
+                            <li class="active"><a href="order-management-unpaid-order.html">未付款订单</a></li>
+                            <li><a href="order-management-unship-order.html">待发货订单</a></li>
+                            <li><a href="order-management-completed-order.html">已完成订单</a></li>
+                        </ul>
+                    </div>
+                    <form class="common-header-nav-right form-inline">
+                        <div class="form-group">
+                            <input type="text" placeholder="请输入搜索内容" class="form-control ipt">
+                            <button type="button" class="btn btn-default">搜索</button>
+                        </div>
+                        <button type="button" class="btn btn-default">刷新</button>
+                        <a href="order-management-new-order.html" type="button" class="btn btn-default">+新建订单</a>
+                    </form>
+                </div>
+
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <!--未付款订单-->
+                    <div class="tab-pane active">
+
+                        <table class="table table-hover order-management-table">
+                            <colgroup>
+                                <col class="w600">
+                                <col class="w150">
+                                <col class="w200">
+                                <col class="w150">
+                                <col class="operate-col">
+                                <col class="w150">
+                            </colgroup>
+                            <thead>
+                            <tr>
+                                <th>
+                                    <div class="omng-title">商品</div>
+                                    <div class="omng-price-num">单价\数量</div>
+                                </th>
+                                <th>买家</th>
+                                <th>收货信息</th>
+                                <th>下单时间</th>
+                                <th>订单状态</th>
+                                <th>实付金额</th>
+                            </tr>
+                            </thead>
+
+                            <tbody class="order-item">
+                            <tr class="order-item-interval">
+                                <td colspan="7"></td>
+                            </tr>
+                            <tr class="order-item-header">
+                                <td colspan="7">
+                                    <span>订单号：<a>12274630743</a></span>
+                                    <div class="float-right">
+                                        <a>查看详情</a>
+                                        <a href="order-management-modify-order.html">修改订单</a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="order-item-content">
+                                <td rowspan="1" class="no-padding">
+                                    <div class="goods-item-wrap">
+                                        <div class="goods-item">
+                                            <div class="goods-items-img"><img src="img/gallery3.jpg"/> </div>
+                                            <div class="goods-items-msg">千山健康24小时无线动态血压仪</div>
+                                        </div>
+                                        <div class="goods-unit-price-number">299.00/（2台）</div>
+                                    </div>
+                                </td>
+                                <td rowspan="1">
+                                    <div>王小帅</div>
+                                    <div>1895858899</div>
+                                </td>
+                                <td rowspan="1">
+                                    <div>湖南省 长沙经济开发区盼盼路9号千山药机2栋504</div>
+                                    <div>李雷</div>
+                                    <div>1585858588</div>
+                                </td>
+                                <td rowspan="1">
+                                    <div>2016-3-1 13:34</div>
+                                </td>
+                                <td rowspan="1">
+                                    <div>买家未付款</div>
+                                    <div><a class="btn btn-default btn-sm">取消订单</a></div>
+                                </td>
+                                <td rowspan="1">
+                                    <div>598.00</div>
+                                    <div><a class="btn btn-default btn-sm">修改价格</a></div>
+                                </td>
+                            </tr>
+                            </tbody>
+
+                            <tbody class="order-item">
+                            <tr class="order-item-interval">
+                                <td colspan="7"></td>
+                            </tr>
+                            <tr class="order-item-header">
+                                <td colspan="7">
+                                    <span>订单号：<a>12274630743</a></span>
+                                    <div class="float-right">
+                                        <a>查看详情</a>
+                                        <a href="order-management-modify-order.html">修改订单</a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="order-item-content">
+                                <td rowspan="1" class="no-padding">
+                                    <div class="goods-item-wrap">
+                                        <div class="goods-item">
+                                            <div class="goods-items-img"><img src="img/gallery3.jpg"/> </div>
+                                            <div class="goods-items-msg">千山健康24小时无线动态血压仪</div>
+                                        </div>
+                                        <div class="goods-unit-price-number">299.00/（2台）</div>
+                                    </div>
+                                    <div class="goods-item-wrap">
+                                        <div class="goods-item">
+                                            <div class="goods-items-img"><img src="img/gallery3.jpg"/> </div>
+                                            <div class="goods-items-msg">千山健康24小时无线动态血压仪</div>
+                                        </div>
+                                        <div class="goods-unit-price-number">299.00/（2台）</div>
+                                    </div>
+                                </td>
+                                <td rowspan="1">
+                                    <div>王小帅</div>
+                                    <div>1895858899</div>
+                                </td>
+                                <td rowspan="1">
+                                    <div>湖南省 长沙经济开发区盼盼路9号千山药机2栋504</div>
+                                    <div>李雷</div>
+                                    <div>1585858588</div>
+                                </td>
+                                <td rowspan="1">
+                                    <div>2016-3-1 13:34</div>
+                                </td>
+                                <td rowspan="1">
+                                    <div>买家未付款</div>
+                                    <div><a class="btn btn-default btn-sm">取消订单</a></div>
+                                </td>
+                                <td rowspan="1">
+                                    <div>598.00</div>
+                                    <div><a class="btn btn-default btn-sm">修改价格</a></div>
+                                </td>
+                            </tr>
+                            </tbody>
+
+                            <tfoot>
+                            <tr>
+                                <td colspan="7">
+                                    <div class="pull-left">共有168个帖子</div>
+                                    <div class="pull-right">
+                                        <ul class="pagination">
+                                            <li page-index="1"><a>首页</a></li>
+                                            <li page-index="0"><a>上一页</a></li>
+                                            <li><a>1/22</a></li>
+                                            <li page-index="2"><a>下一页</a></li>
+                                        </ul>
+                                        <div class="pagination-goto">
+                                            <span id="goBtna">跳转到</span>
+                                            <input type="text" class="form-control ipt" placeholder="页">
+                                        </div>
+                                        <div class="pagination-per-show">
+                                            <select class="form-control">
+                                                <option value="10perPage">每页显示10条</option>
+                                                <option value="20perPage">每页显示20条</option>
+                                                <option value="30perPage">每页显示30条</option>
+                                                <option value="40perPage">每页显示40条</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                    <!--全部订单结束-->
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--右侧主体页面结束-->
+</div>
+</div>
+</body>
+</html>

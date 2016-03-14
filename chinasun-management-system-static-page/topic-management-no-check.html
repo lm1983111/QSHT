@@ -3,7 +3,7 @@
 <head lang="en">
     <meta charset="UTF-8">
     <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <title>千山健康后台管理系统</title>
+    <title>话题管理-待审核话题</title>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/common.css">
     <script src="js/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
@@ -36,15 +36,15 @@
                 <div class="sidebar-nav">
                     <div class="sidebar-title"><i class="sidebar-title-icon"></i><span>社区管理</span><span class="glyphicon glyphicon-triangle-bottom"></span></div>
                     <ul class="sidebar-trans">
-                        <li><a class="active" href="topic-management.html">话题管理</a></li>
+                        <li><a class="active" href="topic-management-published.html">话题管理</a></li>
                         <li><a href="lower-blood-pressure-data.html">降压资料</a></li>
                     </ul>
                 </div>
                 <div class="sidebar-nav">
                     <div class="sidebar-title"><i class="sidebar-title-icon"></i><span>商城管理</span><span class="glyphicon glyphicon-triangle-bottom"></span></div>
                     <ul class="sidebar-trans">
-                        <li><a href="order-management.html">订单管理</a></li>
-                        <li><a href="goods-management.html">商品管理</a></li>
+                        <li><a href="order-management-all-order.html">订单管理</a></li>
+                        <li><a href="goods-management-selling.html">商品管理</a></li>
                     </ul>
                 </div>
                 <div class="sidebar-nav">
@@ -74,8 +74,9 @@
                                 <div class="common-header-nav-left">
                                     <!-- Nav tabs -->
                                     <ul class="nav nav-tabs" role="tablist">
-                                        <li role="presentation" class="active"><a href="#haveReleaseTopic" aria-controls="haveReleaseTopic" role="tab" data-toggle="tab">已发布话题</a></li>
-                                        <li role="presentation"><a href="#waitCheckTopic" aria-controls="waitCheckTopic" role="tab" data-toggle="tab">待审核话题</a></li>
+                                        <li><a href="topic-management-published.html">已发布话题</a></li>
+                                        <li class="active"><a href="topic-management-no-check.html">待审核话题</a></li>
+                                        <li><a href="topic-management-not-pass-check.html">未通过审核的话题</a></li>
                                     </ul>
                                 </div>
                                 <form class="common-header-nav-right form-inline">
@@ -90,98 +91,9 @@
 
                             <!-- Tab panes -->
                             <div class="tab-content">
-                                <!--已发布话题-->
-                                <div role="tabpanel" class="tab-pane active" id="haveReleaseTopic">
-                                    <table class="table table-hover">
-                                        <colgroup>
-                                            <col class="w50">
-                                            <col class="w200">
-                                            <col class="w400">
-                                            <col class="w150">
-                                            <col class="w150">
-                                            <col class="w150">
-                                            <col class="w200">
-                                        </colgroup>
-                                        <thead>
-                                            <tr>
-                                                <th><input type="checkbox" name="ckSellectAlla" id="ckSellectAlla"></th>
-                                                <th>标题</th>
-                                                <th>内容</th>
-                                                <th>作者</th>
-                                                <th>赞/评论</th>
-                                                <th class="dropdown">
-                                                    <div id="dLabel" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-title">
-                                                        发布时间
-                                                        <span class="caret"></span>
-                                                    </div>
-                                                    <ul class="dropdown-menu" aria-labelledby="dLabel">
-                                                        <li><a>最近3个月话题</a></li>
-                                                        <li><a>今年内话题</a></li>
-                                                        <li><a>2015年话题</a></li>
-                                                    </ul>
-                                                </th>
-                                                <th>操作</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td><input type="checkbox" name="ckbox" id="ckbox1"></td>
-                                                <td class="limit-acolor"><a href="topic-management-topic-tetail.html">千山降压APP使用心得</a></td>
-                                                <td>
-                                                    <div class="td-attach-img50text-left"><img src="img/htgl_item_img.jpg"></div>
-                                                    <div class="td-attach-img50text-right">朋友推荐下了千山降压APP抱着好奇的心情去用了下感觉非常不错朋友推荐下了千山降压APP抱着好奇的心情去用了下感觉非常不错朋友推荐下了千山降压APP抱着好奇的心情去用了下感觉非常不错朋友推荐下了千山降压APP抱着好奇的心情去用了下感觉非常不错~</div>
-                                                </td>
-                                                <td><span>王小帅</span></td>
-                                                <td><span>200/120</span></td>
-                                                <td><span>2016-3-1 13:34</span></td>
-                                                <td><a href="topic-management-modify-topic.html" class="btn btn-default btn-sm mr20">编辑</a><a class="btn btn-default btn-sm">删除</a></td>
-                                            </tr>
-                                            <tr>
-                                                <td><input type="checkbox" name="ckbox" id="ckbox2"></td>
-                                                <td class="limit-acolor"><a href="topic-management-topic-tetail.html">千山降压APP使用心得</a></td>
-                                                <td>
-                                                    <div class="td-attach-img50text-left"><img src="img/htgl_item_img.jpg"></div>
-                                                    <div class="td-attach-img50text-right">朋友推荐下了千山降压APP抱着好奇的心情去用了下感觉非常不错~</div>
-                                                </td>
-                                                <td><span>王小帅</span></td>
-                                                <td><span>200/120</span></td>
-                                                <td><span>2016-3-1 13:34</span></td>
-                                                <td><a class="btn btn-default btn-sm mr20">编辑</a><a class="btn btn-default btn-sm">删除</a></td>
-                                            </tr>
-                                        </tbody>
-                                        <tfoot>
-                                            <tr>
-                                                <td colspan="7">
-                                                    <div class="pull-left">共有168个帖子</div>
-                                                    <div class="pull-right">
-                                                        <ul class="pagination">
-                                                            <li page-index="1"><a>首页</a></li>
-                                                            <li page-index="0"><a>上一页</a></li>
-                                                            <li><a>1/22</a></li>
-                                                            <li page-index="2"><a>下一页</a></li>
-                                                        </ul>
-                                                        <div class="pagination-goto">
-                                                            <span id="goBtna">跳转到</span>
-                                                            <input type="text" class="form-control ipt" placeholder="页">
-                                                        </div>
-                                                        <div class="pagination-per-show">
-                                                            <select class="form-control">
-                                                                <option value="10perPage">每页显示10条</option>
-                                                                <option value="20perPage">每页显示20条</option>
-                                                                <option value="30perPage">每页显示30条</option>
-                                                                <option value="40perPage">每页显示40条</option>
-                                                            </select>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                        </tfoot>
-                                    </table>
-                                </div>
-                                <!--已发布话题结束-->
 
                                 <!--待审核话题-->
-                                <div role="tabpanel" class="tab-pane" id="waitCheckTopic">
+                                <div class="tab-pane active">
                                     <table class="table table-hover">
                                         <colgroup>
                                             <col class="w50">
@@ -189,8 +101,7 @@
                                             <col class="w400">
                                             <col class="w150">
                                             <col class="w150">
-                                            <col class="w150">
-                                            <col class="w200">
+                                            <col class="w300">
                                         </colgroup>
                                         <thead>
                                         <tr>
@@ -198,9 +109,8 @@
                                             <th>标题</th>
                                             <th>内容</th>
                                             <th>作者</th>
-                                            <th>赞/评论</th>
                                             <th class="dropdown">
-                                                <div id="dLabel" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-title">
+                                                <div id="dLabel2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-title">
                                                     发布时间
                                                     <span class="caret"></span>
                                                 </div>
@@ -222,9 +132,8 @@
                                                 <div class="td-attach-img50text-right">朋友推荐下了千山降压APP抱着好奇的心情去用了下感觉非常不错朋友推荐下了千山降压APP抱着好奇的心情去用了下感觉非常不错朋友推荐下了千山降压APP抱着好奇的心情去用了下感觉非常不错朋友推荐下了千山降压APP抱着好奇的心情去用了下感觉非常不错~</div>
                                             </td>
                                             <td><span>王小帅</span></td>
-                                            <td><span>200/120</span></td>
                                             <td><span>2016-3-1 13:34</span></td>
-                                            <td><span class="btn btn-default btn-sm mr20">通过审核</span><span class="btn btn-default btn-sm">删除</span></td>
+                                            <td><span class="btn btn-default btn-sm mr20">通过审核</span><span class="btn btn-default btn-sm mr20">不通过</span><span class="btn btn-default btn-sm">删除</span></td>
                                         </tr>
                                         <tr>
                                             <td><input type="checkbox" name="ckbox4" id="ckbox4"></td>
@@ -234,14 +143,13 @@
                                                 <div class="td-attach-img50text-right">朋友推荐下了千山降压APP抱着好奇的心情去用了下感觉非常不错朋友推荐下了千山降压APP抱着好奇的心情去用了下感觉非常不错朋友推荐下了千山降压APP抱着好奇的心情去用了下感觉非常不错朋友推荐下了千山降压APP抱着好奇的心情去用了下感觉非常不错~</div>
                                             </td>
                                             <td><span>王小帅</span></td>
-                                            <td><span>200/120</span></td>
                                             <td><span>2016-3-1 13:34</span></td>
-                                            <td><span class="btn btn-default btn-sm mr20">通过审核</span><span class="btn btn-default btn-sm">删除</span></td>
+                                            <td><span class="btn btn-default btn-sm mr20">通过审核</span><span class="btn btn-default btn-sm mr20">不通过</span><span class="btn btn-default btn-sm">删除</span></td>
                                         </tr>
                                         </tbody>
                                         <tfoot>
                                         <tr>
-                                            <td colspan="7">
+                                            <td colspan="6">
                                                 <div class="pull-left">共有168个帖子</div>
                                                 <div class="pull-right page-box">
                                                     <ul class="pagination">
