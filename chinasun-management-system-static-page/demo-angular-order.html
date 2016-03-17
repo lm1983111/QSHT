@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>购物车</title>
+    <script type="text/javascript" charset="utf-8" src="js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/angular.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/order-controller.js"></script>
+</head>
+<body ng-app="orderApp">
+    <table ng-controller="orderController">
+        <tr>
+            <td>选择药品</td>
+            <td>名称</td>
+            <td>数量</td>
+            <td>单价</td>
+            <td>价格</td>
+        </tr>
+        <tr ng-repeat="data in dataList">
+            <td><input type="checkbox"></td>
+            <td>{{data.name}}</td>
+            <td><input type="text" value="1"><button type="button">-</button><button type="button">+</button></td>
+            <td>{{data.oneprice}}</td>
+            <td>{{data.price}}</td>
+        </tr>
+        <tr><td>总价格：{{data.price}}</td></tr>
+    </table>
+
+    <script type="text/javascript" charset="utf-8">
+        //取数据循环ng-repeat
+    </script>
+</body>
+</html>
