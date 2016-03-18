@@ -3,7 +3,7 @@
 <head lang="en">
     <meta charset="UTF-8">
     <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <title>角色管理-新建角色</title>
+    <title>BANNER-新建BANNER</title>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/common.css">
     <script src="js/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
@@ -11,7 +11,7 @@
     <script src="js/common.js" type="text/javascript" charset="utf-8"></script>
 </head>
 <body>
-<div class="view-wrap new-role">
+<div class="view-wrap staff-management">
     <!--顶部菜单-->
     <div class="view-topbar">
         <div class="topbar-content">
@@ -39,7 +39,7 @@
                     <li><a href="topic-management-published.html">话题管理</a></li>
                     <li><a href="lower-blood-pressure-data.html">降压资料</a></li>
                     <li><a href="quality-recommend.html">精华推荐</a></li>
-                    <li><a href="banner-page.html">BANNER</a></li>
+                    <li><a class="active" href="banner-page.html">BANNER</a></li>
                 </ul>
             </div>
             <div class="sidebar-nav">
@@ -58,7 +58,7 @@
             <div class="sidebar-nav">
                 <div class="sidebar-title"><i class="sidebar-title-icon"></i><span>系统管理</span><span class="glyphicon glyphicon-triangle-bottom"></span></div>
                 <ul class="sidebar-trans">
-                    <li><a class="active" href="role-management.html">角色管理</a></li>
+                    <li><a href="role-management.html">角色管理</a></li>
                     <li><a href="staff-management.html">员工管理</a></li>
                     <li><a href="menu-management.html">菜单管理</a></li>
                     <li><a href="function-management.html">功能管理</a></li>
@@ -73,47 +73,56 @@
                 <div class="col-sm-12">
                     <div class="wizard">
                         <div class="wizard-title">
-                            <h2>新建角色</h2>
+                            <h2>新建BANNER</h2>
                         </div>
                         <div class="wizard-content">
-                            <div class="center-items-wrap w600">
+                            <div class="center-items-wrap w500">
                                 <dl class="dl-horizontal center-margin-left-negative100">
-                                    <dt>角色名称：</dt>
+                                    <dt>标题：</dt>
                                     <dd class="form-group">
-                                        <input type="text" class="form-control">
+                                        <input type="text" class="form-control" value="千山降压社区首页Banner A">
                                     </dd>
-                                    <dt>功能授权：</dt>
+                                    <dt>链接：</dt>
+                                    <dd class="form-group">
+                                        <input type="text" class="form-control" value="http://chinasunhealth.com/">
+                                    </dd>
+                                    <dt>排序：</dt>
+                                    <dd class="form-group">
+                                        <input type="text" class="form-control" value="01">
+                                    </dd>
+                                    <dt>图片：</dt>
+                                    <dd class="form-group">
+                                        <div class="banner-preview-upload-img-wrap">
+                                            <img id="bannerPreviewImg" src=""/>
+                                        </div>
+                                        <div class="banner-up-load-wrap">
+                                            <input type="file" value="上传图片" id="upLaunch" onchange="getUpLoadImgUrl()">
+                                        </div>
+                                        <script type="text/javascript">
+                                            var upLaunch = document.getElementById("upLaunch");
+                                            var bannerPreviewImg = document.getElementById("bannerPreviewImg");
+
+                                            function getUpLoadImgUrl() {
+                                                bannerPreviewImg.src = window.URL.createObjectURL(upLaunch.files[0]);
+                                            }
+                                        </script>
+                                    </dd>
+                                    <dt>状态：</dt>
                                     <dd class="form-group">
                                         <div class="function-authorize-from">
-                                            <label class="function-authorize-item">
-                                                <input type="checkbox" id="inlineCheckBox1" value="option1">
-                                                功能A
+                                            <label class="function-authorize-item mb0">
+                                                <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option7">
+                                                显示
                                             </label>
-                                            <label class="function-authorize-item">
-                                                <input type="checkbox" id="inlineCheckBox2" value="option2">
-                                                功能A
-                                            </label>
-                                            <label class="function-authorize-item">
-                                                <input type="checkbox" id="inlineCheckBox3" value="option3">
-                                                功能A
-                                            </label>
-                                            <label class="function-authorize-item">
-                                                <input type="checkbox" id="inlineCheckBox4" value="option4">
-                                                功能A
-                                            </label>
-                                            <label class="function-authorize-item">
-                                                <input type="checkbox" id="inlineCheckBox5" value="option5">
-                                                功能A
-                                            </label>
-                                            <label class="function-authorize-item">
-                                                <input type="checkbox" id="inlineCheckBox6" value="option6">
-                                                功能A
+                                            <label class="function-authorize-item mb0">
+                                                <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option8" checked>
+                                                隐藏
                                             </label>
                                         </div>
                                     </dd>
                                     <dt></dt>
                                     <dd class="form-group mt60">
-                                        <button type="button" class="btn btn-bg-gray-font-white btn-lg mr20">保存</button>
+                                        <button type="button" class="btn btn-bg-gray-font-white btn-lg mr20">发布</button>
                                         <button type="button" class="btn btn-bg-gray-font-white2 btn-lg">取消</button>
                                     </dd>
                                 </dl>

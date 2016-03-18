@@ -46,8 +46,17 @@ body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 .mb0{
     margin-bottom: 0 !important;
 }
+.mb5{
+    margin-bottom: 5px;
+}
+.mb10{
+    margin-bottom: 10px;
+}
 .mt60{
     margin-top: 60px;
+}
+.mr10{
+    margin-right: 10px;
 }
 .w420h160-textarea{
     width: 420px !important;
@@ -1078,3 +1087,23 @@ a{
     border-radius: 3px;
 }
 /*弹出框结束*/
+
+/*精华BANNER*/
+.banner-preview-upload-img-wrap{
+    position: relative;
+    display: block;
+    width: 380px;
+    height: 160px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    background-image: url("../img/up_load_img_bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.banner-preview-upload-img-wrap img{
+    max-width: 100%;
+    max-height: 100%;
+}
+/*精华BANNER结束*/
+
+/*精华推荐结束*/
