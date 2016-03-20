@@ -95,14 +95,14 @@
                                         <div class="banner-preview-upload-img-wrap">
                                             <img id="bannerPreviewImg" src=""/>
                                         </div>
-                                        <div class="banner-up-load-wrap">
-                                            <input type="file" value="上传图片" id="upLaunch" onchange="getUpLoadImgUrl()">
+                                        <div class="banner-up-load-box">
+                                            选择文件
+                                            <input type="file" id="upLaunch" onchange="getUpLoadImgUrl()" accept="image/*" class="up-launch">
                                         </div>
                                         <script type="text/javascript">
-                                            var upLaunch = document.getElementById("upLaunch");
-                                            var bannerPreviewImg = document.getElementById("bannerPreviewImg");
-
                                             function getUpLoadImgUrl() {
+                                                var upLaunch = document.getElementById("upLaunch");
+                                                var bannerPreviewImg = document.getElementById("bannerPreviewImg");
                                                 bannerPreviewImg.src = window.URL.createObjectURL(upLaunch.files[0]);
                                             }
                                         </script>
@@ -111,18 +111,18 @@
                                     <dd class="form-group">
                                         <div class="function-authorize-from">
                                             <label class="function-authorize-item mb0">
-                                                <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option7">
+                                                <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option7" checked>
                                                 显示
                                             </label>
                                             <label class="function-authorize-item mb0">
-                                                <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option8" checked>
+                                                <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option8" >
                                                 隐藏
                                             </label>
                                         </div>
                                     </dd>
                                     <dt></dt>
                                     <dd class="form-group mt60">
-                                        <button type="button" class="btn btn-bg-gray-font-white btn-lg mr20">发布</button>
+                                        <button type="button" class="btn btn-bg-gray-font-white btn-lg mr20">保存</button>
                                         <button type="button" class="btn btn-bg-gray-font-white2 btn-lg">取消</button>
                                     </dd>
                                 </dl>

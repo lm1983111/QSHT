@@ -1088,22 +1088,44 @@ a{
 }
 /*弹出框结束*/
 
-/*精华BANNER*/
+/*新建BANNER*/
 .banner-preview-upload-img-wrap{
     position: relative;
     display: block;
-    width: 380px;
+    width: 420px;
     height: 160px;
     overflow: hidden;
     margin-bottom: 20px;
     background-image: url("../img/up_load_img_bg.png");
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
 }
 .banner-preview-upload-img-wrap img{
-    max-width: 100%;
-    max-height: 100%;
+    width: 100%;
+    height: 100%;
 }
-/*精华BANNER结束*/
+.banner-up-load-box{
+    position: relative;
+    height: 38px;
+    line-height: 38px;
+    padding-left: 20px;
+    padding-right: 20px;
+    cursor: pointer;
+    color: #888;
+    background: #fafafa;
+    border: 1px solid #ddd;
+    overflow: hidden;
+    display: inline-block;
+}
+.up-launch{
+    position: absolute;
+    font-size: 100px;
+    right: 0;
+    top: 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    cursor: pointer
+}
 
-/*精华推荐结束*/
+/*新建BANNER结束*/

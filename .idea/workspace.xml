@@ -2,37 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="878255c6-1cc4-45d3-8cd3-bf54d36e87fe" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/chinasun-management-system-static-page/img/blank.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/chinasun-management-system-static-page/js/jquery.msg.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/chinasun-management-system-static-page/lower-blood-pressure-data-new-data.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/chinasun-management-system-static-page/lower-blood-pressure-data-view-data.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/chinasun-management-system-static-page/lower-blood-pressure-data.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/chinasun-management-system-static-page/message-demo.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chinasun-management-system-static-page/all-user-modify-user-info.html" afterPath="$PROJECT_DIR$/chinasun-management-system-static-page/all-user-modify-user-info.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chinasun-management-system-static-page/all-user.html" afterPath="$PROJECT_DIR$/chinasun-management-system-static-page/all-user.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chinasun-management-system-static-page/css/common.css" afterPath="$PROJECT_DIR$/chinasun-management-system-static-page/css/common.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chinasun-management-system-static-page/function-management-modify-function.html" afterPath="$PROJECT_DIR$/chinasun-management-system-static-page/function-management-modify-function.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chinasun-management-system-static-page/function-management-new-function.html" afterPath="$PROJECT_DIR$/chinasun-management-system-static-page/function-management-new-function.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chinasun-management-system-static-page/function-management.html" afterPath="$PROJECT_DIR$/chinasun-management-system-static-page/function-management.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chinasun-management-system-static-page/goods-management.html" afterPath="$PROJECT_DIR$/chinasun-management-system-static-page/goods-management.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chinasun-management-system-static-page/menu-management-modify-menu.html" afterPath="$PROJECT_DIR$/chinasun-management-system-static-page/menu-management-modify-menu.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chinasun-management-system-static-page/menu-management.html" afterPath="$PROJECT_DIR$/chinasun-management-system-static-page/menu-management.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chinasun-management-system-static-page/model.html" afterPath="$PROJECT_DIR$/chinasun-management-system-static-page/model.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chinasun-management-system-static-page/modify-staff-data.html" afterPath="$PROJECT_DIR$/chinasun-management-system-static-page/modify-staff-data.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chinasun-management-system-static-page/new-menu.html" afterPath="$PROJECT_DIR$/chinasun-management-system-static-page/new-menu.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chinasun-management-system-static-page/new-role.html" afterPath="$PROJECT_DIR$/chinasun-management-system-static-page/new-role.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chinasun-management-system-static-page/order-management-modify-order.html" afterPath="$PROJECT_DIR$/chinasun-management-system-static-page/order-management-modify-order.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chinasun-management-system-static-page/order-management-new-order.html" afterPath="$PROJECT_DIR$/chinasun-management-system-static-page/order-management-new-order.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chinasun-management-system-static-page/order-management.html" afterPath="$PROJECT_DIR$/chinasun-management-system-static-page/order-management.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chinasun-management-system-static-page/role-management-modify-role.html" afterPath="$PROJECT_DIR$/chinasun-management-system-static-page/role-management-modify-role.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chinasun-management-system-static-page/role-management-view-role.html" afterPath="$PROJECT_DIR$/chinasun-management-system-static-page/role-management-view-role.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chinasun-management-system-static-page/role-management.html" afterPath="$PROJECT_DIR$/chinasun-management-system-static-page/role-management.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chinasun-management-system-static-page/staff-management-new-staff.html" afterPath="$PROJECT_DIR$/chinasun-management-system-static-page/staff-management-new-staff.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chinasun-management-system-static-page/staff-management.html" afterPath="$PROJECT_DIR$/chinasun-management-system-static-page/staff-management.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chinasun-management-system-static-page/topic-management-modify-topic.html" afterPath="$PROJECT_DIR$/chinasun-management-system-static-page/topic-management-modify-topic.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chinasun-management-system-static-page/topic-management-topic-tetail.html" afterPath="$PROJECT_DIR$/chinasun-management-system-static-page/topic-management-topic-tetail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chinasun-management-system-static-page/topic-management.html" afterPath="$PROJECT_DIR$/chinasun-management-system-static-page/topic-management.html" />
-      <change type="MOVED" beforePath="E:\wlg-work\QS-work\QSHT\chinasun-management-system-static-page\buck-profile.html" afterPath="$PROJECT_DIR$/chinasun-management-system-static-page/lower-blood-pressure-data-modify-data.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="QSHT.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -55,44 +25,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="common.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chinasun-management-system-static-page/css/common.css">
+      <file leaf-file-name="all-user.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/chinasun-management-system-static-page/all-user.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="12442" max-vertical-offset="26075">
-              <caret line="510" column="24" selection-start-line="510" selection-start-column="24" selection-end-line="510" selection-end-column="24" />
+            <state vertical-scroll-proportion="0.2375297" vertical-offset="0" max-vertical-offset="3875">
+              <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="message-demo.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chinasun-management-system-static-page/message-demo.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.135593" vertical-offset="2620" max-vertical-offset="5800">
-              <caret line="124" column="256" selection-start-line="124" selection-start-column="256" selection-end-line="124" selection-end-column="256" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="order-management.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/chinasun-management-system-static-page/order-management.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.17814727" vertical-offset="0" max-vertical-offset="9400">
-              <caret line="6" column="72" selection-start-line="6" selection-start-column="72" selection-end-line="6" selection-end-column="72" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="jquery.msg.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chinasun-management-system-static-page/js/jquery.msg.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-57.0" vertical-offset="0" max-vertical-offset="4750">
-              <caret line="65" column="16" selection-start-line="65" selection-start-column="16" selection-end-line="65" selection-end-column="16" />
-              <folding>
-                <marker date="1457875245532" expanded="false" signature="3889:3907" placeholder="..." />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -178,66 +116,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="QSHT" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="QSHT" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="QSHT" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="QSHT" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="chinasun-management-system-static-page" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="QSHT" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="QSHT" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="chinasun-management-system-static-page" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="QSHT" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="QSHT" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="chinasun-management-system-static-page" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="img" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -246,6 +124,7 @@
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="FullScreen" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
+    <property name="last_opened_file_path" value="E:/UI-collection" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -255,14 +134,6 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
-      <option name="VMOptions" />
-      <option name="arguments" />
-      <option name="filePath" />
-      <option name="scope" value="ALL" />
-      <option name="testName" />
-      <method />
-    </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <option name="VMOptions" />
       <option name="arguments" />
@@ -273,14 +144,12 @@
       <option name="showConsoleOnStdOut" value="false" />
       <method />
     </configuration>
-    <configuration default="true" type="CucumberJavaScriptRunConfigurationType" factoryName="Cucumber.js">
-      <option name="cucumberJsArguments" />
-      <option name="executablePath" />
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <option name="VMOptions" />
+      <option name="arguments" />
       <option name="filePath" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
-      <envs />
+      <option name="scope" value="ALL" />
+      <option name="testName" />
       <method />
     </configuration>
     <configuration default="true" type="JSTestDriver:ConfigurationType" factoryName="JsTestDriver">
@@ -288,6 +157,16 @@
       <setting name="settingsFile" value="" />
       <setting name="serverType" value="INTERNAL" />
       <setting name="preferredDebugBrowser" value="Chrome" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="CucumberJavaScriptRunConfigurationType" factoryName="Cucumber.js">
+      <option name="cucumberJsArguments" />
+      <option name="executablePath" />
+      <option name="filePath" />
       <method />
     </configuration>
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
@@ -317,10 +196,9 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35371178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23988095" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23988095" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -329,9 +207,10 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35371178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -356,9 +235,29 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/chinasun-management-system-static-page/css/common.css">
       <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="26075">
+          <caret line="510" column="24" selection-start-line="510" selection-start-column="24" selection-end-line="510" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chinasun-management-system-static-page/message-demo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="3100" max-vertical-offset="5625">
+          <caret line="124" column="256" selection-start-line="124" selection-start-column="256" selection-end-line="124" selection-end-column="256" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chinasun-management-system-static-page/js/jquery.msg.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1625" max-vertical-offset="4950">
+          <caret line="65" column="16" selection-start-line="65" selection-start-column="16" selection-end-line="65" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chinasun-management-system-static-page/css/common.css">
+      <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="21142" max-vertical-offset="26050">
           <caret line="863" column="16" selection-start-line="863" selection-start-column="16" selection-end-line="863" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -366,7 +265,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="3058" max-vertical-offset="3900">
           <caret line="133" column="41" selection-start-line="133" selection-start-column="41" selection-end-line="133" selection-end-column="41" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -374,7 +272,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="3592" max-vertical-offset="12000">
           <caret line="153" column="20" selection-start-line="153" selection-start-column="20" selection-end-line="153" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -466,7 +363,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.74821854" vertical-offset="2745" max-vertical-offset="3900">
           <caret line="135" column="40" selection-start-line="135" selection-start-column="40" selection-end-line="135" selection-end-column="40" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -474,7 +370,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.32305935" vertical-offset="172492" max-vertical-offset="180100">
           <caret line="6911" column="131" selection-start-line="6911" selection-start-column="123" selection-end-line="6911" selection-end-column="131" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -482,7 +377,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.05752754" vertical-offset="1678" max-vertical-offset="3775">
           <caret line="69" column="35" selection-start-line="69" selection-start-column="35" selection-end-line="69" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -490,7 +384,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.38717338" vertical-offset="4174" max-vertical-offset="5350">
           <caret line="180" column="94" selection-start-line="0" selection-start-column="0" selection-end-line="208" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -498,7 +391,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.61219513" vertical-offset="1523" max-vertical-offset="4050">
           <caret line="81" column="41" selection-start-line="0" selection-start-column="0" selection-end-line="156" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -506,7 +398,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.20783848" vertical-offset="2050" max-vertical-offset="4425">
           <caret line="89" column="69" selection-start-line="89" selection-start-column="69" selection-end-line="89" selection-end-column="69" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -514,15 +405,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.2631579" vertical-offset="0" max-vertical-offset="855">
           <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chinasun-management-system-static-page/topic-management.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.6425178" vertical-offset="800" max-vertical-offset="7150">
-          <caret line="121" column="53" selection-start-line="121" selection-start-column="53" selection-end-line="121" selection-end-column="53" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -530,7 +412,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-17.411764" vertical-offset="2283" max-vertical-offset="4250">
           <caret line="115" column="41" selection-start-line="106" selection-start-column="36" selection-end-line="115" selection-end-column="41" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -538,15 +419,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.1754386" vertical-offset="825" max-vertical-offset="3200">
           <caret line="39" column="41" selection-start-line="39" selection-start-column="41" selection-end-line="39" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chinasun-management-system-static-page/goods-management.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.14845605" vertical-offset="2250" max-vertical-offset="5625">
-          <caret line="95" column="49" selection-start-line="95" selection-start-column="49" selection-end-line="95" selection-end-column="49" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -554,7 +426,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-8.0" vertical-offset="1703" max-vertical-offset="3275">
           <caret line="79" column="79" selection-start-line="79" selection-start-column="79" selection-end-line="79" selection-end-column="79" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -562,40 +433,48 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-6.647059" vertical-offset="2674" max-vertical-offset="3975">
           <caret line="116" column="82" selection-start-line="0" selection-start-column="0" selection-end-line="153" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chinasun-management-system-static-page/css/common.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="12442" max-vertical-offset="26075">
-          <caret line="510" column="24" selection-start-line="510" selection-start-column="24" selection-end-line="510" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/chinasun-management-system-static-page/js/jquery.msg.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-57.0" vertical-offset="0" max-vertical-offset="4750">
-          <caret line="65" column="16" selection-start-line="65" selection-start-column="16" selection-end-line="65" selection-end-column="16" />
-          <folding>
-            <marker date="1457875245532" expanded="false" signature="3889:3907" placeholder="..." />
-          </folding>
+        <state vertical-scroll-proportion="1.6552511" vertical-offset="0" max-vertical-offset="4750">
+          <caret line="66" column="0" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/chinasun-management-system-static-page/message-demo.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.135593" vertical-offset="2620" max-vertical-offset="5800">
-          <caret line="124" column="256" selection-start-line="124" selection-start-column="256" selection-end-line="124" selection-end-column="256" />
-          <folding />
+        <state vertical-scroll-proportion="0.14845605" vertical-offset="2400" max-vertical-offset="5000">
+          <caret line="101" column="52" selection-start-line="101" selection-start-column="52" selection-end-line="101" selection-end-column="52" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chinasun-management-system-static-page/order-management.html">
+    <entry file="file://$PROJECT_DIR$/chinasun-management-system-static-page/js/date-controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.17814727" vertical-offset="0" max-vertical-offset="9400">
-          <caret line="6" column="72" selection-start-line="6" selection-start-column="72" selection-end-line="6" selection-end-column="72" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="975">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chinasun-management-system-static-page/js/common.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="889">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chinasun-management-system-static-page/css/common.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.2385845" vertical-offset="26249" max-vertical-offset="27125">
+          <caret line="516" column="24" selection-start-line="516" selection-start-column="24" selection-end-line="516" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chinasun-management-system-static-page/all-user.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2375297" vertical-offset="0" max-vertical-offset="3875">
+          <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
           <folding />
         </state>
       </provider>
