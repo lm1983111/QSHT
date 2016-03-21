@@ -25,6 +25,9 @@ body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 .w50{
     width: 50px;
 }
+.w80{
+    width: 80px;
+}
 .w150{
     width: 150px;
 }
@@ -51,6 +54,9 @@ body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 }
 .mb10{
     margin-bottom: 10px;
+}
+.mb20{
+    margin-bottom: 20px;
 }
 .mt60{
     margin-top: 60px;
@@ -83,6 +89,12 @@ a{
 }
 .fs18{
     font-size: 18px;
+}
+.textarea-common{
+    height: 100px !important;
+    width: 100%;
+    max-height: 100px;
+    max-width: 100%;
 }
 .common-header-nav:after,.common-header-nav:before, .wizard-title:after, .wizard-title:before, .gallery-wrap:before, .gallery-wrap:after{
     display: table;
@@ -1129,3 +1141,29 @@ a{
 }
 
 /*新建BANNER结束*/
+
+/*index*/
+.index-content-warp{
+    position: relative;
+    display: block;
+    margin-top: 200px;
+    text-align: center;
+    color: #4d4d4d;
+}
+.index-portrait-box{
+    display: block;
+    width: 110px;
+    height: 110px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    border-radius: 100%;
+    border: 1px solid #ddd;
+}
+/*index结束*/
+
+/*精华推荐*/
+.quality-recommend-sort{
+
+}
+/*精华推荐结束*/
