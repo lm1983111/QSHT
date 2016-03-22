@@ -1036,6 +1036,9 @@ a{
 .input-medicine-num-add-btn{
     margin-left: -4px;
 }
+.new-order-add-goods-table label{
+    font-weight: normal;
+}
 /*商城管理-订单管理-新建订单结束*/
 
 /*社区管理-降压资料*/
@@ -1163,7 +1166,5 @@ a{
 /*index结束*/
 
 /*精华推荐*/
-.quality-recommend-sort{
 
-}
 /*精华推荐结束*/

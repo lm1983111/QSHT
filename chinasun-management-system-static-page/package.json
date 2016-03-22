@@ -1,0 +1,24 @@
+[
+{
+    "Bol":"false",
+    "name":"皮炎康",
+    "num":"1",
+    "items":"0",
+    "oneprice":"100",
+    "price":""
+},{
+    "Bol":"false",
+    "name":"皮炎灵",
+    "num":"1",
+    "items":"1",
+    "oneprice":"20",
+    "price":""
+},{
+    "Bol":"false",
+    "name":"达克灵",
+    "num":"1",
+    "items":"2",
+    "oneprice":"1000",
+    "price":""
+}
+]
