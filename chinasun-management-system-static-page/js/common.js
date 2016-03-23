@@ -17,3 +17,15 @@ $(function(){
     });
 
 });
+
+
+//话题详情-回复评论
+function heightReply(){
+    var ctdCommentWrap = $("#ctdCommentWrap");
+    if(ctdCommentWrap.hasClass('replying')){
+        ctdCommentWrap.removeClass('replying')
+    }else{
+        ctdCommentWrap.addClass('replying')
+    }
+}
+

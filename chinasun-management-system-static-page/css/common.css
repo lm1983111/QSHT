@@ -620,9 +620,10 @@ a{
     margin-top: 30px;
 }
 .wizard-title{
+    position: relative;
     display: block;
     width: 100%;
-    padding-left: 35px;
+    text-align: center;
     background-color: #ccc;
 }
 .wizard-title h2{
@@ -631,6 +632,26 @@ a{
     font-size: 18px;
     margin: 0;
     padding: 0;
+}
+.wizard-return{
+    position: absolute;
+    top: 12px;
+    left: 20px;
+    display: block;
+    padding-left: 20px;
+    cursor: pointer;
+    font-size: 18px;
+}
+.wizard-return i{
+    position: absolute;
+    top: 5px;
+    left: 0;
+    display: block;
+    width: 16px;
+    height: 16px;
+    background-image: url("../img/arrow_left.png");
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .wizard-content{
     padding-top: 40px;
@@ -677,7 +698,7 @@ a{
 
 /*员工管理结束*/
 
-/*话题管理话题详情*/
+/*话题管理-查看话题详情*/
 .full-items-wrap{
     display: block;
 }
@@ -779,18 +800,32 @@ a{
 .comment-text-box{
     position: relative;
     display: block;
-    padding:10px 10px 60px;
+    height: 0 !important;
+    padding: 0 !important;
     background-color: #eee;
+    overflow: hidden;
+    -webkit-transition: all .1s;
+    -moz-transition: all .1s;
+    -ms-transition: all .1s;
+    -o-transition: all .1s;
+    transition: all .1s;
+}
+.replying .comment-text-box{
+    height: 170px !important;
+    /*padding:10px 10px 60px !important;*/
 }
 .comment-text-box textarea{
     width: 100%;
     max-width: 100%;
     height: 100px;
+    max-height: 100px;
+    overflow: hidden;
 }
 .tmtt-comment-btn{
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
+    position: relative;
+    bottom: -10px;
+    right: 0;
+    float: right;
 }
 .tmtt-pagination-wrap{
     display: block;
@@ -800,7 +835,31 @@ a{
 .total-comment-num{
     display: inline-block;
 }
-/*话题管理话题详情结束*/
+.have-replay-comment-item{
+    display: block;
+    padding: 10px;
+    background-color: #eee;
+}
+.have-replay-comment-item .col-md-2 img{
+    width: 36px;
+    height: 36px;
+    border-radius: 100%;
+}
+.tmtt-btn{
+    position: relative;
+    display: inline-block;
+    padding: 12px 20px;
+    cursor: pointer;
+}
+.replying .tmtt-reply-btn{
+    background-color: #eee;
+    -webkit-transition: all .1s;
+    -moz-transition:  all .1s;
+    -ms-transition:  all .1s;
+    -o-transition:  all .1s;
+    transition:  all .1s;
+}
+/*话题管理-查看话题详情结束*/
 
 /*修改话题*/
 .topic-img-preview{
@@ -1074,6 +1133,7 @@ a{
     padding-left: 80px;
     padding-right: 10px;
 }
+
 /*社区管理-降压资料结束*/
 
 /*弹出框*/

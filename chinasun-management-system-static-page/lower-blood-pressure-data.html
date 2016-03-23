@@ -7,8 +7,42 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/common.css">
     <script src="js/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/jquery.zclip.js" type="text/javascript" charset="utf-8"></script>
     <script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
     <script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+    <style type="text/css">
+        body{
+            position: relative;
+            display: block;
+            height: 100%;
+            width: 100%;
+            font-family: "Helvetica Neue", "Luxi Sans", "DejaVu Sans", Tahoma, "Hiragino Sans GB", STHeiti, "Microsoft YaHei";
+            color: #333;
+        }
+        .line {
+            margin-bottom: 20px;
+        }
+        /* 复制提示 */
+
+        .copy-tips {
+            position: fixed;
+            z-index: 9999;
+            bottom: 50%;
+            left: 50%;
+            margin: 0 0 -20px -80px;
+            filter: progid: DXImageTransform.Microsoft.Gradient(startColorstr=#30000000, endColorstr=#30000000);
+        }
+
+        .copy-tips-wrap {
+            padding: 30px 100px;
+            text-align: center;
+            font-size: 14px;
+            border-radius: 3px;
+            background-color: #e6e6e6;
+            box-shadow:0 0 10px rgba(0, 0, 0, .3);
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
 <div class="view-wrap">
@@ -71,6 +105,10 @@
     <div class="view-main">
         <div class="main-body">
             <div class="col-sm-12">
+
+
+
+
                 <div class="common-con">
                     <div class="common-header-nav">
                         <div class="common-header-nav-left">
@@ -85,7 +123,11 @@
                             <button type="button" class="btn btn-default">刷新</button>
                             <button type="button" class="btn btn-default">删除</button>
                         </form>
+
+
                     </div>
+
+
 
                     <!-- Tab panes -->
                     <div class="tab-content">
@@ -115,7 +157,7 @@
                                         </ul>
                                     </th>
                                     <th class="dropdown">
-                                        <div id="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-title">
+                                        <div data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-title">
                                             发布时间
                                             <span class="caret"></span>
                                         </div>
@@ -130,14 +172,55 @@
                                 </thead>
                                 <tbody>
                                 <tr>
-                                    <td><input type="checkbox" name="ckbox" id="ckbox1"></td>
-                                    <td class="limit-acolor"><a id="listItemA" href="lower-blood-pressure-data-view-data.html">王小帅教授降压专题讲座</a></td>
+                                    <td><input type="checkbox" name="ckbox"></td>
+                                    <td class="limit-acolor copy-url-a-wrap">
+                                        <a class="copy-url-a" href="lower-blood-pressure-data-view-data.html">王小帅教授降压专题讲座</a>
+                                    </td>
                                     <td><span>管理员A</span></td>
                                     <td><span>200/120</span></td>
                                     <td><span>降压讲座</span></td>
                                     <td><span>2016-3-1 13:34</span></td>
-                                    <td><a class="btn btn-default btn-sm mr20 mb5">推荐</a><a href="lower-blood-pressure-data-modify-data.html" class="btn btn-default btn-sm mr20 mb5">修改</a><a class="btn btn-default btn-sm mr20 mb5">删除</a><a class="btn btn-default btn-sm mb5" id="copyUrlBtn">复制链接</a></td>
+                                    <td>
+                                        <a class="btn btn-default btn-sm mr20 mb5">推荐</a>
+                                        <a href="lower-blood-pressure-data-modify-data.html" class="btn btn-default btn-sm mr20 mb5">修改</a>
+                                        <a class="btn btn-default btn-sm mr20 mb5">删除</a>
+                                        <a class="btn btn-default btn-sm mb5 copy-url-btn" style="z-index: 8000; position:relative;">复制链接</a>
+                                    </td>
                                 </tr>
+                                <tr>
+                                    <td><input type="checkbox" name="ckbox"></td>
+                                    <td class="limit-acolor copy-url-a-wrap">
+                                        <a class="copy-url-a" href="https://www.baidu.com/">王小帅教授降压专题讲座</a>
+                                    </td>
+                                    <td><span>管理员A</span></td>
+                                    <td><span>200/120</span></td>
+                                    <td><span>降压讲座</span></td>
+                                    <td><span>2016-3-1 13:34</span></td>
+                                    <td>
+                                        <a class="btn btn-default btn-sm mr20 mb5">推荐</a>
+                                        <a href="lower-blood-pressure-data-modify-data.html" class="btn btn-default btn-sm mr20 mb5">修改</a>
+                                        <a class="btn btn-default btn-sm mr20 mb5">删除</a>
+                                        <a class="btn btn-default btn-sm mb5 copy-url-btn" style="z-index: 8000; position:relative;">复制链接</a>
+                                    </td>
+                                </tr>
+                                <script type="text/javascript" charset="utf-8">
+                                    $(function(){
+
+                                        //降压资料-复制链接
+                                        $(".copy-url-btn").zclip({
+                                            path: "ZeroClipboard.swf",
+                                            copy: function() {
+                                                return $(this).parent().siblings(".copy-url-a-wrap").find(".copy-url-a").attr("href");
+                                            },
+                                            afterCopy: function() {
+                                                var $copysuc = $("<div class='copy-tips'><div class='copy-tips-wrap'>复制成功</div></div>");
+                                                $("body").find(".copy-tips").remove().end().append($copysuc);
+                                                $(".copy-tips").fadeOut(3000);
+                                            }
+                                        });
+
+                                    });
+                                </script>
                                 </tbody>
                                 <tfoot>
                                 <tr>
