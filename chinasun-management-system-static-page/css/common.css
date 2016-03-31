@@ -1202,7 +1202,11 @@ a{
     filter: alpha(opacity=0);
     cursor: pointer
 }
-
+.relative-bl12{
+    position: relative;
+    bottom: 12px;
+    left: 12px;
+}
 /*新建BANNER结束*/
 
 /*index*/
