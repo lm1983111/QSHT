@@ -58,6 +58,9 @@ body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 .mb20{
     margin-bottom: 20px;
 }
+.mt10{
+    margin-top: 10px;
+}
 .mt60{
     margin-top: 60px;
 }
@@ -75,6 +78,10 @@ body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     padding-left: 15px;
     padding-right: 15px;
 }
+.plr20{
+    padding-left: 20px;
+    padding-right: 20px;
+}
 .float-left, .fl{
     float: left;
 }
@@ -89,6 +96,9 @@ a{
 }
 .fs18{
     font-size: 18px;
+}
+.red{
+    color: red;
 }
 .textarea-common{
     height: 100px !important;
@@ -1232,3 +1242,91 @@ a{
 /*精华推荐*/
 
 /*精华推荐结束*/
+
+/*未付款订单-修改价格*/
+.modal-modify-price-wrap{
+    position: absolute;
+    z-index: 8000;
+    display: none;
+    width: 800px;
+    left: 50%;
+    top: 30%;
+    margin-left: -400px;
+    background-color: #fff;
+    border-radius: 3px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+
+    /*position: absolute;*/
+    /*z-index: 2000;*/
+    /*top: 30%;*/
+    /*left: 50%;*/
+    /*display: block;*/
+    /*width: 600px;*/
+    /*height: auto;*/
+    /*margin-left: -200px;*/
+    /*border-radius: 3px;*/
+    /*background-color: #fff;*/
+    /*box-shadow: 0 0 10px rgba(0, 0, 0, .3);*/
+}
+.mmp-header{
+    position: relative;
+    height: 60px;
+    line-height: 60px;
+    background-color: #eee;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    color: #333;
+    min-width: 700px;
+}
+.mmp-body{
+    position: relative;
+    padding-left: 20px;
+    padding-right: 20px;
+    /*border-bottom: 1px solid #ddd;*/
+    background-color: #fff;
+    min-width: 700px;
+}
+.mmp-footer{
+    padding: 20px;
+    min-width: 700px;
+}
+.mmp-body-goods-item{
+    position: relative;
+    display: block;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+}
+.mmp-body-goods-item:last-child{
+    border-bottom: none;
+}
+.mmp-header-title{
+    padding-left: 30px;
+}
+.mmp-body-goods-item .thumbnail{
+    margin-bottom: 0;
+}
+.mmp-body-right{
+    position: absolute;
+    top:50%;
+    right: 0;
+    margin-top: -20px;
+}
+.bbdd{
+    border: 1px solid #ddd;
+}
+.mmp-body:after{
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    right: 20px;
+    content: "";
+    height: 0;
+    border-bottom: 1px solid #ddd;
+}
+.mmp-order-discount{
+    font-size: 20px;
+}
+
+/*未付款订单-修改价格结束*/

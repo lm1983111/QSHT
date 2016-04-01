@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="css/common.css">
     <script src="js/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
     <script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/angular.min.js" type="text/javascript" charset="utf-8"></script>
     <script src="js/common.js" type="text/javascript" charset="utf-8"></script>
 </head>
 <body>
@@ -156,12 +157,14 @@
                                     <div>2016-3-1 13:34</div>
                                 </td>
                                 <td rowspan="1">
-                                    <div>买家未付款</div>
+                                    <div class="mb10">买家未付款</div>
                                     <div><a class="btn btn-default btn-sm">取消订单</a></div>
                                 </td>
                                 <td rowspan="1">
-                                    <div>598.00</div>
-                                    <div><a class="btn btn-default btn-sm">修改价格</a></div>
+                                    <div class="mb10">200.00</div>
+                                    <div><a class="btn btn-default btn-sm mb10" id="modifyPriceBtn">修改价格</a></div>
+                                    <div>已优惠99.00</div>
+                                    <!--<div>已加价10.00</div>-->
                                 </td>
                             </tr>
                             </tbody>
@@ -209,11 +212,11 @@
                                     <div>2016-3-1 13:34</div>
                                 </td>
                                 <td rowspan="1">
-                                    <div>买家未付款</div>
+                                    <div class="mb10">买家未付款</div>
                                     <div><a class="btn btn-default btn-sm">取消订单</a></div>
                                 </td>
                                 <td rowspan="1">
-                                    <div>598.00</div>
+                                    <div class="mb10">598.00</div>
                                     <div><a class="btn btn-default btn-sm">修改价格</a></div>
                                 </td>
                             </tr>
@@ -258,5 +261,90 @@
 <!--右侧主体页面结束-->
 </div>
 </div>
+
+<script src="js/jquery.center.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/jquery.msg.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript" charset="utf-8">
+    $(function(){
+        //修改订单价格
+        $('#modifyPriceBtn').bind('click',function(){
+            $.msg({
+                autoUnblock : false,
+                clickUnblock : false,
+                content: '<div class="mmp-header">'+
+                            '<div class="mmp-header-title">订单原价：<span class="mmp-order-old-price">299</span>.00元</div>'+
+                        '</div>'+
+                        '<div class="mmp-body">'+
+                            '<div class="row">'+
+                                '<div class="col-sm-8 mmp-body-left">'+
+                                    '<div class="mmp-body-goods-item clearfix">'+
+                                        '<div class="col-sm-2">'+
+                                            '<div class="thumbnail"><img src="img/ui-icons_444444_256x240.png"> </div>'+
+                                        '</div>'+
+                                        '<div class="col-sm-5">'+
+                                            '<div>千山健康24小时无线动态血压仪</div>'+
+                                        '</div>'+
+                                        '<div class="col-sm-5">'+
+                                            '<div><span>299</span>.00/(2<span>台</span>)</div>'+
+                                        '</div>'+
+                                    '</div>'+
+                                '</div>'+
+                                '<div class="col-sm-4 mmp-body-right">'+
+                                    '<div class="row">'+
+                                        '<div class="col-sm-4 text-right">涨价或减价:</div>'+
+                                        '<div class="col-sm-8 text-left">'+
+                                             '<input type="text" class="form-control" value="-99.00" oninput="getDiscountFun(event)">'+
+                                        '</div>'+
+                                    '</div>'+
+                                '</div>'+
+                            '</div>'+
+                        '</div>'+
+                        '<div class="mmp-footer">'+
+                            '<div class="row">'+
+                                '<div class="col-sm-6">'+
+                                    '买家实付款：<span id="oldPrice">299</span>.00<span class="red" id="discountPrice">-99.00</span> = <span class="mmp-order-discount" id="newPrice">200</span>.00'+
+                                '</div>'+
+                                '<div class="col-sm-6 text-right">'+
+                                    '<a id="no" class="btn btn-default mr20">取消</a>'+
+                                    '<a id="yes" class="btn btn-bg-gray-font-white">确定</a>'+
+                                '</div>'+
+                            '</div>'+
+                        '</div>'
+                ,
+                afterBlock : function(){
+                    var self = this;
+                    $( '#yes' ).bind( 'click', function(){
+                        //修改成功
+                        self.replace( '<div class="weak-note"><i class="weak-note-delete-icon-success"></i>修改成功</div>' );
+
+                        //修改失败
+                        self.unblock( 2000 );
+                    });
+
+                    $( '#no' ).bind( 'click', function(){
+                        self.unblock();
+                    });
+                },
+                beforeUnblock : function(){
+                    //alert( 'This is a callback from beforeUnblock event handler :)' )
+                }
+            });
+        });
+    });
+
+    //获取浮动价格函数
+    function getDiscountFun(event){
+        var This = event.target;
+        alert($(This).val());
+        //
+        $("#oldPrice").html();
+        $("#discountPrice").html();
+        $("#newPrice").html();
+
+        //判断输入的值只能是数，且小数控制在两位
+
+
+    }
+</script>
 </body>
 </html>
