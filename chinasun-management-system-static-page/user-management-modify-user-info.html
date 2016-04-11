@@ -3,7 +3,7 @@
 <head lang="en">
     <meta charset="UTF-8">
     <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <title>所有用户-修改用户资料</title>
+    <title>用户管理-修改用户资料</title>
     <link rel="stylesheet" type="text/css" href="css/jquery-ui.css" />
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/common.css">
@@ -53,9 +53,10 @@
                 </ul>
             </div>
             <div class="sidebar-nav">
-                <div class="sidebar-title"><i class="sidebar-title-icon"></i><span>用户管理</span><span class="glyphicon glyphicon-triangle-bottom"></span></div>
+                <div class="sidebar-title"><i class="sidebar-title-icon"></i><span>用户菜单</span><span class="glyphicon glyphicon-triangle-bottom"></span></div>
                 <ul class="sidebar-trans">
-                    <li><a class="active" href="all-user.html">全部用户</a></li>
+                    <li><a class="active" href="user-management.html">用户管理</a></li>
+                    <li><a href="user-authenticate.html">实名认证</a></li>
                 </ul>
             </div>
             <div class="sidebar-nav">
@@ -80,6 +81,7 @@
                             <h2>修改用户资料</h2>
                         </div>
                         <div class="wizard-content">
+                            <form action="" method="post">
                             <div class="center-items-wrap w500">
                                 <dl class="dl-horizontal center-margin-left-negative100">
                                     <dt>头像：</dt>
@@ -96,11 +98,21 @@
                                     </dd>
                                     <dt>性别：</dt>
                                     <dd class="form-group">
-                                        <input type="text" class="form-control" value="男">
+                                        <div class="function-authorize-from">
+                                            <label class="function-authorize-item mb0">
+                                                <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option7" checked="">
+                                                男
+                                            </label>
+                                            <label class="function-authorize-item mb0">
+                                                <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option8">
+                                                女
+                                            </label>
+                                        </div>
                                     </dd>
                                     <dt>手机：</dt>
                                     <dd class="form-group">
-                                        <input type="text" class="form-control" value="15475458554">
+                                        <input type="text" class="form-control" value="15475458554" onblur="validateTele(event)">
+                                        <div class="red-note"></div>
                                     </dd>
                                     <dt>收货地址：</dt>
                                     <dd class="form-group">
@@ -119,6 +131,7 @@
                                     </dd>
                                 </dl>
                             </div>
+                            </form>
                         </div>
                     </div>
                 </div>

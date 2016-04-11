@@ -26,7 +26,10 @@ body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     width: 50px;
 }
 .w80{
-    width: 80px;
+     width: 80px;
+ }
+.w100{
+    width: 100px;
 }
 .w150{
     width: 150px;
@@ -235,7 +238,6 @@ a{
     bottom: 0;
     width: 100%;
     z-index: 100;
-    min-height: 800px;
 }
 .view-sidebar{
     position: fixed;
@@ -968,7 +970,10 @@ a{
 }
 .child-img-node-wh50 img{
     width: 100%;
-}
+}.red-note{
+    color: red;
+    margin-top: 5px;
+ }
 /*用户管理结束*/
 
 /*商城管理-订单管理*/
@@ -1328,5 +1333,88 @@ a{
 .mmp-order-discount{
     font-size: 20px;
 }
-
+.no-style-input{
+    display: inline-block;
+    width: 80px;
+    border: 0;
+    overflow-x:visible;
+    overflow-y:visible;
+}
 /*未付款订单-修改价格结束*/
+
+/*实名认证*/
+.portrait50{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    border-radius: 3px;
+}
+.portrait50 img{
+    width: 100%;
+    vertical-align: middle;
+}
+/* 相册  */
+.thumb-authenticate-table{
+    display: table;
+    float: left;
+    margin-right: 10px;
+    height: 60px;
+    width: 100px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+.thumb-authenticate-table-cell{
+    display: table-cell;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+}
+.thumb-authenticate-table-cell img{
+    max-width: 98px;
+    max-height: 58px;
+}
+.source-img-wrap{
+    position: absolute;
+    z-index: 8200;
+    display: block;
+    width: 380px;
+    height: 160px;
+    left: 50%;
+    top: 50%;
+    margin-left: -190px;
+    margin-top: -80px;
+}
+.source-img-wrap img{
+    display: inline-block;
+}
+.close-source-img{
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    font-size: 20px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border-radius: 100%;
+    background-color: #888;
+    color: #fff;
+    display: inline-block;
+    cursor: pointer;
+}
+.mask{
+    position: absolute;
+    z-index: 8100;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /*display: none;*/
+    height: 100%;
+    width: 100%;
+    background-color: #000000;
+    filter: alpha(opacity=60);
+    opacity: .6;
+}
+/* 相册结束  */
+/*实名认证结束*/
