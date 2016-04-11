@@ -1363,6 +1363,8 @@ a{
     width: 100px;
     border: 1px solid #ddd;
     text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 .thumb-authenticate-table-cell{
     display: table-cell;
@@ -1373,20 +1375,22 @@ a{
 .thumb-authenticate-table-cell img{
     max-width: 98px;
     max-height: 58px;
+    cursor: pointer;
 }
 .source-img-wrap{
     position: absolute;
     z-index: 8200;
     display: block;
-    width: 380px;
-    height: 160px;
     left: 50%;
     top: 50%;
-    margin-left: -190px;
-    margin-top: -80px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .3);
 }
 .source-img-wrap img{
     display: inline-block;
+    max-width: 800px;
+    max-height: 500px;
 }
 .close-source-img{
     position: absolute;
@@ -1397,7 +1401,7 @@ a{
     height: 30px;
     text-align: center;
     border-radius: 100%;
-    background-color: #888;
+    background-color: red;
     color: #fff;
     display: inline-block;
     cursor: pointer;
@@ -1409,7 +1413,6 @@ a{
     bottom: 0;
     left: 0;
     right: 0;
-    /*display: none;*/
     height: 100%;
     width: 100%;
     background-color: #000000;
