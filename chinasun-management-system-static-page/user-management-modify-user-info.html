@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>用户管理-修改用户资料</title>
-    <link rel="stylesheet" type="text/css" href="css/jquery-ui.css" />
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-datetimepicker.css">
     <link rel="stylesheet" type="text/css" href="css/common.css">
     <script src="js/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
     <script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
-    <script src="js/jquery-ui.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/bootstrap-datetimepicker.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/bootstrap-datetimepicker.zh-CN.js" type="text/javascript" charset="utf-8"></script>
     <script src="js/common.js" type="text/javascript" charset="utf-8"></script>
-    <script src="js/date-controller.js" type="text/javascript" charset="utf-8"></script>
 </head>
 <body>
 <div class="view-wrap all-user-modify-user-info">
@@ -82,48 +82,208 @@
                         </div>
                         <div class="wizard-content">
                             <form action="" method="post">
-                            <div class="center-items-wrap w500">
-                                <dl class="dl-horizontal center-margin-left-negative100">
+                            <div class="center-items-wrap maxw800 plr15">
+                                <dl class="dl-horizontal">
+                                    <div class="mb10">
+                                        <span class="fs18-title-type1">基本信息</span>
+                                    </div>
                                     <dt>头像：</dt>
                                     <dd class="form-group child-img-node-wh50">
                                         <img src="img/gallery1.jpg">
                                     </dd>
-                                    <dt>姓名：</dt>
+                                    <dt>昵称：</dt>
                                     <dd class="form-group">
-                                        <input type="text" class="form-control" value="王小帅">
-                                    </dd>
-                                    <dt>年龄：</dt>
-                                    <dd class="form-group">
-                                        <input type="text" id="datepicker" class="form-control" value="2016-03-14">
-                                    </dd>
-                                    <dt>性别：</dt>
-                                    <dd class="form-group">
-                                        <div class="function-authorize-from">
-                                            <label class="function-authorize-item mb0">
-                                                <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option7" checked="">
-                                                男
-                                            </label>
-                                            <label class="function-authorize-item mb0">
-                                                <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option8">
-                                                女
-                                            </label>
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <input type="text" class="form-control" value="王小帅">
+                                            </div>
                                         </div>
                                     </dd>
                                     <dt>手机：</dt>
                                     <dd class="form-group">
-                                        <input type="text" class="form-control" value="15475458554" onblur="validateTele(event)">
-                                        <div class="red-note"></div>
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <input type="text" class="form-control" value="15475458554" onblur="validateTele(event)">
+                                                <div class="red-note"></div>
+                                            </div>
+                                        </div>
                                     </dd>
-                                    <dt>收货地址：</dt>
+                                    <dt>性别：</dt>
                                     <dd class="form-group">
-                                        <input type="text" class="form-control" value="湖南省长沙县盼盼路9号千山药机5栋1205室">
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div class="pick-one-of-two-wrap">
+                                                    <label class="w-per50 fl">
+                                                        <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option7" checked="">
+                                                        男
+                                                    </label>
+                                                    <label class="w-per50 fl">
+                                                        <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option8">
+                                                        女
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </dd>
+                                    <dt>出生年月：</dt>
+                                    <dd class="form-group">
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div class="input-group date form_date" data-date="" data-date-format="yyyy-mm-dd" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
+                                                    <input class="form-control" size="16" type="text" value="" id="datetimepicker" readonly>
+                                                    <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+                                                </div>
+                                                <input type="hidden" id="dtp_input2" value="" />
+                                                <script type="text/javascript">
+                                                    $('.form_date').datetimepicker({
+                                                        language:  'zh-CN',
+                                                        weekStart: 1,
+                                                        todayBtn:  1,
+                                                        autoclose: 1,
+                                                        todayHighlight: 1,
+                                                        startView: 2,
+                                                        minView: 2,
+                                                        forceParse: 0
+                                                    });
+                                                </script>
+                                            </div>
+                                        </div>
+                                    </dd>
+                                    <dt>家庭地址：</dt>
+                                    <dd class="form-group">
+                                        <div class="row">
+                                            <div class="col-md-2">
+                                                <select class="form-control">
+                                                    <option>湖南省</option>
+                                                    <option>湖南省</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <select class="form-control">
+                                                    <option>长沙市</option>
+                                                    <option>长沙市</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <select class="form-control">
+                                                    <option>星沙县</option>
+                                                    <option>星沙县</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <input type="text" class="form-control" value="盼盼路9号千山药机5栋1205室">
+                                            </div>
+                                        </div>
                                     </dd>
                                     <dt>状态：</dt>
                                     <dd class="form-group">
-                                        <select class="form-control">
-                                            <option>启用</option>
-                                            <option selected>锁定</option>
-                                        </select>
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div class="pick-one-of-two-wrap">
+                                                    <label class="w-per50 fl">
+                                                        <input type="radio" name="inlineRadioOptions2" id="inlineRadio3" value="option9" checked="">
+                                                        启用
+                                                    </label>
+                                                    <label class="w-per50 fl">
+                                                        <input type="radio" name="inlineRadioOptions2" id="inlineRadio4" value="option10">
+                                                        锁定
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </dd>
+                                    <div class="mb10">
+                                        <span class="fs18-title-type1">高危保护</span>
+                                    </div>
+                                    <dt>急救通知人：</dt>
+                                    <dd class="form-group">
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <input type="text" class="form-control" value="李雷雷">
+                                            </div>
+                                        </div>
+                                    </dd>
+                                    <dt>急救通知人电话：</dt>
+                                    <dd class="form-group">
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <input type="text" class="form-control" value="15475458554" onblur="validateTele(event)">
+                                                <div class="red-note"></div>
+                                            </div>
+                                        </div>
+                                    </dd>
+                                    <dt>急救地址：</dt>
+                                    <dd class="form-group">
+                                        <div class="row">
+                                            <div class="col-md-2">
+                                                <select class="form-control">
+                                                    <option>湖南省</option>
+                                                    <option>湖南省</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <select class="form-control">
+                                                    <option>长沙市</option>
+                                                    <option>长沙市</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <select class="form-control">
+                                                    <option>星沙县</option>
+                                                    <option>星沙县</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <input type="text" class="form-control" value="盼盼路9号千山药机5栋1205室">
+                                            </div>
+                                        </div>
+                                    </dd>
+                                    <div class="mb10">
+                                        <a class="btn btn-bg-gray-font-white fr">+新增收货地址</a>
+                                        <span class="fs18-title-type1">收货信息</span>
+                                    </div>
+                                    <dt>收货人：</dt>
+                                    <dd class="form-group">
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <input type="text" class="form-control" value="李雷雷">
+                                            </div>
+                                        </div>
+                                    </dd>
+                                    <dt>收货人电话：</dt>
+                                    <dd class="form-group">
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <input type="text" class="form-control" value="15475458554" onblur="validateTele(event)">
+                                                <div class="red-note"></div>
+                                            </div>
+                                        </div>
+                                    </dd>
+                                    <dt>收货地址：</dt>
+                                    <dd class="form-group">
+                                        <div class="row">
+                                            <div class="col-md-2">
+                                                <select class="form-control">
+                                                    <option>湖南省</option>
+                                                    <option>湖南省</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <select class="form-control">
+                                                    <option>长沙市</option>
+                                                    <option>长沙市</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <select class="form-control">
+                                                    <option>星沙县</option>
+                                                    <option>星沙县</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <input type="text" class="form-control" value="盼盼路9号千山药机5栋1205室">
+                                            </div>
+                                        </div>
                                     </dd>
                                     <dt></dt>
                                     <dd class="form-group mt60">
@@ -140,5 +300,64 @@
         <!--右侧主体页面结束-->
     </div>
 </div>
+<div>
+</div>
+<!--弹出框-->
+<div class="pop-up-window">
+    <div class="pop-up-window-header">
+        <div class="pop-up-window-title">新建收货地址</div>
+        <div class="pop-up-window-close">×</div>
+    </div>
+    <div class="pop-up-window-content">
+        <div class="form-group">
+            <label>收货人：</label>
+            <div class="row">
+                <div class="col-md-6"><input type="text" class="form-control"></div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label>收货人电话：</label>
+            <div class="row">
+                <div class="col-md-6"><input type="text" class="form-control"></div>
+                <div class="col-md-6"><div class="red">请填写收货人电话</div></div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label>所在地区：</label>
+            <div class="row">
+                <div class="col-md-3">
+                    <select class="form-control">
+                        <option>请选择</option>
+                        <option>请选择</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <select class="form-control">
+                        <option>请选择</option>
+                        <option>请选择</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <select class="form-control">
+                        <option>请选择</option>
+                        <option>请选择</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label>详细地址：</label>
+            <div class="row">
+                <div class="col-md-8"><input type="text" class="form-control"></div>
+                <div class="col-md-4"><div class="red">请填写详细地址</div></div>
+            </div>
+        </div>
+    </div>
+    <div class="pop-up-window-footer">
+        <a class="puw-footer-btn">新增</a>
+    </div>
+</div>
+<!--弹出框结束-->
+
 </body>
 </html>

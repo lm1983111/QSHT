@@ -6,8 +6,10 @@
     <title>实名认证</title>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/show-big-image.css">
     <script src="js/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
     <script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/show-big-image.js" type="text/javascript" charset="utf-8"></script>
     <script src="js/common.js" type="text/javascript" charset="utf-8"></script>
 </head>
 <body>
@@ -76,7 +78,10 @@
                         <div class="common-header-nav">
                             <div class="common-header-nav-left">
                                 <ul class="nav nav-tabs">
-                                    <li class="active"><a href="user-authenticate.html">等待审核</a></li>
+                                    <li class="active have-message">
+                                        <span class="message-red-note">125</span>
+                                        <a href="user-authenticate.html">等待审核</a>
+                                    </li>
                                     <li><a href="user-authenticate-pass-check.html">已经审核通过</a></li>
                                     <li><a href="user-authenticate-not-pass-check.html">未通过审核</a></li>
                                 </ul>
@@ -113,23 +118,23 @@
                                     </thead>
                                     <tbody>
                                     <tr>
-                                        <td class="limit-acolor"><a href="topic-management-topic-tetail.html">王大大的</a></td>
+                                        <td><span>王大大</span></td>
                                         <td><span>王力宏</span></td>
                                         <td><span>43025454554789232454</span></td>
                                         <td>
-                                            <div class="thumb-authenticate-table">
-                                                <div class="thumb-authenticate-table-cell">
-                                                    <img onclick="showSourceImg(event)" src="img/up_load_img_bg.png">
+                                            <div class="thumb-w100-showimg-table">
+                                                <div class="thumb-w100-showimg-table-cell">
+                                                    <img onclick="showSourceImg(event)" src="img/3605.jpg">
                                                 </div>
                                             </div>
-                                            <div class="thumb-authenticate-table">
-                                                <div class="thumb-authenticate-table-cell">
-                                                    <img onclick="showSourceImg(event)" src="img/3605.jpg">
+                                            <div class="thumb-w100-showimg-table">
+                                                <div class="thumb-w100-showimg-table-cell">
+                                                    <img onclick="showSourceImg(event)" src="img/3603.jpg">
                                                 </div>
                                             </div>
                                         </td>
                                         <td>2016-3-1 13:34</td>
-                                        <td><a class="btn btn-default btn-sm mr20 mb5">查看</a><a href="topic-management-modify-topic.html" class="btn btn-default btn-sm mr20 mb5">审核通过</a><a class="btn btn-default btn-sm mb5">不通过</a></td>
+                                        <td><a href="user-authenticate-info.html" class="btn btn-default btn-sm mr20 mb5">查看</a><a class="btn btn-default btn-sm mr20 mb5">审核通过</a><a class="btn btn-default btn-sm mb5">不通过</a></td>
                                     </tr>
                                     </tbody>
                                     <tfoot>
