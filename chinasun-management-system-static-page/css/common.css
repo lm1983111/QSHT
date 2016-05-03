@@ -477,6 +477,79 @@ a{
 }
 /*插件msg弹出框自带样式结束*/
 
+/*弹出框*/
+.pop-up-window{
+    position: absolute;
+    z-index: 2000;
+    top: 30%;
+    left: 50%;
+    display: block;
+    height: auto;
+    margin-left: -200px;
+    border-radius: 3px;
+    background-color: #fff;
+    box-shadow:0 0 10px rgba(0, 0, 0, .3);
+}
+.pop-up-window-header{
+    position: relative;
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    width: 100%;
+    min-width: 400px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    background-color: #eee;
+}
+.pop-up-window-title{
+    padding-left: 30px;
+    display: inline-block;
+    color: #333;
+    font-size: 16px;
+}
+.pop-up-window-close{
+    position: absolute;
+    top: 18px;
+    right: 20px;
+    font-size: 21px;
+    line-height: 1;
+    font-weight: 700;
+    color: #333;
+    cursor: pointer;
+}
+.pop-up-window-content{
+    display: block;
+    line-height: 30px;
+    padding:5px 30px;
+    background-color: #fff;
+}
+.pop-up-window-content label{
+    margin-bottom: 0;
+    font-weight: 300;
+}
+.pop-up-window-content .form-group{
+    margin-bottom: 8px;
+}
+.pop-up-window-content .form-group .form-control{
+    margin-top: -5px;
+}
+.pop-up-window-footer{
+    display: block;
+    width: 100%;
+    background-color: #fff;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
+}
+.pop-up-window-footer .btn{
+    margin-right: 20px;
+}
+.pop-up-window-footer .btn:last-child{
+    margin-right: 0;
+}
+/*弹出框结束*/
+
 /*弹出框1*/
 .pop-up-window1{
     position: absolute;
@@ -548,91 +621,6 @@ a{
     background-color: #eeeeee;
 }
 /*弹出框1结束*/
-
-/*弹出框2*/
-.pop-up-window{
-    position: absolute;
-    z-index: 2000;
-    top: 30%;
-    left: 50%;
-    display: block;
-    height: auto;
-    margin-left: -250px;
-    border-radius: 3px;
-    background-color: #fff;
-    box-shadow:0 0 10px rgba(0, 0, 0, .3);
-}
-.pop-up-window-header{
-    position: relative;
-    display: block;
-    height: 60px;
-    width: 100%;
-    min-width: 500px;
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
-    background-color: #808080;
-}
-.pop-up-window-title{
-    position: absolute;
-    top: 20px;
-    left: 30px;
-    display: inline-block;
-    color: #fff;
-}
-.pop-up-window-close{
-    position: absolute;
-    top: 18px;
-    right: 20px;
-    font-size: 21px;
-    line-height: 1;
-    font-weight: 700;
-    color: #fff;
-    cursor: pointer;
-}
-.pop-up-window-content{
-    display: block;
-    line-height: 30px;
-    padding:20px 30px;
-    background-color: #fff;
-}
-.pop-up-window-footer{
-    display: block;
-    width: 100%;
-    background-color: #fff;
-    padding-bottom: 20px;
-    padding-left: 30px;
-    padding-right: 30px;
-}
-.puw-footer-btn{
-    display: inline-block;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    height: 40px;
-    line-height: 40px;
-    padding-left: 30px;
-    padding-right: 30px;
-    min-width: 100px;
-    color: #333;
-    background-color: #ccc;
-    text-decoration: none;
-}
-.puw-footer-btn:hover{
-    color: #333;
-    text-decoration: none;
-    background-color: #bdbdbd;
-}
-.puw-footer-btn-light-bg{
-    background-color: #e7e7e7;
-}
-.puw-footer-btn-light-bg:hover{
-    background-color: #eeeeee;
-}
-.pop-top-red-note{
-    height: 30px;
-    color: red;
-}
-/*弹出框2结束*/
 
 /*弹出框若提醒*/
 .weak-note{
@@ -1356,10 +1344,15 @@ form.common-header-nav-right{
 .pick-one-of-two-wrap{
     padding: 10px 0;
 }
-.fs18-title-type1{
+.title-style1{
     position: relative;
     font-size: 18px;
     font-weight: 300;
+}
+.title-style1-note{
+    font-size: 14px;
+    margin-left: 15px;
+    color: #888;
 }
 .wizard-content .dl-horizontal.resume-horizontal{
     padding: 15px;
@@ -1372,6 +1365,11 @@ form.common-header-nav-right{
     margin-bottom: 8px;
 }
 .btn-right-top{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+.umvui-modify-btn{
     position: absolute;
     top: 15px;
     right: 15px;
