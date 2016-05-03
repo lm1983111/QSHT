@@ -11,7 +11,7 @@
     <script src="js/common.js" type="text/javascript" charset="utf-8"></script>
 </head>
 <body>
-<div class="view-wrap">
+<div class="view-wrap have-min-w1200">
 <!--顶部菜单-->
 <div class="view-topbar">
     <div class="topbar-content">
@@ -34,30 +34,11 @@
     <!--左侧菜单栏-->
     <div class="view-sidebar">
         <div class="sidebar-nav">
-            <div class="sidebar-title"><i class="sidebar-title-icon"></i><span>社区管理</span><span class="glyphicon glyphicon-triangle-bottom"></span></div>
-            <ul class="sidebar-trans">
-                <li><a href="topic-management-published.html">话题管理</a></li>
-                <li><a href="lower-blood-pressure-data.html">降压资料</a></li>
-                <li><a href="quality-recommend.html">精华推荐</a></li>
-                <li><a href="banner-page.html">BANNER</a></li>
-            </ul>
-        </div>
-        <div class="sidebar-nav">
-            <div class="sidebar-title"><i class="sidebar-title-icon"></i><span>商城管理</span><span class="glyphicon glyphicon-triangle-bottom"></span></div>
-            <ul class="sidebar-trans">
-                <li><a class="active" href="order-management-all-order.html">订单管理</a></li>
-                <li><a href="goods-management-selling.html">商品管理</a></li>
-            </ul>
-        </div>
-        <div class="sidebar-nav">
-            <div class="sidebar-title"><i class="sidebar-title-icon"></i><span>用户菜单</span><span class="glyphicon glyphicon-triangle-bottom"></span></div>
-            <ul class="sidebar-trans">
-                <li><a href="user-management.html">用户管理</a></li>
-                <li><a href="user-authenticate.html">实名认证</a></li>
-            </ul>
-        </div>
-        <div class="sidebar-nav">
-            <div class="sidebar-title"><i class="sidebar-title-icon"></i><span>系统管理</span><span class="glyphicon glyphicon-triangle-bottom"></span></div>
+            <div class="sidebar-title">
+                <span class="icon-icon_setting"></span>
+                <span>系统管理</span>
+                <span class="glyphicon glyphicon-triangle-bottom"></span>
+            </div>
             <ul class="sidebar-trans">
                 <li><a href="role-management.html">角色管理</a></li>
                 <li><a href="staff-management.html">员工管理</a></li>
@@ -65,19 +46,52 @@
                 <li><a href="function-management.html">功能管理</a></li>
             </ul>
         </div>
-
+        <div class="sidebar-nav">
+            <div class="sidebar-title">
+                <span class="icon-icon_portrait"></span>
+                <span>用户菜单</span>
+                <span class="glyphicon glyphicon-triangle-bottom"></span>
+            </div>
+            <ul class="sidebar-trans">
+                <li><a href="user-management.html">用户管理</a></li>
+                <li><a href="user-authenticate.html">实名认证</a></li>
+            </ul>
+        </div>
+        <div class="sidebar-nav">
+            <div class="sidebar-title">
+                <span class="icon-icon_shopping_cart"></span>
+                <span>商城管理</span>
+                <span class="glyphicon glyphicon-triangle-bottom"></span>
+            </div>
+            <ul class="sidebar-trans">
+                <li><a class="active" href="order-management-all-order.html">订单管理</a></li>
+                <li><a href="goods-management-selling.html">商品管理</a></li>
+            </ul>
+        </div>
+        <div class="sidebar-nav">
+            <div class="sidebar-title">
+                <span class="icon-icon_chart"></span>
+                <span>社区管理</span>
+                <span class="glyphicon glyphicon-triangle-bottom"></span>
+            </div>
+            <ul class="sidebar-trans">
+                <li><a href="topic-management-published.html">话题管理</a></li>
+                <li><a href="lower-blood-pressure-data.html">降压资料</a></li>
+                <li><a href="quality-recommend.html">精华推荐</a></li>
+                <li><a href="banner-page.html">BANNER</a></li>
+            </ul>
+        </div>
     </div>
     <!--左侧菜单栏结束-->
     <!--右侧主体页面-->
     <div class="view-main">
         <div class="main-body">
-            <div class="col-sm-12">
+            <div class="grid-plrb15">
                 <div class="common-con">
                     <div class="common-header-nav">
                         <div class="common-header-nav-left">
-                            <!-- Nav tabs -->
-                            <ul class="nav nav-tabs" role="tablist">
-                                <li class="active"><a href="order-management-all-order.html">全部订单</a></li>
+                            <ul class="tab-nav ui1-tab-nav">
+                                <li><a class="current" href="order-management-all-order.html">全部订单</a></li>
                                 <li><a href="order-management-unpaid-order.html">未付款订单</a></li>
                                 <li><a href="order-management-unship-order.html">待发货订单</a></li>
                                 <li><a href="order-management-completed-order.html">已完成订单</a></li>
@@ -86,14 +100,13 @@
                         <form class="common-header-nav-right form-inline">
                             <div class="form-group">
                                 <input type="text" placeholder="请输入搜索内容" class="form-control ipt">
-                                <button type="button" class="btn btn-default">搜索</button>
+                                <button type="button" class="btn btn-gray-empty btn-size16">搜索</button>
                             </div>
-                            <button type="button" class="btn btn-default">刷新</button>
-                            <a href="order-management-new-order.html" type="button" class="btn btn-default">+新建订单</a>
+                            <button type="button" class="btn btn-gray-empty btn-size16">刷新</button>
+                            <a href="order-management-new-order.html" type="button" class="btn btn-bluelight-full btn-size16">+新建订单</a>
                         </form>
                     </div>
 
-                    <!-- Tab panes -->
                     <div class="tab-content">
                         <!--全部订单-->
                         <div class="tab-pane active">
@@ -158,7 +171,7 @@
                                     </td>
                                     <td rowspan="1">
                                         <div>等待发货</div>
-                                        <div><a class="btn btn-default btn-sm">发货</a></div>
+                                        <div><a class="btn btn-bluelight-empty btn-size14">发货</a></div>
                                     </td>
                                     <td rowspan="1">
                                         <div>598.00</div>
@@ -209,11 +222,11 @@
                                         </td>
                                         <td rowspan="1">
                                             <div>买家未付款</div>
-                                            <div><a class="btn btn-default btn-sm">取消订单</a></div>
+                                            <div><a class="btn btn-redlight-empty btn-size14">取消订单</a></div>
                                         </td>
                                         <td rowspan="1">
                                             <div>598.00</div>
-                                            <div><a class="btn btn-default btn-sm">修改价格</a></div>
+                                            <div><a class="btn btn-bluelight-empty btn-size14">修改价格</a></div>
                                         </td>
                                     </tr>
                                 </tbody>

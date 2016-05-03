@@ -36,30 +36,11 @@
         <!--左侧菜单栏-->
         <div class="view-sidebar">
             <div class="sidebar-nav">
-                <div class="sidebar-title"><i class="sidebar-title-icon"></i><span>社区管理</span><span class="glyphicon glyphicon-triangle-bottom"></span></div>
-                <ul class="sidebar-trans">
-                    <li><a href="topic-management-published.html">话题管理</a></li>
-                    <li><a href="lower-blood-pressure-data.html">降压资料</a></li>
-                    <li><a href="quality-recommend.html">精华推荐</a></li>
-                    <li><a href="banner-page.html">BANNER</a></li>
-                </ul>
-            </div>
-            <div class="sidebar-nav">
-                <div class="sidebar-title"><i class="sidebar-title-icon"></i><span>商城管理</span><span class="glyphicon glyphicon-triangle-bottom"></span></div>
-                <ul class="sidebar-trans">
-                    <li><a href="order-management-all-order.html">订单管理</a></li>
-                    <li><a href="goods-management-selling.html">商品管理</a></li>
-                </ul>
-            </div>
-            <div class="sidebar-nav">
-                <div class="sidebar-title"><i class="sidebar-title-icon"></i><span>用户菜单</span><span class="glyphicon glyphicon-triangle-bottom"></span></div>
-                <ul class="sidebar-trans">
-                    <li><a href="user-management.html">用户管理</a></li>
-                    <li><a class="active" href="user-authenticate.html">实名认证</a></li>
-                </ul>
-            </div>
-            <div class="sidebar-nav">
-                <div class="sidebar-title"><i class="sidebar-title-icon"></i><span>系统管理</span><span class="glyphicon glyphicon-triangle-bottom"></span></div>
+                <div class="sidebar-title">
+                    <span class="icon-icon_setting"></span>
+                    <span>系统管理</span>
+                    <span class="glyphicon glyphicon-triangle-bottom"></span>
+                </div>
                 <ul class="sidebar-trans">
                     <li><a href="role-management.html">角色管理</a></li>
                     <li><a href="staff-management.html">员工管理</a></li>
@@ -67,45 +48,71 @@
                     <li><a href="function-management.html">功能管理</a></li>
                 </ul>
             </div>
-
+            <div class="sidebar-nav">
+                <div class="sidebar-title">
+                    <span class="icon-icon_portrait"></span>
+                    <span>用户菜单</span>
+                    <span class="glyphicon glyphicon-triangle-bottom"></span>
+                </div>
+                <ul class="sidebar-trans">
+                    <li><a href="user-management.html">用户管理</a></li>
+                    <li><a class="active" href="user-authenticate.html">实名认证</a></li>
+                </ul>
+            </div>
+            <div class="sidebar-nav">
+                <div class="sidebar-title">
+                    <span class="icon-icon_shopping_cart"></span>
+                    <span>商城管理</span>
+                    <span class="glyphicon glyphicon-triangle-bottom"></span>
+                </div>
+                <ul class="sidebar-trans">
+                    <li><a href="order-management-all-order.html">订单管理</a></li>
+                    <li><a href="goods-management-selling.html">商品管理</a></li>
+                </ul>
+            </div>
+            <div class="sidebar-nav">
+                <div class="sidebar-title">
+                    <span class="icon-icon_chart"></span>
+                    <span>社区管理</span>
+                    <span class="glyphicon glyphicon-triangle-bottom"></span>
+                </div>
+                <ul class="sidebar-trans">
+                    <li><a href="topic-management-published.html">话题管理</a></li>
+                    <li><a href="lower-blood-pressure-data.html">降压资料</a></li>
+                    <li><a href="quality-recommend.html">精华推荐</a></li>
+                    <li><a href="banner-page.html">BANNER</a></li>
+                </ul>
+            </div>
         </div>
         <!--左侧菜单栏结束-->
         <!--右侧主体页面-->
         <div class="view-main">
             <div class="main-body">
-                <div class="col-sm-12">
+                <div class="grid-plrb15">
                     <div class="common-con">
                         <div class="common-header-nav">
                             <div class="common-header-nav-left">
-                                <ul class="nav nav-tabs">
+                                <ul class="tab-nav ui1-tab-nav">
                                     <li class="have-message">
                                         <span class="message-red-note">125</span>
                                         <a href="user-authenticate.html">等待审核</a>
                                     </li>
                                     <li><a href="user-authenticate-pass-check.html">已经审核通过</a></li>
-                                    <li class="active"><a href="user-authenticate-not-pass-check.html">未通过审核</a></li>
+                                    <li><a class="current" href="user-authenticate-not-pass-check.html">未通过审核</a></li>
                                 </ul>
                             </div>
                             <form class="common-header-nav-right form-inline">
                                 <div class="form-group">
                                     <input type="text" placeholder="请输入搜索内容" class="form-control ipt">
-                                    <button type="button" class="btn btn-default">搜索</button>
+                                    <button type="button" class="btn btn-gray-empty btn-size16">搜索</button>
                                 </div>
-                                <button type="button" class="btn btn-default">刷新</button>
+                                <button type="button" class="btn btn-gray-empty btn-size16">刷新</button>
                             </form>
                         </div>
 
                         <div class="tab-content">
                             <div class="tab-pane active">
                                 <table class="table table-hover">
-                                    <colgroup>
-                                        <col class="w100">
-                                        <col class="w100">
-                                        <col class="w200">
-                                        <col class="w250">
-                                        <col class="w100">
-                                        <col class="w250">
-                                    </colgroup>
                                     <thead>
                                     <tr>
                                         <th>用户名</th>
@@ -134,7 +141,9 @@
                                             </div>
                                         </td>
                                         <td>2016-3-1 13:34</td>
-                                        <td><a href="user-authenticate-info.html" class="btn btn-default btn-sm mr20 mb5">查看</a><a class="btn btn-default btn-sm mb5">修改</a></td>
+                                        <td class="have-operate-btn-td">
+                                            <a href="user-authenticate-view-info.html" class="btn btn-bluelight-empty btn-size14">查看</a>
+                                        </td>
                                     </tr>
                                     </tbody>
                                     <tfoot>

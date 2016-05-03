@@ -34,30 +34,11 @@
             <!--左侧菜单栏-->
             <div class="view-sidebar">
                 <div class="sidebar-nav">
-                    <div class="sidebar-title"><i class="sidebar-title-icon"></i><span>社区管理</span><span class="glyphicon glyphicon-triangle-bottom"></span></div>
-                    <ul class="sidebar-trans">
-                        <li><a class="active" href="topic-management-published.html">话题管理</a></li>
-                        <li><a href="lower-blood-pressure-data.html">降压资料</a></li>
-                        <li><a href="quality-recommend.html">精华推荐</a></li>
-                        <li><a href="banner-page.html">BANNER</a></li>
-                    </ul>
-                </div>
-                <div class="sidebar-nav">
-                    <div class="sidebar-title"><i class="sidebar-title-icon"></i><span>商城管理</span><span class="glyphicon glyphicon-triangle-bottom"></span></div>
-                    <ul class="sidebar-trans">
-                        <li><a href="order-management-all-order.html">订单管理</a></li>
-                        <li><a href="goods-management-selling.html">商品管理</a></li>
-                    </ul>
-                </div>
-                <div class="sidebar-nav">
-                    <div class="sidebar-title"><i class="sidebar-title-icon"></i><span>用户菜单</span><span class="glyphicon glyphicon-triangle-bottom"></span></div>
-                    <ul class="sidebar-trans">
-                        <li><a href="user-management.html">用户管理</a></li>
-                        <li><a href="user-authenticate.html">实名认证</a></li>
-                    </ul>
-                </div>
-                <div class="sidebar-nav">
-                    <div class="sidebar-title"><i class="sidebar-title-icon"></i><span>系统管理</span><span class="glyphicon glyphicon-triangle-bottom"></span></div>
+                    <div class="sidebar-title">
+                        <span class="icon-icon_setting"></span>
+                        <span>系统管理</span>
+                        <span class="glyphicon glyphicon-triangle-bottom"></span>
+                    </div>
                     <ul class="sidebar-trans">
                         <li><a href="role-management.html">角色管理</a></li>
                         <li><a href="staff-management.html">员工管理</a></li>
@@ -65,47 +46,71 @@
                         <li><a href="function-management.html">功能管理</a></li>
                     </ul>
                 </div>
-
+                <div class="sidebar-nav">
+                    <div class="sidebar-title">
+                        <span class="icon-icon_portrait"></span>
+                        <span>用户菜单</span>
+                        <span class="glyphicon glyphicon-triangle-bottom"></span>
+                    </div>
+                    <ul class="sidebar-trans">
+                        <li><a href="user-management.html">用户管理</a></li>
+                        <li><a href="user-authenticate.html">实名认证</a></li>
+                    </ul>
+                </div>
+                <div class="sidebar-nav">
+                    <div class="sidebar-title">
+                        <span class="icon-icon_shopping_cart"></span>
+                        <span>商城管理</span>
+                        <span class="glyphicon glyphicon-triangle-bottom"></span>
+                    </div>
+                    <ul class="sidebar-trans">
+                        <li><a href="order-management-all-order.html">订单管理</a></li>
+                        <li><a href="goods-management-selling.html">商品管理</a></li>
+                    </ul>
+                </div>
+                <div class="sidebar-nav">
+                    <div class="sidebar-title">
+                        <span class="icon-icon_chart"></span>
+                        <span>社区管理</span>
+                        <span class="glyphicon glyphicon-triangle-bottom"></span>
+                    </div>
+                    <ul class="sidebar-trans">
+                        <li><a class="active" href="topic-management-published.html">话题管理</a></li>
+                        <li><a href="lower-blood-pressure-data.html">降压资料</a></li>
+                        <li><a href="quality-recommend.html">精华推荐</a></li>
+                        <li><a href="banner-page.html">BANNER</a></li>
+                    </ul>
+                </div>
             </div>
             <!--左侧菜单栏结束-->
             <!--右侧主体页面-->
             <div class="view-main">
                 <div class="main-body">
-                    <div class="col-sm-12">
+                    <div class="grid-plrb15">
                         <div class="common-con">
                             <div class="common-header-nav">
                                 <div class="common-header-nav-left">
-                                    <!-- Nav tabs -->
-                                    <ul class="nav nav-tabs" role="tablist">
+                                    <ul class="tab-nav ui1-tab-nav" role="tablist">
                                         <li><a href="topic-management-published.html">已发布话题</a></li>
-                                        <li class="active"><a href="topic-management-no-check.html">待审核话题</a></li>
+                                        <li><a class="current" href="topic-management-no-check.html">待审核话题</a></li>
                                         <li><a href="topic-management-not-pass-check.html">未通过审核的话题</a></li>
                                     </ul>
                                 </div>
                                 <form class="common-header-nav-right form-inline">
                                     <div class="form-group">
                                         <input type="text" placeholder="请输入搜索内容" class="form-control ipt">
-                                        <button type="button" class="btn btn-default">搜索</button>
+                                        <button type="button" class="btn btn-gray-empty btn-size16">搜索</button>
                                     </div>
-                                    <button type="button" class="btn btn-default">刷新</button>
-                                    <button type="button" class="btn btn-default">删除</button>
+                                    <button type="button" class="btn btn-gray-empty btn-size16">刷新</button>
+                                    <button type="button" class="btn btn-gray-empty btn-size16">删除</button>
                                 </form>
                             </div>
 
-                            <!-- Tab panes -->
                             <div class="tab-content">
 
                                 <!--待审核话题-->
                                 <div class="tab-pane active">
                                     <table class="table table-hover">
-                                        <colgroup>
-                                            <col class="w50">
-                                            <col class="w200">
-                                            <col class="w400">
-                                            <col class="w150">
-                                            <col class="w150">
-                                            <col class="w300">
-                                        </colgroup>
                                         <thead>
                                         <tr>
                                             <th><input type="checkbox" name="ckSellectAllb" id="ckSellectAllb"></th>
@@ -127,28 +132,17 @@
                                         </tr>
                                         </thead>
                                         <tbody>
-                                        <tr>
-                                            <td><input type="checkbox" name="ckbox3" id="ckbox3"></td>
-                                            <td class="limit-acolor"><a href="#">千山降压APP使用心得</a></td>
-                                            <td>
-                                                <div class="td-attach-img50text-left"><img src="img/htgl_item_img.jpg"></div>
-                                                <div class="td-attach-img50text-right">朋友推荐下了千山降压APP抱着好奇的心情去用了下感觉非常不错朋友推荐下了千山降压APP抱着好奇的心情去用了下感觉非常不错朋友推荐下了千山降压APP抱着好奇的心情去用了下感觉非常不错朋友推荐下了千山降压APP抱着好奇的心情去用了下感觉非常不错~</div>
-                                            </td>
-                                            <td><span>王小帅</span></td>
-                                            <td><span>2016-3-1 13:34</span></td>
-                                            <td><span class="btn btn-default btn-sm mr20">通过审核</span><span class="btn btn-default btn-sm mr20">不通过</span><span class="btn btn-default btn-sm">删除</span></td>
-                                        </tr>
-                                        <tr>
-                                            <td><input type="checkbox" name="ckbox4" id="ckbox4"></td>
-                                            <td class="limit-acolor"><a href="#">千山降压APP使用心得</a></td>
-                                            <td>
-                                                <div class="td-attach-img50text-left"><img src="img/htgl_item_img.jpg"></div>
-                                                <div class="td-attach-img50text-right">朋友推荐下了千山降压APP抱着好奇的心情去用了下感觉非常不错朋友推荐下了千山降压APP抱着好奇的心情去用了下感觉非常不错朋友推荐下了千山降压APP抱着好奇的心情去用了下感觉非常不错朋友推荐下了千山降压APP抱着好奇的心情去用了下感觉非常不错~</div>
-                                            </td>
-                                            <td><span>王小帅</span></td>
-                                            <td><span>2016-3-1 13:34</span></td>
-                                            <td><span class="btn btn-default btn-sm mr20">通过审核</span><span class="btn btn-default btn-sm mr20">不通过</span><span class="btn btn-default btn-sm">删除</span></td>
-                                        </tr>
+                                            <tr>
+                                                <td><input type="checkbox" name="ckbox4" id="ckbox4"></td>
+                                                <td class="limit-acolor"><a href="#">千山降压APP使用心得</a></td>
+                                                <td>
+                                                    <div class="td-attach-img50text-left"><img src="img/htgl_item_img.jpg"></div>
+                                                    <div class="td-attach-img50text-right">朋友推荐下了千山降压APP抱着好奇的心情去用了下感觉非常不错朋友推荐下了千山降压APP抱着好奇的心情去用了下感觉非常不错朋友推荐下了千山降压APP抱着好奇的心情去用了下感觉非常不错朋友推荐下了千山降压APP抱着好奇的心情去用了下感觉非常不错~</div>
+                                                </td>
+                                                <td><span>王小帅</span></td>
+                                                <td><span>2016-3-1 13:34</span></td>
+                                                <td class="have-operate-btn-td"><span class="btn btn-bluelight-empty btn-size14">通过审核</span><span class="btn btn-bluelight-empty btn-size14">不通过</span><span class="btn btn-redlight-empty btn-size14">删除</span></td>
+                                            </tr>
                                         </tbody>
                                         <tfoot>
                                         <tr>

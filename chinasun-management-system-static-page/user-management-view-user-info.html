@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>用户管理-查看用户资料</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-datetimepicker.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <script src="js/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/bootstrap-datetimepicker.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/bootstrap-datetimepicker.zh-CN.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+<div class="view-wrap all-user-modify-user-info">
+    <!--顶部菜单-->
+    <div class="view-topbar">
+        <div class="topbar-content">
+            <div class="topbar-left-logo"></div>
+            <ul class="topbar-right">
+                <li class="topbar-right-item">
+                    <div class="topbar-right-item-inner user-portrait-wrap"><a class="user-portrait"></a><span>王小帅，欢迎您!</span></div>
+                </li>
+                <li class="topbar-right-item">
+                    <a class="topbar-right-item-inner">修改密码</a>
+                </li>
+                <li class="topbar-right-item">
+                    <a class="topbar-right-item-inner">退出</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--顶部菜单结束-->
+    <div class="view-body">
+        <!--左侧菜单栏-->
+        <div class="view-sidebar">
+            <div class="sidebar-nav">
+                <div class="sidebar-title">
+                    <span class="icon-icon_setting"></span>
+                    <span>系统管理</span>
+                    <span class="glyphicon glyphicon-triangle-bottom"></span>
+                </div>
+                <ul class="sidebar-trans">
+                    <li><a href="role-management.html">角色管理</a></li>
+                    <li><a href="staff-management.html">员工管理</a></li>
+                    <li><a href="menu-management.html">菜单管理</a></li>
+                    <li><a href="function-management.html">功能管理</a></li>
+                </ul>
+            </div>
+            <div class="sidebar-nav">
+                <div class="sidebar-title">
+                    <span class="icon-icon_portrait"></span>
+                    <span>用户菜单</span>
+                    <span class="glyphicon glyphicon-triangle-bottom"></span>
+                </div>
+                <ul class="sidebar-trans">
+                    <li><a class="active" href="user-management.html">用户管理</a></li>
+                    <li><a href="user-authenticate.html">实名认证</a></li>
+                </ul>
+            </div>
+            <div class="sidebar-nav">
+                <div class="sidebar-title">
+                    <span class="icon-icon_shopping_cart"></span>
+                    <span>商城管理</span>
+                    <span class="glyphicon glyphicon-triangle-bottom"></span>
+                </div>
+                <ul class="sidebar-trans">
+                    <li><a href="order-management-all-order.html">订单管理</a></li>
+                    <li><a href="goods-management-selling.html">商品管理</a></li>
+                </ul>
+            </div>
+            <div class="sidebar-nav">
+                <div class="sidebar-title">
+                    <span class="icon-icon_chart"></span>
+                    <span>社区管理</span>
+                    <span class="glyphicon glyphicon-triangle-bottom"></span>
+                </div>
+                <ul class="sidebar-trans">
+                    <li><a href="topic-management-published.html">话题管理</a></li>
+                    <li><a href="lower-blood-pressure-data.html">降压资料</a></li>
+                    <li><a href="quality-recommend.html">精华推荐</a></li>
+                    <li><a href="banner-page.html">BANNER</a></li>
+                </ul>
+            </div>
+        </div>
+        <!--左侧菜单栏结束-->
+        <!--右侧主体页面-->
+        <div class="view-main">
+            <div class="main-body">
+                <div class="grid-plrb15">
+                    <div class="wizard">
+                        <div class="wizard-title">
+                            <span class="wizard-return"><i></i>返回</span>
+                            <h2>用户资料</h2>
+                        </div>
+                        <div class="wizard-content">
+                            <div class="row">
+                                <div class="col-lg-offset-3 col-lg-6">
+                                    <div class="mb10 clearfix">
+                                        <span class="fs18-title-type1">基本信息</span>
+                                    </div>
+                                    <dl class="dl-horizontal resume-horizontal">
+                                        <span class="btn btn-gray-empty btn-size16">修改</span>
+                                        <dt>头像：</dt>
+                                        <dd>
+                                            <div class="thumb80">
+                                                <div class="thumb80-cell">
+                                                    <img src="img/gallery1.jpg">
+                                                </div>
+                                            </div>
+                                        </dd>
+                                        <dt>昵称：</dt>
+                                        <dd>王小帅</dd>
+                                        <dt>手机：</dt>
+                                        <dd>15475458554</dd>
+                                        <dt>性别：</dt>
+                                        <dd>男</dd>
+                                        <dt>出生年月：</dt>
+                                        <dd>1960/04/04</dd>
+                                        <dt>家庭地址：</dt>
+                                        <dd>盼盼路9号千山药机5栋1205室</dd>
+                                        <dt>状态：</dt>
+                                        <dd>启用</dd>
+                                    </dl>
+                                    <div class="mb10 clearfix">
+                                        <span class="fs18-title-type1">高危保护信息</span>
+                                    </div>
+                                    <dl class="dl-horizontal resume-horizontal bdd">
+                                        <span class="btn btn-gray-empty btn-size16">修改</span>
+                                        <dt>紧急通知人：</dt>
+                                        <dd>李雷雷</dd>
+                                        <dt>紧急通知人电话：</dt>
+                                        <dd>18854565525</dd>
+                                        <dt>急救地址：</dt>
+                                        <dd>盼盼路9号千山药机5栋1205室</dd>
+                                    </dl>
+                                    <div class="mb10 clearfix">
+                                        <span class="fs18-title-type1">收货信息</span><span class="">您可以创建2个收货地址，最多可以创建20个</span>
+                                        <span class="btn btn-bluelight-full btn-size16">+新建收货地址</span>
+                                    </div>
+                                    <dl class="dl-horizontal resume-horizontal bdd">
+                                        <span class="btn btn-gray-empty btn-size16">修改</span>
+                                        <dt>紧急通知人：</dt>
+                                        <dd>李雷雷</dd>
+                                        <dt>紧急通知人电话：</dt>
+                                        <dd>18854565525</dd>
+                                        <dt>急救地址：</dt>
+                                        <dd>盼盼路9号千山药机5栋1205室</dd>
+                                    </dl>
+                                    <dl class="dl-horizontal resume-horizontal bdd">
+                                        <span class="btn btn-gray-empty btn-size16">修改</span>
+                                        <dt>紧急通知人：</dt>
+                                        <dd>李雷雷</dd>
+                                        <dt>紧急通知人电话：</dt>
+                                        <dd>18854565525</dd>
+                                        <dt>急救地址：</dt>
+                                        <dd>盼盼路9号千山药机5栋1205室</dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--右侧主体页面结束-->
+    </div>
+</div>
+<div>
+</div>
+
+
+</body>
+</html>

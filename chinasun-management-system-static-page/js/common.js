@@ -3,8 +3,9 @@ $(function(){
     function setBodyWithHeight(){
         var wWith = $(window).width();
         var wHeight = $(window).height();
-        $(".view-body").css({"min-height":wHeight-80});
-        $(".wizard").css({"min-height":wHeight-140})
+        $(".view-wrap").css({"min-height":wHeight});
+//        $(".view-body").css({"min-height":wHeight-80});
+        $(".wizard").css({"min-height":wHeight-110})
     }
     setBodyWithHeight();
     $(window).resize(function(){
@@ -28,6 +29,41 @@ $(function(){
         }
     });
 
+    //文本截断函数
+    function ellipsisText(e,x){
+        $(e).each(function(){
+            var maxTextLen = x;
+            var realLen = $(this).text();
+            if(realLen.length > maxTextLen){
+                var cutText = realLen.substring(0,maxTextLen);
+                $(this).html(cutText + "...")
+            }
+        });
+    }
+    ellipsisText(".td-attach-img50text-right",27);
+    ellipsisText(".limit-acolor a",20);
+
+    //tabs
+    $(function() {
+        (function() {
+            $('#tabNav > li > a').attr('class', '');
+            $('#tabNav > li:first > a').attr('class', 'current');
+            $('#tabContent > div').hide();
+            $('#tabContent > div:first').fadeIn();
+
+            $('#tabNav > li > a').on('click', function(e) {
+                e.preventDefault();
+                if ($(this).attr('class') == 'current') {
+                    return
+                } else {
+                    $('#tabNav > li > a').attr('class', '');
+                    $('#tabContent > div').hide();
+                    $(this).attr('class', 'current');
+                    $($(this).attr('name')).fadeIn()
+                }
+            })
+        })();
+    })
 });
 
 
@@ -55,3 +91,4 @@ function validateTele(event){
         $(event.target).next(".red-note").html("");
     }
 }
+

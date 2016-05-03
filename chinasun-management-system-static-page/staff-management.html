@@ -11,7 +11,7 @@
     <script src="js/common.js" type="text/javascript" charset="utf-8"></script>
 </head>
 <body>
-<div class="view-wrap staff-management">
+<div class="view-wrap">
     <!--顶部菜单-->
     <div class="view-topbar">
         <div class="topbar-content">
@@ -34,30 +34,11 @@
         <!--左侧菜单栏-->
         <div class="view-sidebar">
             <div class="sidebar-nav">
-                <div class="sidebar-title"><i class="sidebar-title-icon"></i><span>社区管理</span><span class="glyphicon glyphicon-triangle-bottom"></span></div>
-                <ul class="sidebar-trans">
-                    <li><a href="topic-management-published.html">话题管理</a></li>
-                    <li><a href="lower-blood-pressure-data.html">降压资料</a></li>
-                    <li><a href="quality-recommend.html">精华推荐</a></li>
-                    <li><a href="banner-page.html">BANNER</a></li>
-                </ul>
-            </div>
-            <div class="sidebar-nav">
-                <div class="sidebar-title"><i class="sidebar-title-icon"></i><span>商城管理</span><span class="glyphicon glyphicon-triangle-bottom"></span></div>
-                <ul class="sidebar-trans">
-                    <li><a href="order-management-all-order.html">订单管理</a></li>
-                    <li><a href="goods-management-selling.html">商品管理</a></li>
-                </ul>
-            </div>
-            <div class="sidebar-nav">
-                <div class="sidebar-title"><i class="sidebar-title-icon"></i><span>用户菜单</span><span class="glyphicon glyphicon-triangle-bottom"></span></div>
-                <ul class="sidebar-trans">
-                    <li><a href="user-management.html">用户管理</a></li>
-                    <li><a href="user-authenticate.html">实名认证</a></li>
-                </ul>
-            </div>
-            <div class="sidebar-nav">
-                <div class="sidebar-title"><i class="sidebar-title-icon"></i><span>系统管理</span><span class="glyphicon glyphicon-triangle-bottom"></span></div>
+                <div class="sidebar-title">
+                    <span class="icon-icon_setting"></span>
+                    <span>系统管理</span>
+                    <span class="glyphicon glyphicon-triangle-bottom"></span>
+                </div>
                 <ul class="sidebar-trans">
                     <li><a href="role-management.html">角色管理</a></li>
                     <li><a class="active" href="staff-management.html">员工管理</a></li>
@@ -65,20 +46,54 @@
                     <li><a href="function-management.html">功能管理</a></li>
                 </ul>
             </div>
-
+            <div class="sidebar-nav">
+                <div class="sidebar-title">
+                    <span class="icon-icon_portrait"></span>
+                    <span>用户菜单</span>
+                    <span class="glyphicon glyphicon-triangle-bottom"></span>
+                </div>
+                <ul class="sidebar-trans">
+                    <li><a href="user-management.html">用户管理</a></li>
+                    <li><a href="user-authenticate.html">实名认证</a></li>
+                </ul>
+            </div>
+            <div class="sidebar-nav">
+                <div class="sidebar-title">
+                    <span class="icon-icon_shopping_cart"></span>
+                    <span>商城管理</span>
+                    <span class="glyphicon glyphicon-triangle-bottom"></span>
+                </div>
+                <ul class="sidebar-trans">
+                    <li><a href="order-management-all-order.html">订单管理</a></li>
+                    <li><a href="goods-management-selling.html">商品管理</a></li>
+                </ul>
+            </div>
+            <div class="sidebar-nav">
+                <div class="sidebar-title">
+                    <span class="icon-icon_chart"></span>
+                    <span>社区管理</span>
+                    <span class="glyphicon glyphicon-triangle-bottom"></span>
+                </div>
+                <ul class="sidebar-trans">
+                    <li><a href="topic-management-published.html">话题管理</a></li>
+                    <li><a href="lower-blood-pressure-data.html">降压资料</a></li>
+                    <li><a href="quality-recommend.html">精华推荐</a></li>
+                    <li><a href="banner-page.html">BANNER</a></li>
+                </ul>
+            </div>
         </div>
         <!--左侧菜单栏结束-->
         <!--右侧主体页面-->
         <div class="view-main">
             <div class="main-body">
-                <div class="col-sm-12">
+                <div class="grid-plrb15">
                     <div class="common-con">
                         <div class="common-header-nav">
                             <div class="common-header-nav-left">
                             </div>
                             <form class="common-header-nav-right form-inline">
-                                <a type="button" class="btn btn-default">重置密码</a>
-                                <a href="staff-management-new-staff.html" type="button" class="btn btn-default">+新建员工</a>
+                                <a type="button" class="btn btn-gray-empty btn-size16">重置密码</a>
+                                <a href="staff-management-new-staff.html" type="button" class="btn btn-bluelight-full btn-size16">+新建员工</a>
                             </form>
                         </div>
 
@@ -107,7 +122,7 @@
                                     <td><span>角色A</span></td>
                                     <td><span>2016-3-1 13：34</span></td>
                                     <td><span>启用</span></td>
-                                    <td><a href="modify-staff-data.html" class="btn btn-default btn-sm mr20">修改</a><a class="btn btn-default btn-sm">删除</a></td>
+                                    <td class="have-operate-btn-td"><a href="modify-staff-data.html" class="btn btn-bluelight-empty btn-size14">修改</a><a class="btn btn-redlight-empty btn-size14">删除</a></td>
                                 </tr>
                                 </tbody>
                                 <tfoot>
