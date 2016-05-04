@@ -1531,6 +1531,29 @@ form.common-header-nav-right{
 }
 /*商城管理-订单管理-新建订单结束*/
 
+/*商品管理*/
+.specification-input{
+    display: block;
+    width: 100%;
+    float: left;
+    padding-right: 49px;
+
+}
+.specification-unit-select-addon{
+    position: absolute;
+    right: 15px;
+    display: block;
+    width:50px;
+}
+.specification-cuo{
+    position: absolute;
+    right: -8px;
+    top: 1px;
+    font-size: 23px;
+    font-weight: 300;
+}
+/*商品管理结束*/
+
 /*社区管理-降压资料*/
 .dropdown-title{
     cursor: pointer;
