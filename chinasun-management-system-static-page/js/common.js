@@ -5,7 +5,7 @@ $(function(){
         var wHeight = $(window).height();
         $(".view-wrap").css({"min-height":wHeight});
 //        $(".view-body").css({"min-height":wHeight-80});
-        $(".wizard").css({"min-height":wHeight-110})
+        $(".wizard").css({"min-height":wHeight-96})
     }
     setBodyWithHeight();
     $(window).resize(function(){

@@ -102,10 +102,6 @@ body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     padding-left: 20px;
     padding-right: 20px;
 }
-.ptb8{
-    padding-top: 8px;
-    padding-bottom: 8px;
-}
 .float-left, .fl{
     float: left;
 }
@@ -519,11 +515,14 @@ a{
 }
 .pop-up-window-content{
     display: block;
-    line-height: 30px;
-    padding:5px 30px;
+    /*line-height: 30px;*/
+    padding:15px 30px;
     background-color: #fff;
 }
 .pop-up-window-content label{
+    font-weight: 300;
+}
+/*.pop-up-window-content label{
     margin-bottom: 0;
     font-weight: 300;
 }
@@ -532,7 +531,7 @@ a{
 }
 .pop-up-window-content .form-group .form-control{
     margin-top: -5px;
-}
+}*/
 .pop-up-window-footer{
     display: block;
     width: 100%;
@@ -663,13 +662,13 @@ a{
 .view-topbar{
     position: fixed;
     width: 100%;
-    height: 80px;
+    height: 66px;
     z-index: 101;
     background-color: #eee;
 }
 .view-body{
     position: absolute;
-    top: 80px;
+    top:66px;
     bottom: 0;
     left: 0;
     right: 0;
@@ -678,7 +677,7 @@ a{
 }
 .view-sidebar{
     position: fixed;
-    top: 80px;
+    top: 66px;
     bottom: 0;
     padding-top: 20px;
     display: block;
@@ -702,7 +701,7 @@ a{
     position: relative;
     display: block;
     width: 100%;
-    height: 80px;
+    height: 66px;
     z-index: 100;
     clear: both;
     font-size: 14px;
@@ -714,7 +713,7 @@ a{
     margin-left: 30px;
     float: left;
     width: 285px;
-    height: 80px;
+    height: 66px;
     background-image: url("../img/logo.png");
     background-position: 0 center;
     background-repeat: no-repeat;
@@ -728,7 +727,7 @@ a{
     padding: 0;
     list-style: none;
     width: auto;
-    height: 80px;
+    height: 66px;
 }
 .topbar-right-item{
     display: block;
@@ -739,8 +738,8 @@ a{
     display: block;
     padding-left: 10px;
     padding-right:10px;
-    height: 80px;
-    line-height: 80px;
+    height: 66px;
+    line-height: 66px;
     color: #666;
 }
 .topbar-right-item a{
@@ -758,15 +757,17 @@ a{
 }
 .topbar-right-item .user-portrait{
     position: absolute;
-    top: 20px;
+    top: 14px;
     left: 10px;
     display: block;
     width: 36px;
     height: 36px;
     border-radius: 100%;
-    background-image: url("../img/user_portrait.jpg");
+    background-image: url("../img/index_portrait.png");
+    background-color: #888;
     background-position: center;
     background-repeat: no-repeat;
+    background-size: contain;
 }
 /*顶部菜单结束*/
 
@@ -984,7 +985,7 @@ form.common-header-nav-right{
     display: block;
     width: 100%;
     text-align: center;
-    background-color: #ccc;
+    background-color: #eee;
 }
 .wizard-title h2{
     height: 50px;
@@ -996,14 +997,14 @@ form.common-header-nav-right{
 .wizard-return{
     position: absolute;
     top: 12px;
-    left: 20px;
+    left: 0;
     display: block;
     padding-left: 20px;
     cursor: pointer;
     font-size: 18px;
 }
 .wizard-return i{
-    position: absolute;
+    /*position: absolute;
     top: 5px;
     left: 0;
     display: block;
@@ -1011,7 +1012,10 @@ form.common-header-nav-right{
     height: 16px;
     background-image: url("../img/arrow_left.png");
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat;*/
+    margin-right: 5px;
+    position: relative;
+    top: 1px;
 }
 .wizard-content{
     padding: 40px 15px;
@@ -1029,16 +1033,24 @@ form.common-header-nav-right{
     display: block;
     background-color: #fff;
     border: 1px solid #ddd;
-    padding: 20px;
+    padding: 20px 20px 5px;
 }
-.center-items-wrap table{
-    width: 100%;
-}
-.function-authorize-item{
+/*.function-authorize-item{
     display: inline-block;
     margin-right: 20px;
     margin-bottom: 20px;
-    /*min-width: 130px;*/
+    min-width: 130px;
+}*/
+.function-authorize-from .checkbox-inline, .function-authorize-from .radio-inline{
+    display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.function-authorize-from .checkbox-inline + .checkbox-inline, .function-authorize-from .radio-inline + .radio-inline{
+    margin-left: 0;
+}
+.center-items-wrap table{
+    width: 100%;
 }
 .role-management-view-role-name{
     display: block;
@@ -1341,9 +1353,7 @@ form.common-header-nav-right{
 .form-control[readonly]{
     background-color: #fff;
 }
-.pick-one-of-two-wrap{
-    padding: 10px 0;
-}
+
 .title-style1{
     position: relative;
     font-size: 18px;
@@ -1645,8 +1655,8 @@ form.common-header-nav-right{
 }
 .mmp-header{
     position: relative;
-    height: 60px;
-    line-height: 60px;
+    height: 50px;
+    line-height: 50px;
     background-color: #eee;
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
@@ -1678,6 +1688,7 @@ form.common-header-nav-right{
 }
 .mmp-header-title{
     padding-left: 30px;
+    font-size: 16px;
 }
 .mmp-body-goods-item .thumbnail{
     margin-bottom: 0;

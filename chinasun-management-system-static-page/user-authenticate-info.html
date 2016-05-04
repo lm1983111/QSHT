@@ -92,7 +92,7 @@
 <div class="grid-plrb15">
     <div class="wizard">
     <div class="wizard-title">
-        <span class="wizard-return"><i></i>返回</span>
+        <span class="wizard-return"><i class="icon-icon_return_left"></i>返回</span>
         <h2>审核信息</h2>
     </div>
     <div class="wizard-content col-lg-offset-3 col-lg-6">
@@ -100,13 +100,13 @@
             <div class="form-group">
                 <label class="col-md-3 control-label">姓名：</label>
                 <div class="col-md-6">
-                    <div class="ptb8">王小帅</div>
+                    <div class="form-control-static">王小帅</div>
                 </div>
             </div>
             <div class="form-group">
                 <label class="col-md-3 control-label">身份证号码：</label>
                 <div class="col-md-6">
-                    <div class="ptb8">430725145466658525</div>
+                    <div class="form-control-static">430725145466658525</div>
                 </div>
             </div>
             <div class="form-group">
@@ -127,42 +127,40 @@
             <div class="form-group">
                 <label class="col-md-3 control-label">审核状态：</label>
                 <div class="col-md-6">
-                    <div class="ptb8">
-                        <label class="function-authorize-item mb0">
-                            <input type="radio" name="inlineRadioOptionsSh" id="inlineRadio1" value="option7">
-                            不通过
-                        </label>
-                        <label class="function-authorize-item mb0">
-                            <input type="radio" name="inlineRadioOptionsSh" id="inlineRadio2" value="option8" checked="checked">
-                            审核通过
-                        </label>
-                    </div>
+                    <label class="radio-inline">
+                        <input type="radio" name="inlineRadioOptionsSh" id="inlineRadio1" value="option7">
+                        不通过
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="inlineRadioOptionsSh" id="inlineRadio2" value="option8" checked="checked">
+                        审核通过
+                    </label>
                 </div>
             </div>
             <div class="form-group">
                 <label class="col-md-3 control-label">不通过原因：</label>
                 <div class="col-md-9">
-                    <div class="ptb8">
-                        <label class="function-authorize-item mb0">
-                            <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option9">
-                            照片不清晰
-                        </label>
-                        <label class="function-authorize-item mb0">
-                            <input type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option10">
-                            证件信息与照片不符
-                        </label>
-                        <label class="function-authorize-item mb0">
-                            <input type="radio" name="inlineRadioOptions" id="inlineRadio5" value="option11">
-                            身份证已过期
-                        </label>
-                    </div>
-                    <div class="ptb8 form-inline">
-                        <label class="function-authorize-item mb0">
-                            <input type="radio" name="inlineRadioOptions" id="inlineRadio6" value="option12">
-                            其它原因
-                        </label>
-                        <input type="text" class="form-control">
-                    </div>
+                    <label class="checkbox-inline">
+                        <input type="checkbox" id="inlineCheckbox1" value="option9">
+                        照片不清晰
+                    </label>
+                    <label class="checkbox-inline">
+                        <input type="checkbox" id="inlineCheckbox2" value="option10">
+                        证件信息与照片不符
+                    </label>
+                    <label class="checkbox-inline">
+                        <input type="checkbox" id="inlineCheckbox3" value="option11">
+                        身份证已过期
+                    </label>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-offset-3 col-md-9 form-inline">
+                    <label class="checkbox-inline" style="padding-top: 0">
+                        <input type="checkbox" id="inlineCheckbox4" value="option12">
+                        其它原因
+                    </label>
+                    <input type="text" class="form-control">
                 </div>
             </div>
             <div class="form-group mt60">
