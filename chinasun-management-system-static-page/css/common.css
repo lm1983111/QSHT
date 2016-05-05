@@ -72,6 +72,9 @@ body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 .mb10{
     margin-bottom: 10px;
 }
+.mb15{
+    margin-bottom: 15px;
+}
 .mb20{
     margin-bottom: 20px;
 }
@@ -442,6 +445,9 @@ a{
 }
 .table thead th:first-child input{
     margin-top: 0;
+}
+.table > tbody + tbody{
+    border-top: 1px solid #ddd;
 }
 /*table结束*/
 
@@ -1396,13 +1402,16 @@ form.common-header-nav-right{
 }
 .order-item-header{
     height: 35px;
-    background-color: #ccc;
+    background-color: #eee;
 }
 .order-item-content{
     position: relative;
 }
+.order-item-content td:first-child{
+    border-right:1px solid #ddd;
+}
 .table-hover tbody tr.order-item-header:hover td{
-    background-color: #ccc;
+    background-color: #eee;
 }
 .order-item-header td a, .order-item-header td a:hover{
     color: #333;
@@ -1453,7 +1462,7 @@ form.common-header-nav-right{
     padding: 0;
 }
 .order-item .order-item-content .goods-item-wrap{
-    border-right: 1px solid #ddd;
+    /*border-right: 1px solid #ddd;*/
     border-bottom: 1px solid #ddd;
     padding: 20px;
     min-height: 100px;
@@ -1474,6 +1483,13 @@ form.common-header-nav-right{
 }
 .order-management-table tbody .order-item-content td:nth-of-type(5) > div:last-child, .order-management-table tbody .order-item-content td:nth-of-type(6) > div:last-child{
     margin-bottom: 0;
+}
+
+.order-management-table thead th:last-child{
+    border-right:1px solid #ddd;
+}
+.order-management-table .order-item-content td:last-child{
+    border-right: 1px solid #ddd;
 }
 /*商城管理-订单管理结束*/
 
@@ -1552,6 +1568,82 @@ form.common-header-nav-right{
     font-size: 23px;
     font-weight: 300;
 }
+.banner-preview-upload-img-wrap.main-thumbnail-img{
+    width: 120px;
+    height: 50px;
+}
+.left-line-right-wrap{
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+.left-line-right-wrap:first-child{
+    margin-top: 0;
+}
+.left-line-right{
+    position: relative;
+    text-align: center;
+}
+.left-line-right:after{
+    position: absolute;
+    z-index: 1;
+    content: '';
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 50%;
+    border-bottom: 1px solid #ddd;
+}
+.left-line-right-title{
+    position: relative;
+    z-index: 2;
+    font-size: 18px;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: #666;
+    background-color: #f8f8f8;
+}
+
+/*上传图片*/
+
+.upload-preview-item{
+    position: relative;
+    display: inline-block;
+    float: left;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+.upload-preview-item .thumb80{
+    margin-right: 0;
+    margin-bottom: 0;
+}
+.pic-delete-btn{
+    position: absolute;
+    top: 3px;
+    right: 10px;
+    display: none;
+}
+.upload-preview-item:hover .pic-delete-btn{
+    display: block;
+}
+.upload-preview-wrap{
+    padding: 0;
+}
+.upload-preview-wrap, .upload-preview-wrap li{
+    list-style: none;
+}
+.pic-success{
+    position: relative;
+}
+.status-upload{
+    position: absolute;
+    top: 50%;
+    margin-top: -10px;
+    width: 100%;
+    text-align: center;
+    display: none;
+}
+/*上传图片结束*/
+
 /*商品管理结束*/
 
 /*社区管理-降压资料*/
@@ -1610,7 +1702,7 @@ form.common-header-nav-right{
     width: 100%;
     height: 100%;
 }
-.banner-up-load-box{
+.banner-up-load-box, .upload-lunch-wrap{
     position: relative;
     height: 38px;
     line-height: 38px;
@@ -1623,7 +1715,7 @@ form.common-header-nav-right{
     overflow: hidden;
     display: inline-block;
 }
-.up-launch{
+.up-launch, .upload-lunch-input{
     position: absolute;
     font-size: 100px;
     right: 0;

@@ -3,7 +3,7 @@
 <head lang="en">
     <meta charset="UTF-8">
     <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <title>商品管理-新建商品</title>
+    <title>商品管理-新建降压药品</title>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/common.css">
     <script src="js/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
@@ -90,102 +90,30 @@
                     <div class="wizard">
                         <div class="wizard-title">
                             <span class="wizard-return"><i class="icon-icon_return_left"></i>返回</span>
-                            <h2>新建商品</h2>
+                            <h2>新建降压药品</h2>
                         </div>
                         <div class="wizard-content">
-                            <!--<dl class="dl-horizontal">
-                                <dt>标题：</dt>
-                                <dd class="form-group">
-                                    <input type="text" class="form-control w420" value="">
-                                </dd>
-                                <dt>价格：</dt>
-                                <dd class="form-group">
-                                    <input type="text" class="form-control w420" value="">
-                                </dd>
-                                <dt>商品图片：</dt>
-                                <dd>
-                                    &lt;!&ndash;商品图片&ndash;&gt;
-                                    <div class="uploadimg-body">
-                                        <div id="preview" class="topic-img-preview">
-                                            &lt;!&ndash;话题图片缩略图&ndash;&gt;
-                                            <div class="topic-img-item" id="topic-img_0">
-                                                <a>
-                                                    <span class="delete-topic-img-btn"></span>
-                                                    <img src="img/gallery1.jpg"/>
-                                                </a>
-                                            </div>
-                                            <div class="topic-img-item" id="topic-img_1">
-                                                <a>
-                                                    <span class="delete-topic-img-btn"></span>
-                                                    <img src="img/gallery2.jpg"/>
-                                                </a>
-                                            </div>
-                                            <div class="topic-img-item" id="topic-img_2">
-                                                <a>
-                                                    <span class="delete-topic-img-btn"></span>
-                                                    <img src="img/gallery3.jpg"/>
-                                                </a>
-                                            </div>
-                                            &lt;!&ndash;话题图片缩略图结束&ndash;&gt;
-
-                                            &lt;!&ndash;上传图片按钮&ndash;&gt;
-                                            <div class="uploadimg-launcher">
-                                                <input id="fileImage" class="uploadimg-launcher-input" type="file" size="30" name="fileselect[]" multiple />
-                                                <div class="uploading-launcher-mask"></div>
-                                            </div>
-                                            &lt;!&ndash;上传图片按钮&ndash;&gt;
-                                        </div>
-
-                                    </div>
-                                    &lt;!&ndash;商品图片结束&ndash;&gt;
-                                </dd>
-                                <dt>商品简介：</dt>
-                                <dd class="form-group">
-                                    <textarea class="form-control w420h160-textarea"></textarea>
-                                </dd>
-                                <dt>图文详情：</dt>
-                                <dd class="form-group">
-                                </dd>
-                                <dt>说明书：</dt>
-                                <dd class="form-group">
-                                </dd>
-                                <dt></dt>
-                                <dd class="form-group mt60">
-                                    <button type="button" class="btn btn-bluelight-full btn-size16">保存</button>
-                                </dd>
-                            </dl>-->
-
-
                             <div class="all-info-form-wrap">
                                 <div class="row">
-                                    <div class="col-lg-8">
+                                    <div class="col-md-offset-2 col-lg-8">
                                         <div class="form-horizontal">
+                                            <!--编辑商品基本信息-->
+                                            <div class="row left-line-right-wrap">
+                                                <div class="left-line-right">
+                                                    <span class="left-line-right-title">编辑商品基本信息</span>
+                                                </div>
+                                            </div>
                                             <div class="form-group">
                                                 <label class="col-md-2 control-label">名称：</label>
                                                 <div class="col-md-6">
                                                     <input type="text" class="form-control">
+                                                    <div class="red-note">名称必填</div>
                                                 </div>
                                             </div>
                                             <div class="form-group">
                                                 <label class="col-md-2 control-label">标题：</label>
                                                 <div class="col-md-6">
                                                     <input type="text" class="form-control">
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <label class="col-md-2 control-label">价格：</label>
-                                                <div class="col-md-2">
-                                                    <div class="input-group">
-                                                        <input type="text" class="form-control">
-                                                        <div class="input-group-addon">元</div>
-                                                    </div>
-                                                </div>
-                                                <label class="col-md-2 control-label">原价：</label>
-                                                <div class="col-md-2">
-                                                    <div class="input-group">
-                                                        <input type="text" class="form-control">
-                                                        <div class="input-group-addon">元</div>
-                                                    </div>
                                                 </div>
                                             </div>
                                             <div class="form-group">
@@ -223,6 +151,245 @@
                                                             </select>
                                                         </div>
                                                     </div>
+                                                </div>
+                                                <div class="col-md-offset-2 col-md-10">
+                                                    <div>示例：0.3×10粒×2板</div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-md-2 control-label">价格：</label>
+                                                <div class="col-md-2">
+                                                    <div class="input-group">
+                                                        <input type="text" class="form-control">
+                                                        <div class="input-group-addon">元</div>
+                                                    </div>
+                                                </div>
+                                                <label class="col-md-2 control-label">原价：</label>
+                                                <div class="col-md-2">
+                                                    <div class="input-group">
+                                                        <input type="text" class="form-control">
+                                                        <div class="input-group-addon">元</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-md-2 control-label">商品描述：</label>
+                                                <div class="col-md-8">
+                                                    <textarea class="form-control" rows="3"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-md-2 control-label">药品标签：</label>
+                                                <div class="col-md-8">
+                                                    <label class="checkbox-inline col-md-3">
+                                                        <input type="checkbox" id="inlineCheckBoxYpbq1" value="option1">正品保证
+                                                    </label>
+                                                    <label class="checkbox-inline col-md-3">
+                                                        <input type="checkbox" id="inlineCheckBoxYpbq2" value="option2">药监认证
+                                                    </label>
+                                                    <label class="checkbox-inline col-md-3">
+                                                        <input type="checkbox" id="inlineCheckBoxYpbq3" value="option3">医院担保
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-md-2 control-label">是否为处方药：</label>
+                                                <div class="col-md-8">
+                                                    <label class="radio-inline col-md-2">
+                                                        <input type="radio" name="inlineRadioSfcfy">是
+                                                    </label>
+                                                    <label class="radio-inline col-md-2">
+                                                        <input type="radio" name="inlineRadioSfcfy">否
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-md-2 control-label">适合：</label>
+                                                <div class="col-md-6">
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-md-2 control-label">首页位置排序:</label>
+                                                <div class="col-md-2">
+                                                    <select class="form-control">
+                                                        <option>01</option>
+                                                        <option>01</option>
+                                                        <option>01</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-md-2 control-label">商品缩略图:</label>
+                                                <div class="col-md-10">
+                                                    <div class="banner-preview-upload-img-wrap main-thumbnail-img">
+                                                        <img id="bannerPreviewImg" src=""/>
+                                                    </div>
+                                                    <div class="banner-up-load-box">
+                                                        选择文件
+                                                        <input type="file" id="upLaunch" onchange="getUpLoadImgUrl()" accept="image/*" class="up-launch">
+                                                    </div>
+                                                    <span class="relative-bl12">*最佳图片尺寸750px × 398px</span>
+                                                    <script type="text/javascript">
+                                                        function getUpLoadImgUrl() {
+                                                            var upLaunch = document.getElementById("upLaunch");
+                                                            var bannerPreviewImg = document.getElementById("bannerPreviewImg");
+                                                            bannerPreviewImg.src = window.URL.createObjectURL(upLaunch.files[0]);
+                                                        }
+                                                    </script>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-md-2 control-label">图文详情：</label>
+                                                <div class="col-md-8">
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                            <!--编辑商品说明书-->
+                                            <div class="row left-line-right-wrap">
+                                                <div class="left-line-right">
+                                                    <span class="left-line-right-title">编辑商品说明书</span>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-md-2 control-label">通用名称：</label>
+                                                <div class="col-md-3">
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                                <label class="col-md-2 control-label">汉语拼音：</label>
+                                                <div class="col-md-3">
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-md-2 control-label">商品名称：</label>
+                                                <div class="col-md-3">
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                                <label class="col-md-2 control-label">英文名称：</label>
+                                                <div class="col-md-3">
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-md-2 control-label">成份：</label>
+                                                <div class="col-md-8">
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-md-2 control-label">症状：</label>
+                                                <div class="col-md-8">
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-md-2 control-label">适应症：</label>
+                                                <div class="col-md-8">
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-md-2 control-label">规格：</label>
+                                                <div class="col-md-8">
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-md-2 control-label">用法用量：</label>
+                                                <div class="col-md-8">
+                                                    <textarea class="form-control" rows="1"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-md-2 control-label">不良反应：</label>
+                                                <div class="col-md-8">
+                                                    <textarea class="form-control" rows="1"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-md-2 control-label">禁忌：</label>
+                                                <div class="col-md-8">
+                                                    <textarea class="form-control" rows="1"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-md-2 control-label">注意事项：</label>
+                                                <div class="col-md-8">
+                                                    <textarea class="form-control" rows="1"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-md-2 control-label">药物相互作用：</label>
+                                                <div class="col-md-8">
+                                                    <textarea class="form-control" rows="1"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-md-2 control-label">药理毒理：</label>
+                                                <div class="col-md-8">
+                                                    <textarea class="form-control" rows="1"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-md-2 control-label">药代动力学：</label>
+                                                <div class="col-md-8">
+                                                    <textarea class="form-control" rows="1"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-md-2 control-label">妊娠期妇女及哺乳期妇女用药：</label>
+                                                <div class="col-md-8">
+                                                    <textarea class="form-control" rows="1"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-md-2 control-label">儿童用药：</label>
+                                                <div class="col-md-8">
+                                                    <textarea class="form-control" rows="1"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-md-2 control-label">老年患者用药：</label>
+                                                <div class="col-md-8">
+                                                    <textarea class="form-control" rows="1"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-md-2 control-label">药物过量：</label>
+                                                <div class="col-md-8">
+                                                    <textarea class="form-control" rows="1"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-md-2 control-label">包装：</label>
+                                                <div class="col-md-3">
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                                <label class="col-md-2 control-label">有效期：</label>
+                                                <div class="col-md-3">
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-md-2 control-label">贮藏：</label>
+                                                <div class="col-md-3">
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                                <label class="col-md-2 control-label">批准文号：</label>
+                                                <div class="col-md-3">
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-md-2 control-label">企业名称：</label>
+                                                <div class="col-md-3">
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="form-group mt60">
+                                                <div class="col-md-offset-2 col-md-2">
+                                                    <button type="button" class="btn btn-bluelight-full btn-size16">保存</button>
                                                 </div>
                                             </div>
                                         </div>

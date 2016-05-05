@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>图片上传</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <script src="js/Sortable.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="form-horizontal">
+            <div class="form-group">
+                <label class="col-md-4 control-label">上传图片</label>
+                <div class="col-md-8">
+                    <div class="upload-lunch-wrap">
+                        选择文件
+                        <input type="file" class="upload-lunch-input" id="uploadLunchInput" accept="image/*">
+                    </div>
+                    <ul class="upload-preview-wrap" id="uploadPreviewWrap">
+                        <!--<li id="file-111" class="upload-preview-item">
+                            <div class="pic-success">
+                                <div class="thumb80">
+                                    <div class="thumb80-cell">
+                                        <img src="https://img.alicdn.com/imgextra/i2/771850823/TB25JXPXVXXXXaKXpXXXXXXXXXX_!!0-serviceone.jpg"/>
+                                    </div>
+                                </div>
+                                <div class="status-upload">
+                                    <span>等待上传</span>
+                                </div>
+                            </div>
+                            <a class="pic-delete-btn" onclick="deleUploadImg(event)">删除</a>
+                        </li>
+                        <li id="file-112" class="upload-preview-item">
+                            <div class="pic-success">
+                                <div class="thumb80">
+                                    <div class="thumb80-cell">
+                                        <img src="http://lorempixel.com/100/100/people/2"/>
+                                    </div>
+                                </div>
+                                <div class="status-upload">
+                                    <span>等待上传</span>
+                                </div>
+                            </div>
+                            <a class="pic-delete-btn" onclick="deleUploadImg(event)">删除</a>
+                        </li>
+                        <li id="file-113" class="upload-preview-item">
+                            <div class="pic-success">
+                                <div class="thumb80">
+                                    <div class="thumb80-cell">
+                                        <img src="http://lorempixel.com/100/100/people/3"/>
+                                    </div>
+                                </div>
+                                <div class="status-upload">
+                                    <span>等待上传</span>
+                                </div>
+                            </div>
+                            <a class="pic-delete-btn" onclick="deleUploadImg(event)">删除</a>
+                        </li>-->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" charset="utf-8">
+        $(function(){
+            /*选择图片-弹框-选中图片立即ajax-上传成功返回图片地址-插入到缩略图显示小图
+            拖拽图片功能*/
+            $("#uploadLunchInput").on('change',function(){
+                //插入占位缩略图
+
+
+                var formdata = new FormData();
+                var v_this = $(this);
+                var fileObj = v_this.get(0).files;
+                formdata.append("imgFile", fileObj[0]);
+
+
+                /*$("#uploadPreviewWrap").append(
+                        '<li id="file-111" class="upload-preview-item">' +
+                            '<div class="pic-success">' +
+                                '<div class="thumb80">' +
+                                    '<div class="thumb80-cell">' +
+                                        '<img src="https://img.alicdn.com/imgextra/i2/771850823/TB25JXPXVXXXXaKXpXXXXXXXXXX_!!0-serviceone.jpg"/>' +
+                                    '</div>' +
+                                '</div>' +
+                                '<div class="status-upload">' +
+                                    '<span>等待上传</span>' +
+                                '</div>' +
+                            '</div>' +
+                            '<a class="pic-delete-btn" onclick="deleUploadImg(event)">删除</a>' +
+                        '</li>');*/
+
+                //上传图片，成功后将地址插入到占位缩略图
+                $.ajax({
+                    url:"http://127.0.0.1:8080/good/picUpload.html",
+                    type:"POST",
+                    data:formdata,
+                    contentType:false,
+                    processData:false,
+                    dataType:"json",
+                    success:function(data){
+                        //alert("上传成功");
+                        //$("#uploadPreviewWrap").html("<li>" + data + "</li>")
+                    },
+                    error:function(){
+                        alert("网络连接失败");
+                        alert(data)
+                    }
+                })
+            })
+        });
+        //删除上传图片函数
+        function deleUploadImg(e){
+            var thisDeleteBtn = e.target;
+            $(thisDeleteBtn).parent(".upload-preview-item").remove();
+        }
+
+        //实例化拖拽功能
+        Sortable.create(uploadPreviewWrap, {
+            forceFallback: true
+        });
+    </script>
+</body>
+</html>

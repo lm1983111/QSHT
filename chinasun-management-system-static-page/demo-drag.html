@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>JS Bin</title>
+    <style type="text/css">
+        body {
+            padding: 20px;
+        }
+
+        .grid .item {
+            padding: 10px;
+            float: left;
+        }
+
+        .grid .item img {
+            cursor: move;
+            cursor: -webkit-grabbing;
+        }
+
+        .sortable-fallback img{
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"/>
+
+
+<!-- Latest Sortable -->
+<script src="http://rubaxa.github.io/Sortable/Sortable.js?1"></script>
+
+
+<div id="sortable" class="grid">
+    <div class="item"><img src="http://lorempixel.com/100/100/people/1" alt=""></div>
+    <div class="item"><img src="http://lorempixel.com/100/100/people/2" alt=""></div>
+    <div class="item"><img src="http://lorempixel.com/100/100/people/3" alt=""></div>
+    <div class="item"><img src="http://lorempixel.com/100/100/people/4" alt=""></div>
+    <div class="item"><img src="http://lorempixel.com/100/100/people/5" alt=""></div>
+    <div class="item"><img src="http://lorempixel.com/100/100/people/6" alt=""></div>
+    <div class="item"><img src="http://lorempixel.com/100/100/people/7" alt=""></div>
+    <div class="item"><img src="http://lorempixel.com/100/100/people/8" alt=""></div>
+    <div class="item"><img src="http://lorempixel.com/100/100/people/9" alt=""></div>
+    <div class="item"><img src="http://lorempixel.com/100/100/people/10" alt=""></div>
+    <div class="item"><img src="http://lorempixel.com/100/100/animals/1" alt=""></div>
+    <div class="item"><img src="http://lorempixel.com/100/100/animals/2" alt=""></div>
+    <div class="item"><img src="http://lorempixel.com/100/100/animals/3" alt=""></div>
+    <div class="item"><img src="http://lorempixel.com/100/100/animals/4" alt=""></div>
+    <div class="item"><img src="http://lorempixel.com/100/100/animals/5" alt=""></div>
+    <div class="item"><img src="http://lorempixel.com/100/100/animals/6" alt=""></div>
+</div>
+
+<script type="text/javascript" charset="utf-8">
+    Sortable.create(sortable, {
+        forceFallback: true
+    });
+</script>
+</body>
+</html>
