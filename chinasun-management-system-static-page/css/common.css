@@ -1611,6 +1611,7 @@ form.common-header-nav-right{
     float: left;
     margin-right: 5px;
     margin-bottom: 5px;
+    background-color: #fff;
 }
 .upload-preview-item .thumb80{
     margin-right: 0;
@@ -1618,9 +1619,18 @@ form.common-header-nav-right{
 }
 .pic-delete-btn{
     position: absolute;
-    top: 3px;
-    right: 10px;
+    top: 0;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 20px;
+    text-align: center;
+    color: #fff;
+    background-color: #888;
     display: none;
+    cursor: pointer;
 }
 .upload-preview-item:hover .pic-delete-btn{
     display: block;

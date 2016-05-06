@@ -17,72 +17,23 @@
                         选择文件
                         <input type="file" class="upload-lunch-input" id="uploadLunchInput" accept="image/*">
                     </div>
-                    <ul class="upload-preview-wrap" id="uploadPreviewWrap">
-                        <!--<li id="file-111" class="upload-preview-item">
-                            <div class="pic-success">
-                                <div class="thumb80">
-                                    <div class="thumb80-cell">
-                                        <img src="https://img.alicdn.com/imgextra/i2/771850823/TB25JXPXVXXXXaKXpXXXXXXXXXX_!!0-serviceone.jpg"/>
-                                    </div>
-                                </div>
-                                <div class="status-upload">
-                                    <span>等待上传</span>
-                                </div>
-                            </div>
-                            <a class="pic-delete-btn" onclick="deleUploadImg(event)">删除</a>
-                        </li>
-                        <li id="file-112" class="upload-preview-item">
-                            <div class="pic-success">
-                                <div class="thumb80">
-                                    <div class="thumb80-cell">
-                                        <img src="http://lorempixel.com/100/100/people/2"/>
-                                    </div>
-                                </div>
-                                <div class="status-upload">
-                                    <span>等待上传</span>
-                                </div>
-                            </div>
-                            <a class="pic-delete-btn" onclick="deleUploadImg(event)">删除</a>
-                        </li>
-                        <li id="file-113" class="upload-preview-item">
-                            <div class="pic-success">
-                                <div class="thumb80">
-                                    <div class="thumb80-cell">
-                                        <img src="http://lorempixel.com/100/100/people/3"/>
-                                    </div>
-                                </div>
-                                <div class="status-upload">
-                                    <span>等待上传</span>
-                                </div>
-                            </div>
-                            <a class="pic-delete-btn" onclick="deleUploadImg(event)">删除</a>
-                        </li>-->
-                    </ul>
+                    <ul class="upload-preview-wrap" id="uploadPreviewWrap"></ul>
                 </div>
             </div>
         </div>
+        <button class="btn btn-bluelight-full btn-size16" id="saveDemoPage">保存</button>
     </div>
     <script src="js/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
     <script type="text/javascript" charset="utf-8">
         $(function(){
-            /*选择图片-弹框-选中图片立即ajax-上传成功返回图片地址-插入到缩略图显示小图
-            拖拽图片功能*/
             $("#uploadLunchInput").on('change',function(){
                 //插入占位缩略图
-
-
-                var formdata = new FormData();
-                var v_this = $(this);
-                var fileObj = v_this.get(0).files;
-                formdata.append("imgFile", fileObj[0]);
-
-
-                /*$("#uploadPreviewWrap").append(
-                        '<li id="file-111" class="upload-preview-item">' +
+                $("#uploadPreviewWrap").append(
+                        '<li class="upload-preview-item">' +
                             '<div class="pic-success">' +
                                 '<div class="thumb80">' +
                                     '<div class="thumb80-cell">' +
-                                        '<img src="https://img.alicdn.com/imgextra/i2/771850823/TB25JXPXVXXXXaKXpXXXXXXXXXX_!!0-serviceone.jpg"/>' +
+                                        '<img src=""/>' +
                                     '</div>' +
                                 '</div>' +
                                 '<div class="status-upload">' +
@@ -90,9 +41,13 @@
                                 '</div>' +
                             '</div>' +
                             '<a class="pic-delete-btn" onclick="deleUploadImg(event)">删除</a>' +
-                        '</li>');*/
+                        '</li>');
 
                 //上传图片，成功后将地址插入到占位缩略图
+                var formdata = new FormData();
+                var v_this = $(this);
+                var fileObj = v_this.get(0).files;
+                formdata.append("imgFile", fileObj[0]);
                 $.ajax({
                     url:"http://127.0.0.1:8080/good/picUpload.html",
                     type:"POST",
@@ -101,12 +56,23 @@
                     processData:false,
                     dataType:"json",
                     success:function(data){
+                        if(data.status){
+                            //alert(data.picPath);
+                            //remove掉img的src为空的li还没有写
+
+                            var imgPath = data.picPath;
+                            var liID = data.picId;
+                            //上传成功给src赋值
+                            var thisImgEle = $("#uploadPreviewWrap li:last-child .thumb80-cell img");
+                            $(thisImgEle).attr("src", imgPath);
+                            //上传成功给li赋id
+                            var thisLi = $("#uploadPreviewWrap li:last-child");
+                            $(thisLi).attr("data-id",liID);
+                        }
                         //alert("上传成功");
-                        //$("#uploadPreviewWrap").html("<li>" + data + "</li>")
                     },
                     error:function(){
                         alert("网络连接失败");
-                        alert(data)
                     }
                 })
             })
@@ -121,6 +87,17 @@
         Sortable.create(uploadPreviewWrap, {
             forceFallback: true
         });
+
+        //返回上传图片id
+        $("#saveDemoPage").on("click",function(){
+            var liImgIdArray = new Array();
+            $("#uploadPreviewWrap > li").each(function(){
+                //console.log(this);
+                var thisLiId = $(this).attr("data-id");
+                liImgIdArray.push(thisLiId);
+            });
+            console.log(liImgIdArray);
+        })
     </script>
 </body>
 </html>
