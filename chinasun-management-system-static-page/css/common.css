@@ -453,7 +453,7 @@ a{
 
 /*------------------------------弹出框------------------------------*/
 /*插件msg弹出框自带样式*/
-.black-on-white{
+/*.black-on-white{
     position: absolute;
     z-index: 1000;
     top: 0px;
@@ -461,13 +461,13 @@ a{
     left: 0px;
     height: 2041px;
     display: block;
-}
+}*/
 #jquery-msg-bg {
     opacity: 0.6;
     filter: alpha(opacity=60);
     background: black;
 }
-.black-on-white .jquery-msg-content {
+/*.black-on-white .jquery-msg-content {
     background: white;
     color: #333333;
     opacity: 0.9;
@@ -476,7 +476,7 @@ a{
     box-shadow: 0 0 10px rgba(0, 0, 0, .3);
     -webkit-border-radius: 3px;
     border-radius: 3px;
-}
+}*/
 /*插件msg弹出框自带样式结束*/
 
 /*弹出框*/
