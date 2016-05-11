@@ -11,6 +11,8 @@
     <script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
     <script src="js/bootstrap-datetimepicker.js" type="text/javascript" charset="utf-8"></script>
     <script src="js/bootstrap-datetimepicker.zh-CN.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/jquery.center.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/jquery.msg.js" type="text/javascript" charset="utf-8"></script>
     <script src="js/common.js" type="text/javascript" charset="utf-8"></script>
 </head>
 <body>
@@ -102,7 +104,7 @@
                                         <span class="title-style1">基本信息</span>
                                     </div>
                                     <dl class="dl-horizontal resume-horizontal">
-                                        <span class="btn btn-gray-empty btn-size16 umvui-modify-btn">修改</span>
+                                        <span class="btn btn-gray-empty btn-size16 umvui-modify-btn" id="modifyBasicInfoBtn">修改</span>
                                         <dt>头像：</dt>
                                         <dd>
                                             <div class="thumb80">
@@ -138,7 +140,7 @@
                                     </dl>
                                     <div class="mb10 clearfix">
                                         <span class="title-style1">收货信息</span><span class="title-style1-note">您可以创建2个收货地址，最多可以创建20个</span>
-                                        <span class="btn btn-bluelight-full btn-size16 float-right">+新建收货地址</span>
+                                        <span class="btn btn-bluelight-full btn-size16 float-right" id="addShippingAddressBtn">+新建收货地址</span>
                                     </div>
                                     <dl class="dl-horizontal resume-horizontal bdd">
                                         <span class="btn btn-gray-empty btn-size16 umvui-modify-btn">修改</span>
@@ -168,174 +170,210 @@
         <!--右侧主体页面结束-->
     </div>
 </div>
-<div>
-</div>
-<!--弹出框-->
-<!--<div class="pop-up-window">
-    <div class="pop-up-window-header">
-        <div class="pop-up-window-title">新建收货地址</div>
-        &lt;!&ndash;<div class="pop-up-window-close">×</div>&ndash;&gt;
-    </div>
-    <div class="pop-up-window-content">
-        <div class="form-horizontal">
-            <div class="form-group">
-                <label class="col-md-12">收货人：</label>
-                <div class="col-md-12">
-                    <input type="text" class="form-control">
-                </div>
-            </div>
-            <div class="form-group">
-                <label class="col-md-12">收货人电话：</label>
-                <div class="col-md-12">
-                    <input type="text" class="form-control">
-                </div>
-            </div>
-            <div class="form-group">
-                <label class="col-md-12">所在地区：</label>
-                <div class="col-md-4">
-                    <select class="form-control">
-                        <option>请选择</option>
-                        <option>请选择</option>
-                    </select>
-                </div>
-                <div class="col-md-4">
-                    <select class="form-control">
-                        <option>请选择</option>
-                        <option>请选择</option>
-                    </select>
-                </div>
-                <div class="col-md-4">
-                    <select class="form-control">
-                        <option>请选择</option>
-                        <option>请选择</option>
-                    </select>
-                </div>
-            </div>
-            <div class="form-group">
-                <label class="col-md-12">详细地址：</label>
-                <div class="col-md-12">
-                    <input type="text" class="form-control">
-                    <div class="red-note">请填写详细地址</div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="pop-up-window-footer">
-        <a class="btn btn-gray-full btn-size16">取消</a>
-        <a class="btn btn-bluelight-full btn-size16">保存</a>
-    </div>
-</div>-->
-<!--弹出框结束-->
 
 <!--弹出框修改用户资料-->
-<div class="pop-up-window" style="width: 800px; margin-left: -400px">
-    <div class="pop-up-window-header">
-        <div class="pop-up-window-title">修改用户资料</div>
-    </div>
-    <div class="pop-up-window-content">
-        <div class="form-horizontal">
-            <div class="form-group">
-                <label class="col-md-2 control-label">头像：</label>
-                <div class="col-md-4">
-                    <div class="child-img-node-wh50">
-                        <img src="img/gallery1.jpg">
-                    </div>
-                </div>
-            </div>
-            <div class="form-group">
-                <label class="col-md-2 control-label">昵称：</label>
-                <div class="col-md-4">
-                    <input type="text" class="form-control">
-                </div>
-            </div>
-            <div class="form-group">
-                <label class="col-md-2 control-label">手机：</label>
-                <div class="col-md-4">
-                    <input type="text" class="form-control" value="15475458554" onblur="validateTele(event)">
-                    <div class="red-note">手机号错误</div>
-                </div>
-            </div>
-            <div class="form-group">
-                <label class="col-md-2 control-label">性别：</label>
-                <div class="col-md-4">
-                    <label class="radio-inline">
-                        <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option7" checked="">
-                        男
-                    </label>
-                    <label class="radio-inline">
-                        <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option8">
-                        女
-                    </label>
-                </div>
-            </div>
-            <div class="form-group">
-                <label class="col-md-2 control-label">出生年月：</label>
-                <div class="col-md-4">
-                    <div class="input-group date form_date" data-date="" data-date-format="yyyy-mm-dd" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
-                        <input class="form-control" size="16" type="text" value="" id="datetimepicker" readonly>
-                        <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
-                    </div>
-                    <input type="hidden" id="dtp_input2" value="" />
-                    <script type="text/javascript">
-                        $('.form_date').datetimepicker({
-                            language:  'zh-CN',
-                            weekStart: 1,
-                            todayBtn:  1,
-                            autoclose: 1,
-                            todayHighlight: 1,
-                            startView: 2,
-                            minView: 2,
-                            forceParse: 0
-                        });
-                    </script>
-                </div>
-            </div>
-            <div class="form-group">
-                <label class="col-md-2 control-label">家庭地址：</label>
-                <div class="col-md-2">
-                    <select class="form-control">
-                        <option>湖南省</option>
-                        <option>湖南省</option>
-                    </select>
-                </div>
-                <div class="col-md-2">
-                    <select class="form-control">
-                        <option>长沙市</option>
-                        <option>长沙市</option>
-                    </select>
-                </div>
-                <div class="col-md-2">
-                    <select class="form-control">
-                        <option>星沙县</option>
-                        <option>星沙县</option>
-                    </select>
-                </div>
-                <div class="col-md-4">
-                    <input type="text" class="form-control" value="盼盼路9号千山药机5栋1205室">
-                </div>
-            </div>
-            <div class="form-group">
-                <label class="col-md-2 control-label">状态：</label>
-                <div class="col-md-4">
-                    <label class="radio-inline">
-                        <input type="radio" name="inlineRadioOptions2" id="inlineRadio3" value="option9" checked="">
-                        启用
-                    </label>
-                    <label class="radio-inline">
-                        <input type="radio" name="inlineRadioOptions2" id="inlineRadio4" value="option10">
-                        锁定
-                    </label>
-                </div>
-            </div>
-        </div>
+<script type="text/javascript">
+    $( '#modifyBasicInfoBtn' ).bind( 'click', function(){
+        $.msg({
+            autoUnblock : false,
+            clickUnblock : false,
+            content: '<div class="pop-up-window" style="width: 800px">' +
+                        '<div class="pop-up-window-header">' +
+                            '<div class="pop-up-window-title">修改用户资料</div>' +
+                        '</div>' +
+                        '<div class="pop-up-window-content">' +
+                            '<div class="form-horizontal">' +
+                                '<div class="form-group">' +
+                                    '<label class="col-md-2 control-label">头像：</label>' +
+                                    '<div class="col-md-4">' +
+                                        '<div class="child-img-node-wh50">' +
+                                            '<img src="img/gallery1.jpg">' +
+                                        '</div>' +
+                                    '</div>' +
+                                '</div>' +
+                                '<div class="form-group">' +
+                                    '<label class="col-md-2 control-label">昵称：</label>' +
+                                    '<div class="col-md-4">' +
+                                        '<input type="text" class="form-control">' +
+                                    '</div>' +
+                                '</div>' +
+                                '<div class="form-group">' +
+                                    '<label class="col-md-2 control-label">手机：</label>' +
+                                    '<div class="col-md-4">' +
+                                        '<input type="text" class="form-control" value="15475458554" onblur="validateTele(event)">' +
+                                        '<div class="red-note">手机号错误</div>' +
+                                    '</div>' +
+                                '</div>' +
+                                '<div class="form-group">' +
+                                    '<label class="col-md-2 control-label">性别：</label>' +
+                                    '<div class="col-md-4">' +
+                                        '<label class="radio-inline">' +
+                                            '<input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option7" checked="">男' +
+                                        '</label>' +
+                                        '<label class="radio-inline">' +
+                                            '<input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option7" checked="">女' +
+                                        '</label>' +
+                                    '</div>' +
+                                '</div>' +
+                                '<div class="form-group">' +
+                                    '<label class="col-md-2 control-label">出生年月：</label>' +
+                                    '<div class="col-md-4">' +
+                                        '<div class="input-group date form_date" data-date="" data-date-format="yyyy-mm-dd" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">' +
+                                            '<input class="form-control" size="16" type="text" value="" id="datetimepicker" readonly>' +
+                                            '<span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>' +
+                                        '</div>' +
+                                        '<input type="hidden" id="dtp_input2" value="" />' +
+                                    '</div>' +
+                                '</div>' +
+                                '<div class="form-group">' +
+                                    '<label class="col-md-2 control-label">家庭地址：</label>' +
+                                    '<div class="col-md-2">' +
+                                        '<select class="form-control">' +
+                                            '<option>湖南省</option>' +
+                                            '<option>湖南省</option>' +
+                                        '</select>' +
+                                    '</div>' +
+                                    '<div class="col-md-2">' +
+                                        '<select class="form-control">' +
+                                            '<option>长沙市</option>' +
+                                            '<option>长沙市</option>' +
+                                        '</select>' +
+                                    '</div>' +
+                                    '<div class="col-md-2">' +
+                                        '<select class="form-control">' +
+                                            '<option>星沙县</option>' +
+                                            '<option>星沙县</option>' +
+                                        '</select>' +
+                                    '</div>' +
+                                    '<div class="col-md-4">' +
+                                        '<input type="text" class="form-control" value="盼盼路9号千山药机5栋1205室">' +
+                                    '</div>' +
+                                '</div>' +
+                                '<div class="form-group">' +
+                                    '<label class="col-md-2 control-label">状态：</label>' +
+                                    '<div class="col-md-4">' +
+                                        '<label class="radio-inline">' +
+                                            '<input type="radio" name="inlineRadioOptions2" id="inlineRadio3" value="option9" checked="">启用' +
+                                        '</label>' +
+                                        '<label class="radio-inline">' +
+                                            '<input type="radio" name="inlineRadioOptions2" id="inlineRadio4" value="option10">锁定' +
+                                        '</label>' +
+                                    '</div>' +
+                                '</div>' +
+                            '</div>' +
+                        '</div>' +
+                        '<div class="pop-up-window-footer">' +
+                            '<a class="btn btn-gray-full btn-size16" id="noModifyInfoBtn">取消</a>' +
+                            '<a class="btn btn-bluelight-full btn-size16" id="yesModifyInfoBtn">保存</a>' +
+                        '</div>' +
+                    '</div>',
+            afterBlock : function(){
+                var self = this;
+                $( '#yesModifyInfoBtn' ).bind( 'click', function(){
+                    self.unblock( 200 );
+                });
 
-    </div>
-    <div class="pop-up-window-footer">
-        <a class="btn btn-gray-full btn-size16">取消</a>
-        <a class="btn btn-bluelight-full btn-size16">保存</a>
-    </div>
-</div>
+                $( '#noModifyInfoBtn' ).bind( 'click', function(){
+                    self.unblock();
+                });
+            },
+            beforeUnblock : function(){
+                alert( 'This is a callback from beforeUnblock event handler :)' )
+            }
+        });
+
+        //初始化日期
+        $('.form_date').datetimepicker({
+            language:  'zh-CN',
+            weekStart: 1,
+            todayBtn:  1,
+            autoclose: 1,
+            todayHighlight: 1,
+            startView: 2,
+            minView: 2,
+            forceParse: 0
+        });
+    });
+</script>
 <!--弹出框修改用户资料结束-->
+
+<!--弹出框新增收货地址-->
+<script type="text/javascript">
+    $( '#addShippingAddressBtn' ).bind( 'click', function(){
+        $.msg({
+            autoUnblock : false,
+            clickUnblock : false,
+            content: '<div class="pop-up-window">' +
+                        '<div class="pop-up-window-header">' +
+                            '<div class="pop-up-window-title">新建收货地址</div>' +
+                        '</div>' +
+                        '<div class="pop-up-window-content">' +
+                            '<div class="form-horizontal">' +
+                                '<div class="form-group">' +
+                                    '<label class="col-md-12">收货人：</label>' +
+                                    '<div class="col-md-12">' +
+                                        '<input type="text" class="form-control">' +
+                                    '</div>' +
+                                '</div>' +
+                                '<div class="form-group">' +
+                                    '<label class="col-md-12">收货人电话：</label>' +
+                                    '<div class="col-md-12">' +
+                                        '<input type="text" class="form-control">' +
+                                    '</div>' +
+                                '</div>' +
+                                '<div class="form-group">' +
+                                    '<label class="col-md-12">所在地区：</label>' +
+                                    '<div class="col-md-4">' +
+                                        '<select class="form-control">' +
+                                            '<option>请选择</option>' +
+                                            '<option>请选择</option>' +
+                                        '</select>' +
+                                    '</div>' +
+                                    '<div class="col-md-4">' +
+                                        '<select class="form-control">' +
+                                            '<option>请选择</option>' +
+                                            '<option>请选择</option>' +
+                                        '</select>' +
+                                    '</div>' +
+                                    '<div class="col-md-4">' +
+                                        '<select class="form-control">' +
+                                            '<option>请选择</option>' +
+                                            '<option>请选择</option>' +
+                                        '</select>' +
+                                    '</div>' +
+                                '</div>' +
+                                '<div class="form-group">' +
+                                    '<label class="col-md-12">详细地址：</label>' +
+                                    '<div class="col-md-12">' +
+                                        '<input type="text" class="form-control">' +
+                                        '<div class="red-note">请填写详细地址</div>' +
+                                    '</div>' +
+                                '</div>' +
+                            '</div>' +
+                        '</div>' +
+                        '<div class="pop-up-window-footer">' +
+                            '<a id="noAddBtn" class="btn btn-gray-full btn-size16">取消</a>' +
+                            '<a id="yesAddBtn" class="btn btn-bluelight-full btn-size16">保存</a>' +
+                        '</div>' +
+                    '</div>',
+            afterBlock : function(){
+                var self = this;
+                $( '#yesAddBtn' ).bind( 'click', function(){
+                    self.unblock( 200 );
+                });
+
+                $( '#noAddBtn' ).bind( 'click', function(){
+                    self.unblock();
+                });
+            },
+            beforeUnblock : function(){
+                alert( 'This is a callback from beforeUnblock event handler :)' )
+            }
+        });
+    });
+
+</script>
+<!--弹出框新增收货地址结束-->
 
 </body>
 </html>

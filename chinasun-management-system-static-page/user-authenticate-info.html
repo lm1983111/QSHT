@@ -95,7 +95,7 @@
         <span class="wizard-return"><i class="icon-icon_return_left"></i>返回</span>
         <h2>审核信息</h2>
     </div>
-    <div class="wizard-content col-lg-offset-3 col-lg-6">
+    <div class="wizard-content col-lg-offset-1 col-lg-10">
         <div class="form-horizontal">
             <div class="form-group">
                 <label class="col-md-3 control-label">姓名：</label>
@@ -112,13 +112,13 @@
             <div class="form-group">
                 <label class="col-md-3 control-label">图片：</label>
                 <div class="col-md-9 thumb-inline">
-                    <div class="thumb260-160">
-                        <div class="thumb260-160-cell">
+                    <div class="thumb600-400">
+                        <div class="thumb600-400-cell">
                             <img src="img/gallery1.jpg">
                         </div>
                     </div>
-                    <div class="thumb260-160">
-                        <div class="thumb260-160-cell">
+                    <div class="thumb600-400">
+                        <div class="thumb600-400-cell">
                             <img src="img/gallery2.jpg">
                         </div>
                     </div>
@@ -128,40 +128,56 @@
                 <label class="col-md-3 control-label">审核状态：</label>
                 <div class="col-md-6">
                     <label class="radio-inline">
-                        <input type="radio" name="inlineRadioOptionsSh" id="inlineRadio1" value="option7">
+                        <input type="radio" name="inlineRadioOptionsSh" id="authenticateInlineRadio1" value="option7">
                         不通过
                     </label>
                     <label class="radio-inline">
-                        <input type="radio" name="inlineRadioOptionsSh" id="inlineRadio2" value="option8" checked="checked">
+                        <input type="radio" name="inlineRadioOptionsSh" id="authenticateInlineRadio2" value="option8" checked="checked">
                         审核通过
                     </label>
                 </div>
             </div>
-            <div class="form-group">
-                <label class="col-md-3 control-label">不通过原因：</label>
-                <div class="col-md-9">
-                    <label class="checkbox-inline">
-                        <input type="checkbox" id="inlineCheckbox1" value="option9">
-                        照片不清晰
-                    </label>
-                    <label class="checkbox-inline">
-                        <input type="checkbox" id="inlineCheckbox2" value="option10">
-                        证件信息与照片不符
-                    </label>
-                    <label class="checkbox-inline">
-                        <input type="checkbox" id="inlineCheckbox3" value="option11">
-                        身份证已过期
-                    </label>
+            <div class="not-pass-authenticate-wrap" id="notPassAuthenticateWrap">
+                <div class="form-group">
+                    <label class="col-md-3 control-label">不通过原因：</label>
+                    <div class="col-md-9">
+                        <label class="radio-inline">
+                            <input type="radio" name="inlineRadioBecause" value="option9">
+                            照片不清晰
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" name="inlineRadioBecause" value="option10">
+                            证件信息与照片不符
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" name="inlineRadioBecause" value="option11">
+                            身份证已过期
+                        </label>
+                    </div>
                 </div>
-            </div>
-            <div class="form-group">
-                <div class="col-md-offset-3 col-md-9 form-inline">
-                    <label class="checkbox-inline" style="padding-top: 0">
-                        <input type="checkbox" id="inlineCheckbox4" value="option12">
-                        其它原因
-                    </label>
-                    <input type="text" class="form-control">
+                <div class="form-group">
+                    <div class="col-md-offset-3 col-md-9 form-inline">
+                        <label class="radio-inline" style="padding-top: 0">
+                            <input type="radio" name="inlineRadioBecause" value="option12">
+                            其它原因
+                        </label>
+                        <input type="text" class="form-control">
+                    </div>
                 </div>
+                <script type="text/javascript">
+                    $(function(){
+                        $("#authenticateInlineRadio1").on("change",function(){
+                            if(this.checked){
+                                $("#notPassAuthenticateWrap").addClass("open")
+                            }
+                        });
+                        $("#authenticateInlineRadio2").on("change",function(){
+                            if(this.checked){
+                                $("#notPassAuthenticateWrap").removeClass("open")
+                            }
+                        });
+                    });
+                </script>
             </div>
             <div class="form-group mt60">
                 <div class="col-md-offset-3 col-md-6">

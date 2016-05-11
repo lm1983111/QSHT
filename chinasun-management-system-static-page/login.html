@@ -4,99 +4,17 @@
     <meta charset="UTF-8">
     <title>千山健康后台管理系统</title>
     <script type="text/javascript" charset="utf-8" src="js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/login.js"></script>
     <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
     <link type="text/css" rel="stylesheet" href="css/common.css">
-    <style>
-        body{
-            background-color: #e6e6e6;
-        }
-        .login-wrap{
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            display: block;
-            width: 320px;
-        }
-        .login-content form input{
-            border-radius: 3px;
-        }
-        .login-header{
-            display: block;
-            width: 203px;
-            height: 173px;
-            margin-left: auto;
-            margin-right: auto;
-            margin-bottom: 30px;
-            background-image: url("img/login_logo.jpg");
-            background-position: center;
-            background-repeat: no-repeat;
-        }
-        .btn-gray1{
-            background-color: #cccccc;
-            border: 1px solid #a2a2a2;
-            color: #1e1e1e;
-            font-weight: 700;
-        }
-        .btn-gray1:hover{
-            background-color: #b8b8b8;
-        }
-        .radius3{
-            border-radius: 3px;
-        }
-        .account-error{
-            display: none;
-            width: 100%;
-            height: 40px;
-            line-height: 40px;
-            padding: 0 10px;
-            background-color: #fff2f2;
-            border: 1px solid #ff8080;
-            border-radius: 3px;
-            color: red;
-        }
-    </style>
-    <script type="text/javascript">
-        $(function(){
-            var loginWrap = $(".login-wrap");
-            var wHeight = $(window).height();
-            var wWidth = $(window).width();
-            var loginWrapW = loginWrap.width();
-            var loginWrapH = loginWrap.height();
+    <link type="text/css" rel="stylesheet" href="css/login.css">
 
-            loginWrap.css({"margin-left":-loginWrapW/2, "margin-top":-loginWrapH/2-30});
-        });
-
-        //登陆本地验证
-        function login(){
-            var userNameValue = document.getElementById("userName").value;
-            var pwdValue = document.getElementById("pwd").value;
-
-            //如果用户名为空，弹出提示
-            if(userNameValue == ""){
-                //alert("用户名不能为空！");
-                $("#errorWrap > div").css("display","none");
-                $("#userNameErrorNote").css("display","block");
-                return false;
-            }
-
-            //如果密码为空，弹出提示
-            if( pwdValue == ""){
-                //alert("密码不能为空！");
-                $("#errorWrap > div").css("display","none");
-                $("#pwdErrorNote").css("display","block");
-                return false;
-            }else{
-                return true;
-            }
-        }
-    </script>
 </head>
 <body>
-    <div class="container">
         <div class="login-wrap">
             <div class="login-header"></div>
             <div class="login-content">
-                <form id="loginForm" name="login-form" action="/i/eg_smile.gif" onsubmit = "return login();" method="post">
+                <form id="loginForm" name="login-form" action="" onsubmit = "return login();" method="post">
                     <div id="errorWrap" class="form-group">
                         <div id="userNameErrorNote" class="account-error">用户名不能为空！</div>
                         <div id="pwdErrorNote" class="account-error">密码不能为空！</div>
@@ -109,11 +27,11 @@
                         <input id="pwd" type="password" placeholder="密码" class="form-control">
                     </div>
                     <div class="form-group">
-                        <input type="submit" class="btn btn-gray1 radius3 btn-block" value="登陆">
+                        <input type="submit" class="btn btn-bluelight-full btn-size16 btn-block login-btn" value="登 陆">
                     </div>
                 </form>
             </div>
         </div>
-    </div>
+        <p class="copy-right-info">© 2016 HUNAN CHINASUN HEALTH All Rights Reserved.</p>
 </body>
 </html>
