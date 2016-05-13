@@ -4,7 +4,7 @@ $(function(){
         var wWith = $(window).width();
         var wHeight = $(window).height();
         $(".view-wrap").css({"min-height":wHeight});
-//        $(".view-body").css({"min-height":wHeight-80});
+        //$(".view-body").css({"min-height":wHeight-80});
         $(".wizard").css({"min-height":wHeight-96})
     }
     setBodyWithHeight();
@@ -63,7 +63,21 @@ $(function(){
                 }
             })
         })();
-    })
+    });
+
+    //sidebar-none-or-display
+    $("#btnFoldSidebar").click(function(){
+        var viewBody = $(".view-body");
+        if(viewBody.hasClass("view-sidebar-none")){
+            viewBody.removeClass("view-sidebar-none");
+            viewBody.addClass("view-sidebar-block");
+            $(".view-main").css({"left":"180px"});
+        }else{
+            viewBody.removeClass("view-sidebar-block");
+            viewBody.addClass("view-sidebar-none");
+            $(".view-main").css({"left":"0"});
+        }
+    });
 });
 
 
@@ -91,4 +105,5 @@ function validateTele(event){
         $(event.target).next(".red-note").html("");
     }
 }
+
 

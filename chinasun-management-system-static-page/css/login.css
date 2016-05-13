@@ -26,7 +26,6 @@ body{
 }
 .login-content input.form-control{
     height: 44px;
-    line-height: 44px;
     padding: 6px 12px;
 }
 .btn-gray1{
@@ -65,4 +64,21 @@ body{
     height: 43px;
     line-height: 43px;
     padding: 0;
+}
+input.user-name:focus, input.pwd:focus
+{
+    color: #1badc4;
+}
+.login-content .form-group{
+    position: relative;
+}
+.login-content .icon-icon_poritrait, .login-content .icon-icon_lock2{
+    position: absolute;
+    top: 14px;
+    right: 10px;
+    font-size: 16px;
+    color: #c2c2c2;
+}
+#userName:focus~.icon-icon_poritrait, #pwd:focus~.icon-icon_lock2, #userName:focus, #pwd:focus{
+    color: #1badc4;
 }

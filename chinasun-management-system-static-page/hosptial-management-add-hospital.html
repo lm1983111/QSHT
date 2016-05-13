@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>医院管理-新增医院</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <script src="js/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=1.3"></script>
+</head>
+<body>
+<div class="view-wrap have-min-w1200">
+<!--顶部菜单-->
+<div class="view-topbar">
+    <div class="topbar-content">
+        <div class="topbar-left-logo"></div>
+        <ul class="topbar-right">
+            <li class="topbar-right-item">
+                <div class="topbar-right-item-inner user-portrait-wrap"><a class="user-portrait"></a><span>王小帅，欢迎您!</span></div>
+            </li>
+            <li class="topbar-right-item">
+                <a class="topbar-right-item-inner">修改密码</a>
+            </li>
+            <li class="topbar-right-item">
+                <a class="topbar-right-item-inner">退出</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--顶部菜单结束-->
+<div class="view-body">
+    <!--左侧菜单栏-->
+    <div class="view-sidebar">
+        <div class="sidebar-nav">
+            <div class="sidebar-title">
+                <span class="icon-icon_setting"></span>
+                <span>系统管理</span>
+                <span class="glyphicon glyphicon-triangle-bottom"></span>
+            </div>
+            <ul class="sidebar-trans">
+                <li><a href="role-management.html">角色管理</a></li>
+                <li><a href="staff-management.html">员工管理</a></li>
+                <li><a href="menu-management.html">菜单管理</a></li>
+                <li><a href="function-management.html">功能管理</a></li>
+            </ul>
+        </div>
+        <div class="sidebar-nav">
+            <div class="sidebar-title">
+                <span class="icon-icon_portrait"></span>
+                <span>用户菜单</span>
+                <span class="glyphicon glyphicon-triangle-bottom"></span>
+            </div>
+            <ul class="sidebar-trans">
+                <li><a href="user-management.html">用户管理</a></li>
+                <li><a href="user-authenticate.html">实名认证</a></li>
+            </ul>
+        </div>
+        <div class="sidebar-nav">
+            <div class="sidebar-title">
+                <span class="icon-icon_shopping_cart"></span>
+                <span>商城管理</span>
+                <span class="glyphicon glyphicon-triangle-bottom"></span>
+            </div>
+            <ul class="sidebar-trans">
+                <li><a href="order-management-all-order.html">订单管理</a></li>
+                <li><a href="goods-management-selling.html">商品管理</a></li>
+            </ul>
+        </div>
+        <div class="sidebar-nav">
+            <div class="sidebar-title">
+                <span class="icon-icon_chart"></span>
+                <span>社区管理</span>
+                <span class="glyphicon glyphicon-triangle-bottom"></span>
+            </div>
+            <ul class="sidebar-trans">
+                <li><a href="topic-management-published.html">话题管理</a></li>
+                <li><a href="lower-blood-pressure-data.html">降压资料</a></li>
+                <li><a href="quality-recommend.html">精华推荐</a></li>
+                <li><a href="banner-page.html">BANNER</a></li>
+            </ul>
+        </div>
+        <div class="sidebar-nav">
+            <div class="sidebar-title">
+                <span class="icon-icon_hospital"></span>
+                <span>医院管理</span>
+                <span class="glyphicon glyphicon-triangle-bottom"></span>
+            </div>
+            <ul class="sidebar-trans">
+                <li><a class="active" href="hospital-management-list.html">医院列表</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--左侧菜单栏结束-->
+    <!--右侧主体页面-->
+    <div class="view-main">
+        <div class="main-body">
+            <div class="grid-general">
+                <div class="wizard">
+                    <div class="wizard-title">
+                        <span class="wizard-return"><i class="icon-icon_return_left"></i>返回</span>
+                        <h2>新增医院</h2>
+                    </div>
+                    <div class="wizard-content hospital-con">
+                        <div class="all-info-form-wrap">
+                            <div class="row">
+                                <div class="col-md-offset-2 col-lg-8">
+                                    <div class="form-horizontal">
+                                        <div class="form-group">
+                                            <label class="col-md-2 control-label">缩略图:</label>
+                                            <div class="col-md-10">
+                                                <div class="banner-preview-upload-img-wrap main-thumbnail-img">
+                                                    <img id="hospitalPreviewImg" src=""/>
+                                                </div>
+                                                <div class="banner-up-load-box">
+                                                    选择文件
+                                                    <input type="file" id="upLaunch" onchange="getUpLoadImgUrl()" accept="image/*" class="up-launch">
+                                                </div>
+                                                <script type="text/javascript">
+                                                    function getUpLoadImgUrl() {
+                                                        var upLaunch = document.getElementById("upLaunch");
+                                                        var hospitalPreviewImg = document.getElementById("hospitalPreviewImg");
+                                                        hospitalPreviewImg.src = window.URL.createObjectURL(upLaunch.files[0]);
+                                                    }
+                                                </script>
+                                            </div>
+                                            <div class="col-md-offset-2 col-md-10">建议尺寸：180×180像素</div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-md-2 control-label">医院名称：</label>
+                                            <div class="col-md-6">
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-md-2 control-label">医院等级：</label>
+                                            <div class="col-md-6">
+                                                <select class="form-control">
+                                                    <option>三级甲等</option>
+                                                    <option>二级乙等</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-md-2 control-label">医院性质：</label>
+                                            <div class="col-md-6">
+                                                <select class="form-control">
+                                                    <option>公立医院</option>
+                                                    <option>私立医院</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-md-2 control-label">联系电话：</label>
+                                            <div class="col-md-6">
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-md-2 control-label">医院地址：</label>
+                                            <div class="col-md-2">
+                                                <select class="form-control">
+                                                    <option>湖南省</option>
+                                                    <option>湖南省</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <select class="form-control">
+                                                    <option>长沙市</option>
+                                                    <option>长沙市</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <select class="form-control">
+                                                    <option>天心区</option>
+                                                    <option>天心区</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <input type="text" class="form-control" id="text_" value="">
+                                            </div>
+                                            <div class="col-md-1">
+                                                <a class="btn btn-gray-empty btn-size16" onclick="searchByStationName();">获取经纬度</a>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-md-2 control-label">经度：</label>
+                                            <div class="col-md-3">
+                                                <input type="text" class="form-control" id="result_lng">
+                                            </div>
+                                            <label class="col-md-2 control-label">纬度：</label>
+                                            <div class="col-md-3">
+                                                <input type="text" class="form-control" id="result_lat">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-md-offset-2 col-md-3">
+                                                <a class="btn btn-bluelight-full btn-size16">保存</a>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-md-offset-2 col-md-3">
+                                                <div id="mapContainer" class="map-container"></div>
+                                                <script type="text/javascript">
+                                                    var map = new BMap.Map("mapContainer");
+                                                    map.centerAndZoom("北京", 12);
+                                                    map.enableScrollWheelZoom();    //启用滚轮放大缩小，默认禁用
+                                                    map.enableContinuousZoom();    //启用地图惯性拖拽，默认禁用
+
+                                                    map.addControl(new BMap.NavigationControl());  //添加默认缩放平移控件
+                                                    map.addControl(new BMap.OverviewMapControl()); //添加默认缩略地图控件
+                                                    map.addControl(new BMap.OverviewMapControl({ isOpen: true, anchor: BMAP_ANCHOR_BOTTOM_RIGHT }));   //右下角，打开
+
+                                                    var localSearch = new BMap.LocalSearch(map);
+                                                    localSearch.enableAutoViewport(); //允许自动调节窗体大小
+                                                    function searchByStationName() {
+                                                        map.clearOverlays();//清空原来的标注
+                                                        var keyword = document.getElementById("text_").value;
+                                                        localSearch.setSearchCompleteCallback(function (searchResult) {
+                                                            var poi = searchResult.getPoi(0);
+                                                            document.getElementById("result_lng").value = poi.point.lng;
+                                                            document.getElementById("result_lat").value = poi.point.lat;
+                                                            map.centerAndZoom(poi.point, 13);
+                                                            var marker = new BMap.Marker(new BMap.Point(poi.point.lng, poi.point.lat));  // 创建标注，为要查询的地方对应的经纬度
+                                                            map.addOverlay(marker);
+                                                            var content = document.getElementById("text_").value + "<br/><br/>经度：" + poi.point.lng + "<br/>纬度：" + poi.point.lat;
+                                                            var infoWindow = new BMap.InfoWindow("<p style='font-size:14px;'>" + content + "</p>");
+                                                            marker.addEventListener("click", function () { this.openInfoWindow(infoWindow); });
+                                                            // marker.setAnimation(BMAP_ANIMATION_BOUNCE); //跳动的动画
+                                                        });
+                                                        localSearch.search(keyword);
+                                                    }
+                                                </script>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--右侧主体页面结束-->
+</div>
+</div>
+</body>
+</html>

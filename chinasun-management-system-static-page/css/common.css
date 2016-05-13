@@ -191,13 +191,14 @@ a{
 .btn [class^="icon-"]{ position: relative; top: 2px;}
 /*btn结束*/
 
+/*字体图标*/
 @font-face {
     font-family: 'icomoon';
-    src:    url('../fonts/icomoon.eot?uuqxd1');
-    src:    url('../fonts/icomoon.eot?uuqxd1#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?uuqxd1') format('truetype'),
-    url('../fonts/icomoon.woff?uuqxd1') format('woff'),
-    url('../fonts/icomoon.svg?uuqxd1#icomoon') format('svg');
+    src:    url('../fonts/icomoon.eot?3h4las');
+    src:    url('../fonts/icomoon.eot?3h4las#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?3h4las') format('truetype'),
+    url('../fonts/icomoon.woff?3h4las') format('woff'),
+    url('../fonts/icomoon.svg?3h4las#icomoon') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -217,6 +218,9 @@ a{
     -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-icon_hospital:before {
+    content: "\e911";
+}
 .icon-icon_chart:before {
     content: "\e900";
 }
@@ -235,33 +239,42 @@ a{
 .icon-icon_lock:before {
     content: "\e905";
 }
-.icon-icon_portrait:before {
+.icon-icon_lock2:before {
     content: "\e906";
 }
-.icon-icon_power:before {
+.icon-icon_poritrait:before {
     content: "\e907";
 }
-.icon-icon_refresh:before {
+.icon-icon_portrait:before {
     content: "\e908";
 }
-.icon-icon_return_left:before {
+.icon-icon_power:before {
     content: "\e909";
 }
-.icon-icon_right:before {
+.icon-icon_refresh:before {
     content: "\e90a";
 }
-.icon-icon_search:before {
+.icon-icon_return_left:before {
     content: "\e90b";
 }
-.icon-icon_setting:before {
+.icon-icon_right:before {
     content: "\e90c";
 }
-.icon-icon_shopping_cart:before {
+.icon-icon_search:before {
     content: "\e90d";
 }
-.icon-icon_sigh:before {
+.icon-icon_setting:before {
     content: "\e90e";
 }
+.icon-icon_shopping_cart:before {
+    content: "\e90f";
+}
+.icon-icon_sigh:before {
+    content: "\e910";
+}
+
+
+/*字体图标结束*/
 
 /*nav-tabs*/
 .tab-nav, .tab-nav li{
@@ -522,12 +535,12 @@ a{
     min-width: 400px;
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
-    background-color: #eee;
+    background-color: #06a2bb;
 }
 .pop-up-window-title{
     padding-left: 30px;
     display: inline-block;
-    color: #333;
+    color: #fff;
     font-size: 16px;
 }
 .pop-up-window-close{
@@ -572,6 +585,7 @@ a{
 }
 .pop-up-window-footer .btn{
     margin-right: 20px;
+    min-width: 100px;
 }
 .pop-up-window-footer .btn:last-child{
     margin-right: 0;
@@ -595,19 +609,24 @@ a{
 .pop-up-window1-header{
     position: relative;
     display: block;
-    height: 60px;
+    height: 50px;
+    line-height: 50px;
     width: 100%;
     min-width: 400px;
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
-    background-color: #808080;
+    background-color: #06a2bb;
 }
 .pop-up-window1-title{
-    position: absolute;
+    /*position: absolute;
     top: 20px;
     left: 30px;
     display: inline-block;
+    color: #fff;*/
+    padding-left: 30px;
+    display: inline-block;
     color: #fff;
+    font-size: 16px;
 }
 .pop-up-window1-content{
     display: block;
@@ -624,11 +643,12 @@ a{
     display: block;
     float: left;
     width: 50%;
-    height: 50px;
-    line-height: 50px;
+    height: 45px;
+    line-height: 45px;
     text-align: center;
     color: #333;
     text-decoration: none;
+    cursor: pointer;
 }
 .puw1-footer-btn:hover{
     color: #333;
@@ -636,17 +656,17 @@ a{
 }
 .puw1-footer-left-btn{
     border-bottom-left-radius: 3px;
-    background-color: #cccccc;
+    background-color: #e7e7e7;
 }
 .puw1-footer-left-btn:hover{
-    background-color: #bdbdbd;
+    background-color: #eeeeee;
 }
 .puw1-footer-right-btn{
     border-bottom-right-radius: 3px;
-    background-color: #e7e7e7;
+    background-color: #cccccc;
 }
 .puw1-footer-right-btn:hover{
-    background-color: #eeeeee;
+    background-color: #bdbdbd;
 }
 /*弹出框1结束*/
 
@@ -704,16 +724,67 @@ a{
     width: 100%;
     z-index: 100;
 }
+.view-sidebar-wrap{
+    position: relative;
+}
 .view-sidebar{
     position: fixed;
     top: 66px;
     bottom: 0;
-    padding-top: 20px;
+    padding-top: 30px;
     display: block;
     width: 180px;
     z-index: 100;
     background-color: #06a2ba;
     font-size: 14px;
+}
+.view-sidebar-none .view-sidebar{
+    width: 0;
+    overflow: hidden;
+}
+.view-sidebar-block .view-sidebar{
+    width: 180px;
+    overflow: hidden;
+}
+.view-body .icon-icon_double_arrow_left{
+    position: absolute;
+    z-index: 8300;
+    top: 40px;
+    left: 165px;
+    height: 35px;
+    width: 15px;
+    background-color: #35b9cd;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    text-decoration: none;
+    color: #bae6ec;
+}
+.icon-icon_double_arrow_left:before{
+    position: absolute;
+    top: 12px;
+    left: 1px;
+    font-size: 12px;
+    -webkit-transition: all 0.12s ease,0.12s ease;
+    -moz-transition: all 0.12s ease,0.12s ease;
+    -ms-transition: all 0.12s ease,0.12s ease;
+    -o-transition: all 0.12s ease,0.12s ease;
+    transition: all 0.12s ease,0.12s ease;
+}
+.view-sidebar-none .icon-icon_double_arrow_left{
+    left: 0;
+    top: 40px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+.view-sidebar-none .icon-icon_double_arrow_left:before{
+    -webkit-transform:rotate(180deg);
+    transform:rotate(180deg);
+    -ms-transform:rotate(180deg);
+    -moz-transform:rotate(180deg);
+    -webkit-transform:rotate(180deg);
+    -o-transform:rotate(180deg);
 }
 .view-main{
     position: absolute;
@@ -889,11 +960,11 @@ a{
 .view-wrap{
     position: relative;
 }
-.grid-plrb15 {
+.grid-general{
     width: 100%;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
 }
 .have-min-w990{
     min-width: 990px;
@@ -1588,7 +1659,7 @@ form.common-header-nav-right{
     position: absolute;
     right: 15px;
     display: block;
-    width:50px;
+    width:60px;
 }
 .specification-cuo{
     position: absolute;
@@ -1919,3 +1990,18 @@ form.common-header-nav-right{
     margin-bottom: -15px;
 }
 /*实名认证结束*/
+
+/*医院管理*/
+.hospital-con .banner-preview-upload-img-wrap.main-thumbnail-img{
+    width: 90px;
+    height: 90px;
+}
+.map-container{
+    position: relative;
+    margin-top:30px;
+    width: 730px;
+    height: 590px;
+    border: 1px solid gray;
+    overflow:hidden;
+}
+/*医院管理结束*/
